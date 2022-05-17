@@ -1,8 +1,8 @@
 package com.prog2.uwupatch1.Model.Database;
 
-import com.PROG2.Model.Cards.EffectCard;
-import com.PROG2.Model.Cards.SummonedWarriorCard;
-import com.PROG2.Model.PlayerAttachment.*;
+import com.prog2.uwupatch1.Model.Cards.*;
+import com.prog2.uwupatch1.Model.PlayerAttachment.*;
+import com.prog2.uwupatch1.Model.Database.*;
 
 import java.io.*;
 import java.util.Scanner;

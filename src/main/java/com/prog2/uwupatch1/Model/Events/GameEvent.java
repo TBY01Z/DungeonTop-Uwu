@@ -1,6 +1,6 @@
 package com.prog2.uwupatch1.Model.Events;
 
-import com.PROG2.util.MyIO;
+import com.prog2.uwupatch1.util.MyIO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

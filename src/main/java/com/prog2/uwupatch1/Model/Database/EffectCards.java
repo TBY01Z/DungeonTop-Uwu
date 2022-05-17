@@ -1,8 +1,10 @@
 package com.prog2.uwupatch1.Model.Database;
 
-import com.PROG2.Model.Cards.EffectCard;
+
+import com.prog2.uwupatch1.Model.Cards.EffectCard;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
 /**
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ EffectCard

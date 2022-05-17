@@ -1,6 +1,6 @@
 package com.prog2.uwupatch1.Model.Database;
 
-import com.PROG2.Model.Cards.SummonedWarriorCard;
+import com.prog2.uwupatch1.Model.Cards.SummonedWarriorCard;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 /**

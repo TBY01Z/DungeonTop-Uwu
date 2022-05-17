@@ -1,6 +1,6 @@
 package com.prog2.uwupatch1.Model.Events;
 
-import com.PROG2.Model.Database.*;
+import com.prog2.uwupatch1.Model.Database.*;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Armor;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Artifact;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Deck;

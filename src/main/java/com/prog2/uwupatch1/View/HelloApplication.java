@@ -1,4 +1,4 @@
-package com.prog2.uwupatch1;
+package com.prog2.uwupatch1.View;
 
 import com.prog2.uwupatch1.Model.Database.InputClass;
 import javafx.application.Application;
@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 1200, 840);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();

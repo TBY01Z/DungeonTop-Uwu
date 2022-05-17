@@ -1,14 +1,14 @@
 package com.prog2.uwupatch1.Model.Events;
 
-import com.PROG2.Model.Database.*;
+import com.prog2.uwupatch1.Model.Database.*;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Adventurer;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Deck;
 import com.prog2.uwupatch1.Model.PlayerAttachment.DungeonMaster;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Usable;
 import javafx.collections.ObservableList;
 
-import static com.PROG2.util.MyIO.print;
-import static com.PROG2.util.MyIO.random;
+import static com.prog2.uwupatch1.util.MyIO.print;
+import static com.prog2.uwupatch1.util.MyIO.random;
 
 /**
  * @author Niclas Rieckers

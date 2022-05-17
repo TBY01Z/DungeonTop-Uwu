@@ -1,11 +1,13 @@
 package com.prog2.uwupatch1.Model.PlayerAttachment;
 
-import com.PROG2.Model.Cards.EffectCard;
-import com.PROG2.Model.Cards.SummonedWarriorCard;
+
+import com.prog2.uwupatch1.Model.Cards.EffectCard;
+import com.prog2.uwupatch1.Model.Cards.SummonedWarriorCard;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import static com.PROG2.util.MyIO.*;
+import static com.prog2.uwupatch1.util.MyIO.random;
+
 /**
  * @author Niclas Rieckers
  * Klasse Deck, mit der ein Kartendeck erzeugt werden kann.

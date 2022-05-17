@@ -12,5 +12,8 @@ module com.prog2.uwupatch1 {
     requires com.almasb.fxgl.all;
 
     opens com.prog2.uwupatch1 to javafx.fxml;
-    exports com.prog2.uwupatch1;
+    exports com.prog2.uwupatch1.View;
+    opens com.prog2.uwupatch1.View to javafx.fxml;
+    exports com.prog2.uwupatch1.Control;
+    opens com.prog2.uwupatch1.Control to javafx.fxml;
 }
