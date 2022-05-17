@@ -1,0 +1,7 @@
+EffectCard(int ID, String objName, String iconPath, Ability cardAbility, int buyCost, int summonCost)
+SummonedWarriorCard(int ID, String objName, String iconPath, double health, double hitDamage, double defense, int hitRange, int moveRange, int Summoncost, int buyCost)
+Ability(int ID, int timer, String name, String iconPath, double increaseHealth, double increaseMana, double increaseDamage, double increaseArmor, int increaseDrawLimit)
+public Armor(int ID, String objName, String iconPath, double health)
+Artifact(int ID, String name, String iconPath, double increaseHealth, double increaseMana, double increaseDamage, double increaseArmor, int increaseDrawLimit)
+
+
