@@ -1,5 +1,6 @@
 package com.prog2.uwupatch1;
 
+import com.prog2.uwupatch1.Model.Database.InputClass;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,6 +19,8 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        if(InputClass.inputFill()){
+            launch();
+        }
     }
 }
