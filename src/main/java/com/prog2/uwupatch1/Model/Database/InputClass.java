@@ -14,8 +14,8 @@ import java.util.Scanner;
  */
 
 public class InputClass {
-    private static String winResources = System.getProperty("user.dir") + "\\src\\com\\Prog2\\Model\\Database\\";
-    private static String macResources = System.getProperty("user.dir") + "/src/com/Prog2/Model/Database/";
+    private static String winResources = System.getProperty("user.dir") + "\\src\\main\\java\\com\\prog2\\uwupatch1\\Model\\Database\\";
+    private static String macResources = System.getProperty("user.dir") + "/src/main/java/com/prog2/uwupatch1/Model/Database/";
     private static String resourses;
     /**
      *

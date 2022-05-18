@@ -128,7 +128,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.prog2.uwupatch1/com.prog2.uwupatch1.View.HelloApplication</mainClass>
+                            <mainClass>com.prog2.uwupatch1/com.prog2.uwupatch1.Start</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
