@@ -26,7 +26,7 @@ public class SettingStageControl {
     @FXML
     public void onFullscreenClick(ActionEvent event) throws IOException{
         if(stage.isFullScreen()){
-            stage.setFullScreen(false);
+            stage.setFullScreen(false); //this.stage ist wohl null
         } else{
             stage.setFullScreen(true);
         }
