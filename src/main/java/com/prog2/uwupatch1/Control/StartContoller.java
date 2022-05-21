@@ -22,4 +22,20 @@ public class StartContoller {
         root = FXMLLoader.load(Start.class.getResource("SettingStage.fxml"));
         LoadFXML.loadXML(event,root);
     }
+    @FXML
+    public void goToMainMenu(ActionEvent event) throws Exception{
+        root = FXMLLoader.load(Start.class.getResource("StartStage.fxml"));
+        LoadFXML.loadXML(event, root);
+    }
+
+    @FXML
+    public void goToDungeonScene(ActionEvent event) throws Exception{
+        root = FXMLLoader.load(Start.class.getResource("Dungeon.fxml"));
+        LoadFXML.loadXML(event, root);
+    }
+
+    @FXML
+    public void applicationQuit(ActionEvent event) throws Exception{
+        javafx.application.Platform.exit();
+    }
 }

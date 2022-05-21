@@ -12,7 +12,7 @@ public class Start extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Start.class.getResource("StartPage.fxml"));
+        Parent root = FXMLLoader.load(Start.class.getResource("StartStage.fxml"));
         Scene scene = new Scene(root);
         stage.setResizable(false);
         stage.setFullScreen(true);

@@ -22,4 +22,13 @@ public class SettingStageControl {
         root = FXMLLoader.load(Start.class.getResource("StartStage.fxml"));
         LoadFXML.loadXML(event,root);
     }
+
+    @FXML
+    public void onFullscreenClick(ActionEvent event) throws IOException{
+        if(stage.isFullScreen()){
+            stage.setFullScreen(false);
+        } else{
+            stage.setFullScreen(true);
+        }
+    }
 }
