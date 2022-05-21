@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prog2.uwupatch1.Control.SettingStageControl">
    <children>
-      <CheckBox layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFullscreenClicked" text="Full Screen" />
+      <CheckBox layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFullscreenClick" text="Full Screen" />
       <Button layoutX="239.0" layoutY="360.0" mnemonicParsing="false" onAction="#onMainMenuChange" text="Back to Main Menu" />
    </children>
 </AnchorPane>

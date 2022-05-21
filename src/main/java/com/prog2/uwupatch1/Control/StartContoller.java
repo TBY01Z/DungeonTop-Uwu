@@ -35,7 +35,7 @@ public class StartContoller {
     }
 
     @FXML
-    public void applicationQuit(ActionEvent event) throws Exception{
+    public void applicationQuit(ActionEvent event){
         javafx.application.Platform.exit();
     }
 }
