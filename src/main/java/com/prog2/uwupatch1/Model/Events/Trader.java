@@ -14,6 +14,7 @@ import javafx.collections.ObservableList;
  * TODO: Check Grammatical
  */
 public class Trader {
+    private int ID_PARAMETER = 100;
     private final int[] IDs; //int array mit IDs
     private final Deck cardsForSale = new Deck(); //neues Deck wird erzeugt für den Verkauf von Karten
     //Instanzen von ObservableList werden erstellt
@@ -38,11 +39,11 @@ public class Trader {
         for (int i:
              this.IDs) {
             switch (i/100){
-                case 0: cardsForSale.add(WarriorCards.get(i%100));
-                case 1: cardsForSale.add(EffectCards.get(i%100));
-                case 3: armorForSale.add(Armors.get(i%100));
-                case 4: weaponsForSale.add(Weapons.get(i%100));
-                case 5: artifactsForSale.add(Artifacts.get(i%100));
+                case 0: cardsForSale.add(WarriorCards.get(i%ID_PARAMETER));
+                case 1: cardsForSale.add(EffectCards.get(i%ID_PARAMETER));
+                case 3: armorForSale.add(Armors.get(i%ID_PARAMETER));
+                case 4: weaponsForSale.add(Weapons.get(i%ID_PARAMETER));
+                case 5: artifactsForSale.add(Artifacts.get(i%ID_PARAMETER));
             }
         }
     }

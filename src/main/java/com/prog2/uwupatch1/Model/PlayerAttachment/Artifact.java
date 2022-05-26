@@ -9,7 +9,15 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
 public class Artifact extends Ability {
 
     public Artifact(int ID, String name, String iconPath, double increaseHealth, double increaseMana, double increaseDamage, double increaseArmor, int increaseDrawLimit) {
-        super(ID,-1, name, iconPath, increaseHealth, increaseMana, increaseDamage, increaseArmor, increaseDrawLimit);
+        super(ID,
+                -1,
+                name,
+                iconPath,
+                increaseHealth,
+                increaseMana,
+                increaseDamage,
+                increaseArmor,
+                increaseDrawLimit);
     }
     /**
      * toString() Rueckgabe von den Attributen

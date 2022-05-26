@@ -16,6 +16,7 @@
                   <Insets left="14.0" top="20.0"/>
               </VBox.margin>
            </Button>
+           <!--suppress JavaFxUnresolvedFxIdReference -->
            <Button id="setting" fx:id="setting" mnemonicParsing="false" onAction="#onSettingChange" text="Settings"
                    textAlignment="CENTER">
               <VBox.margin>

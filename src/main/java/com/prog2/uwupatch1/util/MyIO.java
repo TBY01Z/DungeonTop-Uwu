@@ -11,6 +11,8 @@ import java.util.Random;
  * TODO: Check Grammatical
  */
 public class MyIO {
+    private static int MIN_RANDOM_VALUE = 0;
+    private static int MAX_RANDOM_VALUE = 999999999;
 
     /**
      *
@@ -20,9 +22,9 @@ public class MyIO {
         System.out.println(arg);
        
     }
-    public static int random(int min,int max){
+    public static int random(){
         Random rn = new Random();
-        return rn.nextInt(max-min+1)+min;
+        return rn.nextInt(MAX_RANDOM_VALUE-MIN_RANDOM_VALUE+1)+MIN_RANDOM_VALUE;
     }
 
 }

@@ -19,10 +19,10 @@ public class Deck {
 
 
     public EffectCard draweffect(){
-        return effectCards.get((random(0,99999999)%(effectCards.size()-1)));
+        return effectCards.get((random()%(effectCards.size()-1)));
     }
     public SummonedWarriorCard drawSummon(){
-        return summonedWarriorCards.get((random(0,99999999)%(summonedWarriorCards.size()-1)));
+        return summonedWarriorCards.get((random()%(summonedWarriorCards.size()-1)));
     }
 
     public void add(EffectCard addedCard){
