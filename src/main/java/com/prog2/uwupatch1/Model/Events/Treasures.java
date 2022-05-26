@@ -12,6 +12,7 @@ import static com.prog2.uwupatch1.util.MyIO.random;
 
 /**
  * @author Niclas Rieckers
+ * TODO: Check Grammatical
  */
 public class Treasures {
     private Adventurer player01;

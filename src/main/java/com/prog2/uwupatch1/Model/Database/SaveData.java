@@ -9,6 +9,7 @@ import java.io.*;
  * @author Tom Grape
  * Klasse für das Speichern und Serialisieren des Zustands des Objekts "Player", sowie das
  * "Laden" eines Zustands aus persistentem Speicher.
+ * TODO: Check Grammatical
  */
 public class SaveData implements Serializable {
 

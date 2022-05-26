@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ WarriorCard
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class WarriorCards {
@@ -23,9 +24,8 @@ public class WarriorCards {
         return WarriorCards.warriorCards().get(i);
     }
 
-    public static WarriorCards setWarriorCards(ObservableList<SummonedWarriorCard> warriorCards) {
+    public static void setWarriorCards(ObservableList<SummonedWarriorCard> warriorCards) {
         WarriorCards.warriorCards = warriorCards;
-        return null;
     }
     public static void add(SummonedWarriorCard summonedWarriorCard){
         warriorCards.add(summonedWarriorCard);

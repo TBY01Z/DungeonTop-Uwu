@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
 /**
  * @author Mark Fisher
  * Klasse GameEvent für das generieren eines zufällig auftretenden Events im Spiel.
+ * TODO: Check Grammatical
  */
 public class GameEvent {
 

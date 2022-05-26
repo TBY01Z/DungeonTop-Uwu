@@ -3,6 +3,7 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
  * @author Mark Fischer
  * Klasse CharacterType, wird gebraucht, um Spiel-Objekte "CharacterTypes"
  * erzeugen zu können.
+ * TODO: Check Grammatical
  */
 public class CharacterType {
     private String name;

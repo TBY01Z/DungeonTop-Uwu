@@ -11,6 +11,7 @@ import javafx.collections.ObservableList;
 /**
  * @author Niclas Rieckers
  * Klasse für den im Spiel zufällig erscheinenden Händler mit zufälligen Items, die gekauft werden können.
+ * TODO: Check Grammatical
  */
 public class Trader {
     private final int[] IDs; //int array mit IDs

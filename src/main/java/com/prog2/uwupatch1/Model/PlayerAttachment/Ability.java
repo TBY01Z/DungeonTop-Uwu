@@ -4,6 +4,7 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
  * @author Niclas Rieckers
  * Klasse Ability, erbt von Superklasse Usable. Wird gebraucht, um Spiel-Objekte "Abilities"
  * erzeugen zu können.
+ * TODO: Check Grammatical
  */
 public class Ability extends Usable {
 

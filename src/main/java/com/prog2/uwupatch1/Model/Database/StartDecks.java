@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ StartDeck.txt
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class StartDecks {
@@ -23,9 +24,8 @@ public class StartDecks {
     public static Deck get(int i){
         return StartDecks.decks().get(i);
     }
-    public static StartDecks setDecks(ObservableList<Deck> decks) {
+    public static void setDecks(ObservableList<Deck> decks) {
         StartDecks.decks = decks;
-        return null;
     }
 
     public static void add(Deck deck){

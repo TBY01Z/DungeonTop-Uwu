@@ -1,6 +1,7 @@
 package com.prog2.uwupatch1.Model.PlayerAttachment;
 /**
  * @author Ali Herz
+ * TODO: Check Grammatical
  */
 public class Weapon extends Usable {
 

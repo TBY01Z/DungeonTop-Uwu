@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für den Zwischenspeicher der Objekte vom Typ Weapon
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class Weapons {
@@ -20,9 +21,8 @@ public class Weapons {
         return Weapons.weapons().get(i);
     }
 
-    public static Weapons setWeapons(ObservableList<Weapon> weapons) {
+    public static void setWeapons(ObservableList<Weapon> weapons) {
         Weapons.weapons = weapons;
-        return null;
     }
 
     /**

@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse fürs erzeugen eines SummonedWarriorCard Objektes. Erbt von Klasse Usable, da SummonedWarriorCard zu
  * den vom Spieler nutzbaren Items gehört.
+ * TODO: Check Grammatical
  */
 public class SummonedWarriorCard extends Card {
     /**
@@ -28,7 +29,6 @@ public class SummonedWarriorCard extends Card {
     private ObservableList<Ability> abilities = FXCollections.observableArrayList();
     private final int hitRange;
     private final int moveRange;
-    private int summonCost;
     private int buyCost;
     /**
      * Konstruktor für SummonedWarriorCard
@@ -53,8 +53,8 @@ public class SummonedWarriorCard extends Card {
      * @param buyCost
      * Initialiesierung vom Mana Aufbrauch der bei Beschwoerung benoetigt wird.
      */
-    public SummonedWarriorCard(int ID, String objName, String iconPath, double health, double hitDamage, double defense, int hitRange, int moveRange, int summonCost, int buyCost) {
-        super(ID, objName, iconPath,summonCost);
+    public SummonedWarriorCard(int ID, String objName, String iconPath, double health, double hitDamage, double defense, int hitRange, int moveRange, int summonCost, int buyCost,int level) {
+        super(ID, objName, iconPath,summonCost,level);
         this.health = health;
         this.hitDamage = hitDamage;
         this.defense = defense;
@@ -224,7 +224,7 @@ public class SummonedWarriorCard extends Card {
                 ", abilities=" + abilities +
                 ", hitRange=" + hitRange +
                 ", moveRange=" + moveRange +
-                ", canSummon=" + summonCost +
+                ", canSummon=" + super.summonCost() +
                 ", buyCost=" + buyCost +
                 '}';
     }

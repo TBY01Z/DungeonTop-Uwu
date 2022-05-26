@@ -3,6 +3,7 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
 /**
  * @author Niclas Rieckers
  * Superklasse für alle vom Spieler nutzbare Items.
+ * TODO: Check Grammatical
  */
 public class Usable {
     private int ID;

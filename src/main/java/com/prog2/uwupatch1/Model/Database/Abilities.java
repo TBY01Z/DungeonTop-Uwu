@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
  *@author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ Ability
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class Abilities {
@@ -29,8 +30,7 @@ public class Abilities {
         return effectList;
     }
 
-    public static Abilities setEffectList(ObservableList<Ability> effectList) {
+    public static void setEffectList(ObservableList<Ability> effectList) {
         Abilities.effectList = effectList;
-        return null;
     }
 }

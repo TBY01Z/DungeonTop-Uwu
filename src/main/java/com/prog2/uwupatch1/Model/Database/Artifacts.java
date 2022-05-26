@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ Artifact
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class Artifacts {
@@ -23,9 +24,8 @@ public class Artifacts {
         return Artifacts.artifacts().get(i);
     }
 
-    public static Artifacts setArtifacts(ObservableList<Artifact> artifacts) {
+    public static void setArtifacts(ObservableList<Artifact> artifacts) {
         Artifacts.artifacts = artifacts;
-        return null;
     }
     public static void add(Artifact artifact){
         artifacts.add(artifact);

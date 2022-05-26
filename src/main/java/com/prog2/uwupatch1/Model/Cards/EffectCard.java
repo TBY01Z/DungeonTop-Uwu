@@ -6,6 +6,7 @@ import com.prog2.uwupatch1.Model.PlayerAttachment.Ability;
  * @author Niclas Rieckers
  * Klasse für die erzeugung eines "EffectCard" Objektes. Erbt von Klasse Usable, da EffectCard zu den vom
  * Spieler nutzbaren Items gehört.
+ * TODO: Check Grammatical
  */
 public class EffectCard extends Card{
     //Hier wird die cardAbility referenciert.
@@ -30,8 +31,8 @@ public class EffectCard extends Card{
      * @param summonCost
      * Initialiesierung vom Mana Aufbrauch der bei Beschwoerung benoetigt wird.
      */
-    public EffectCard(int ID, String objName, String iconPath, Ability cardAbility, int buyCost, int summonCost) {
-        super(ID, objName, iconPath,summonCost);
+    public EffectCard(int ID, String objName, String iconPath, Ability cardAbility, int buyCost, int summonCost,int level) {
+        super(ID, objName, iconPath,summonCost,level);
         this.cardAbility = cardAbility;
         this.buyCost = buyCost;
     }

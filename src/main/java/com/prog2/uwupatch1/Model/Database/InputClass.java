@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
  * @author Niclas Rieckers
  * Diese Klassebefuellt die DataBase Klassen.
- *
+ * TODO: Check Grammatical
  */
 
 public class InputClass {
@@ -138,7 +138,7 @@ public class InputClass {
                     activeLine[2],
                     Abilities.get(Integer.parseInt(activeLine[3])%100),
                     Integer.parseInt(activeLine[4]),
-                    Integer.parseInt(activeLine[5])
+                    Integer.parseInt(activeLine[5]),1
             ));//EffectCard(int ID, String objName, String iconPath, Ability cardAbility, int buyCost, int summonCost)
 
         }
@@ -185,7 +185,7 @@ public class InputClass {
                     Integer.parseInt(activeLine[6]),
                     Integer.parseInt(activeLine[7]),
                     Integer.parseInt(activeLine[8]),
-                    Integer.parseInt(activeLine[9])
+                    Integer.parseInt(activeLine[9]),1
             ));//SummonedWarriorCard(int ID, String objName, String iconPath, double health, double hitDamage, double defense, int hitRange, int moveRange, boolean canSummon, int buyCost)
 
         }

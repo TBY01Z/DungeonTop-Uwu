@@ -7,6 +7,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ CharacterType
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("ALL")
 public class CharacterTypes {

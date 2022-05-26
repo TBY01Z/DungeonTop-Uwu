@@ -9,6 +9,7 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse für das zwischenspeichern der Objekte vom Typ EffectCard
  * vor der Serialisierung.
+ * TODO: Check Grammatical
  */
 @SuppressWarnings("SameReturnValue")
 public class EffectCards {
@@ -26,9 +27,8 @@ public class EffectCards {
     }
 
     @SuppressWarnings("SameReturnValue")
-    public static EffectCards setEffectCards(ObservableList<EffectCard> effectCards) {
+    public static void setEffectCards(ObservableList<EffectCard> effectCards) {
         EffectCards.effectCards = effectCards;
-        return null;
     }
 
     @SuppressWarnings("SameReturnValue")
