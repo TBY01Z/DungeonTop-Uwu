@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ StartDeck.txt
  * vor der Serialisierung.
  */
+@SuppressWarnings("ALL")
 public class StartDecks {
     private static ObservableList<Deck> decks = FXCollections.observableArrayList();
 
@@ -27,8 +28,7 @@ public class StartDecks {
         return null;
     }
 
-    public static StartDecks add(Deck deck){
+    public static void add(Deck deck){
         decks.add(deck);
-        return null;
     }
 }

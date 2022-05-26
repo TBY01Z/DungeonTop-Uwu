@@ -48,7 +48,7 @@ public class Usable {
         return
                 "ID=" + ID +
                 ", objName='" + objName + '\'' +
-                ", iconPath='" + iconPath + "\',"
+                ", iconPath='" + iconPath + "',"
                 ;
     }
 }

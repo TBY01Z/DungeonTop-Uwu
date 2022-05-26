@@ -9,14 +9,15 @@ import java.io.Serializable;
  * @author Niclas Rieckers
  * Superklasse für alle im Spiel vorhandenen spielbaren Charakter.
  */
+@SuppressWarnings("ALL")
 public class Player implements Serializable {
     private double level;
     private double mana;
-    private double addMana = 0;
+    private final double addMana = 0;
     private double health;
     private double addHealth = 0;
     private double hitDamage;
-    private double addHitDamage = 0;
+    private final double addHitDamage = 0;
     private Weapon weapon;
     private Armor armor;
     private Artifact artifact01;
@@ -26,7 +27,7 @@ public class Player implements Serializable {
     private int addDrawLimit = 0;
     private Deck cards;
     private ObservableList<Ability> abilities = FXCollections.observableArrayList();
-    private int zen = 0;
+    private int zen;
     private ObservableList<Usable> intventory = FXCollections.observableArrayList();
 
 
@@ -42,8 +43,6 @@ public class Player implements Serializable {
 
     /**
      * Methode für das hinzufügen eines Effektes zum Spieler.
-     * @param ability
-     * @return
      */
     public Player addEffect(Ability ability){
         abilities.add(ability);
@@ -52,16 +51,14 @@ public class Player implements Serializable {
 
     /**
      * Methode für das Entfernen von Effekten vom Spieler.
-     * @param ability
-     * @return
+     *
      */
-    private Player delEffect(Ability ability){
+    private void delEffect(Ability ability){
         this.addHealth -= (this.health() * ability.increaseHealth());
         this.hitDamage -= (this.hitDamage() * ability.increaseDamage());
         this.mana -= (this.mana() * ability.increaseMana());
         this.armor.setAddHealth(this.armor.addHealth()-(this.armor.health()*ability.increaseArmor()));
         this.addDrawLimit -= ability.increaseDrawLimit();
-        return this;
     }
 
     public ObservableList<Usable> inventory() {
@@ -79,8 +76,6 @@ public class Player implements Serializable {
 
     /**
      * hilfe man was????????????
-     * @param ability
-     * @return
      */
     private Player addingEffect(Ability ability){
         this.addHealth += (this.health() * ability.increaseHealth());
@@ -114,7 +109,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für Level
-     * @param level
      * @return level
      */
     public Player setLevel(double level) {
@@ -132,7 +126,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für mana
-     * @param mana
      * @return mana
      */
     public Player setMana(double mana) {
@@ -150,7 +143,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für Lebenspunkte
-     * @param health
      * @return health
      */
     public Player setHealth(double health) {
@@ -168,7 +160,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für Hit Damage
-     * @param hitDamage
      * @return hitDamage
      */
     public Player setHitDamage(double hitDamage) {
@@ -186,7 +177,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für Weapon
-     * @param weapon
      * @return weapon
      */
     public Player setWeapon(Weapon weapon) {
@@ -204,7 +194,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für Armor
-     * @param armor
      * @return armor
      */
     public Player setArmor(Armor armor) {
@@ -222,7 +211,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für das erste Artefakt
-     * @param artifact01
      * @return artifact01
      */
     public Player setArtifact01(Artifact artifact01) {
@@ -240,7 +228,6 @@ public class Player implements Serializable {
 
     /**
      * Setter für das zweite Artefakt
-     * @param artifact02
      * @return artifact02
      */
     public Player setArtifact02(Artifact artifact02) {
@@ -273,9 +260,8 @@ public class Player implements Serializable {
         return cards;
     }
 
-    public Player setCards(Deck cards) {
+    public void setCards(Deck cards) {
         this.cards = cards;
-        return this;
     }
 
     public ObservableList<Ability> abilities() {
@@ -291,9 +277,8 @@ public class Player implements Serializable {
         return zen;
     }
 
-    public Player setZen(int zen) {
+    public void setZen(int zen) {
         this.zen = zen;
-        return this;
     }
     /**
      * toString() Rueckgabe von den Attributen

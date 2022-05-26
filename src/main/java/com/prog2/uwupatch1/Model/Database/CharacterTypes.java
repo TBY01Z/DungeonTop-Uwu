@@ -8,9 +8,10 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ CharacterType
  * vor der Serialisierung.
  */
+@SuppressWarnings("ALL")
 public class CharacterTypes {
 
-    private static ObservableList<CharacterType> characterTypes = FXCollections.observableArrayList();
+    private static final ObservableList<CharacterType> characterTypes = FXCollections.observableArrayList();
     public CharacterTypes(){
 
     }

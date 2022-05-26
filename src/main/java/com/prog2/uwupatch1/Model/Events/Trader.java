@@ -13,12 +13,12 @@ import javafx.collections.ObservableList;
  * Klasse für den im Spiel zufällig erscheinenden Händler mit zufälligen Items, die gekauft werden können.
  */
 public class Trader {
-    private int[] IDs; //int array mit IDs
-    private Deck cardsForSale = new Deck(); //neues Deck wird erzeugt für den Verkauf von Karten
+    private final int[] IDs; //int array mit IDs
+    private final Deck cardsForSale = new Deck(); //neues Deck wird erzeugt für den Verkauf von Karten
     //Instanzen von ObservableList werden erstellt
-    private ObservableList<Artifact> artifactsForSale = FXCollections.observableArrayList();
-    private ObservableList<Weapon> weaponsForSale = FXCollections.observableArrayList();
-    private ObservableList<Armor> armorForSale = FXCollections.observableArrayList();
+    private final ObservableList<Artifact> artifactsForSale = FXCollections.observableArrayList();
+    private final ObservableList<Weapon> weaponsForSale = FXCollections.observableArrayList();
+    private final ObservableList<Armor> armorForSale = FXCollections.observableArrayList();
 
 
     /**
@@ -32,9 +32,8 @@ public class Trader {
 
     /**
      * Methode für das befüllen des Shops des Händlers mit den ID's die vorher uebergeben wurden.
-     * @return
      */
-    private Trader fillTrader() {
+    private void fillTrader() {
         for (int i:
              this.IDs) {
             switch (i/100){
@@ -45,7 +44,6 @@ public class Trader {
                 case 5: artifactsForSale.add(Artifacts.get(i%100));
             }
         }
-        return this;
     }
 
     /**

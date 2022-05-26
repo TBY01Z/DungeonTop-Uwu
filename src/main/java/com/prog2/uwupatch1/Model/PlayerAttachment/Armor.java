@@ -27,9 +27,8 @@ public class Armor extends Usable {
         return addHealth;
     }
 
-    public Armor setAddHealth(double addHealth) {
+    public void setAddHealth(double addHealth) {
         this.addHealth = addHealth;
-        return this;
     }
     /**
      * toString() Rueckgabe von den Attributen

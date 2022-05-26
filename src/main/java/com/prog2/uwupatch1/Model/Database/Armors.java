@@ -9,6 +9,7 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ Armor
  * vor der Serialisierung.
  */
+@SuppressWarnings("SameReturnValue")
 public class Armors {
     private static ObservableList<Armor> armors = FXCollections.observableArrayList();
 
@@ -21,6 +22,7 @@ public class Armors {
         return Armors.armors().get(i);
     }
 
+    @SuppressWarnings("SameReturnValue")
     public static Armors setArmors(ObservableList<Armor> armors) {
         Armors.armors = armors;
         return null;

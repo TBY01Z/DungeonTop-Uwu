@@ -1,6 +1,5 @@
 package com.prog2.uwupatch1.Model.Cards;
 
-import com.prog2.uwupatch1.Model.PlayerAttachment.Usable;
 import com.prog2.uwupatch1.Model.PlayerAttachment.Ability;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,7 +9,7 @@ import javafx.collections.ObservableList;
  * Klasse fürs erzeugen eines SummonedWarriorCard Objektes. Erbt von Klasse Usable, da SummonedWarriorCard zu
  * den vom Spieler nutzbaren Items gehört.
  */
-public class SummonedWarriorCard extends Usable {
+public class SummonedWarriorCard extends Card {
     /**
      * Wert fuers Leben von der Beschwoerten Karte.
      */
@@ -27,8 +26,8 @@ public class SummonedWarriorCard extends Usable {
      * Ansammlung von Ability's um mehrere Effekte zu stappeln.
      */
     private ObservableList<Ability> abilities = FXCollections.observableArrayList();
-    private int hitRange;
-    private int moveRange;
+    private final int hitRange;
+    private final int moveRange;
     private int summonCost;
     private int buyCost;
     /**
@@ -55,14 +54,12 @@ public class SummonedWarriorCard extends Usable {
      * Initialiesierung vom Mana Aufbrauch der bei Beschwoerung benoetigt wird.
      */
     public SummonedWarriorCard(int ID, String objName, String iconPath, double health, double hitDamage, double defense, int hitRange, int moveRange, int summonCost, int buyCost) {
-        super(ID, objName, iconPath);
+        super(ID, objName, iconPath,summonCost);
         this.health = health;
         this.hitDamage = hitDamage;
         this.defense = defense;
-        this.abilities = abilities;
         this.hitRange = hitRange;
         this.moveRange = moveRange;
-        this.summonCost = summonCost;
         this.buyCost = buyCost;
     }
 
@@ -84,15 +81,12 @@ public class SummonedWarriorCard extends Usable {
     /**
      * Methode für das Aktievieren eines Effektes an die WarriorCard.
      * Ein Effekt kann die stärke der Karte mithilfe des hinzufügen einer Ability beeinflussen.
-     * @param ability
-     * Dieser Effekt wird dieser karte nun hinzugefuegt.
-     * @return SummonedWarriorCard
-     * Es wird eine Instanz der Klasse SummonedWarriorCard zurueck gegeben.
+     *
+     * @param ability Dieser Effekt wird dieser karte nun hinzugefuegt.
      */
-    private SummonedWarriorCard active(Ability ability){
+    private void active(Ability ability){
         this.health += (this.health() * ability.increaseHealth());
         this.hitDamage += (this.hitDamage() * ability.increaseDamage());
-        return this;
     }
 
     /**
@@ -213,27 +207,6 @@ public class SummonedWarriorCard extends Usable {
      */
     public SummonedWarriorCard setBuyCost(int buyCost) {
         this.buyCost = buyCost;
-        return this;
-    }
-
-    /**
-     * Getter für die Manakosten für die Benutzung der Warrior Karten auf dem Spielfeld
-     * @return int
-     * Es wird der Preis der fuer eine Beschwoerung benoetigt wird zurueck gegeben.
-     */
-    public int summonCost() {
-        return summonCost;
-    }
-
-    /**
-     * Setter für die Manakosten für die Benutzung der Warrior Karten auf dem Spielfeld
-     * @param summonCost
-     * Es wird der Preis der fuer eine Beschwoerung benoetigt wird gesetzt.
-     * @return EffectCard
-     * Es wird eine neue Instanz von Warrior Karte zuruek gegeben.
-     */
-    public SummonedWarriorCard setSummonCost(int summonCost) {
-        this.summonCost = summonCost;
         return this;
     }
 

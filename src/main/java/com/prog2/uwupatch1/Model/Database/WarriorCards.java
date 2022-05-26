@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ WarriorCard
  * vor der Serialisierung.
  */
+@SuppressWarnings("ALL")
 public class WarriorCards {
     private static ObservableList<SummonedWarriorCard> warriorCards = FXCollections.observableArrayList();
 

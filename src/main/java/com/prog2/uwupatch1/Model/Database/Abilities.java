@@ -9,15 +9,16 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ Ability
  * vor der Serialisierung.
  */
+@SuppressWarnings("ALL")
 public class Abilities {
     private static ObservableList<Ability> effectList = FXCollections.observableArrayList();
 
     public Abilities() {
     }
 
-    public static Abilities addEffect(Ability ability){
+    @SuppressWarnings("SameReturnValue")
+    public static void addEffect(Ability ability){
         effectList.add(ability);
-        return null;
     }
     public static Ability get(int i){
         return Abilities.effectList().get(i);

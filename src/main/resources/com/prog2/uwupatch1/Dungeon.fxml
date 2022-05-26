@@ -8,22 +8,21 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prog2.uwupatch1.Control.DungeonController">
-   <children>
-      <Label layoutX="93.0" layoutY="200.0" text="Das hier ist der supergeile Dungeon">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@bruh.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="250.0" layoutY="355.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Hauptmenü">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.prog2.uwupatch1.Control.DungeonController">
+   <Label layoutX="93.0" layoutY="200.0" text="Das hier ist der supergeile Dungeon">
+      <font>
+         <Font size="28.0"/>
+      </font>
+   </Label>
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="40.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@bruh.png"/>
+   </ImageView>
+   <Button layoutX="250.0" layoutY="355.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Hauptmenü">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Button>
 </AnchorPane>

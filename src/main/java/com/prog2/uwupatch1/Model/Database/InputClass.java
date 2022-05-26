@@ -5,6 +5,7 @@ import com.prog2.uwupatch1.Model.PlayerAttachment.*;
 import com.prog2.uwupatch1.Model.Database.*;
 
 import java.io.*;
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -14,8 +15,8 @@ import java.util.Scanner;
  */
 
 public class InputClass {
-    private static String winResources = System.getProperty("user.dir") + "\\src\\main\\java\\com\\prog2\\uwupatch1\\Model\\Database\\";
-    private static String macResources = System.getProperty("user.dir") + "/src/main/java/com/prog2/uwupatch1/Model/Database/";
+    private static final String winResources = System.getProperty("user.dir") + "\\src\\main\\java\\com\\prog2\\uwupatch1\\Model\\Database\\";
+    private static final String macResources = System.getProperty("user.dir") + "/src/main/java/com/prog2/uwupatch1/Model/Database/";
     private static String resourses;
     /**
      *
@@ -42,7 +43,7 @@ public class InputClass {
     }
 
     private static void fillRes() {
-        if (System.getProperty("os.name")=="Windows 10"){
+        if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
             resourses = winResources;
         }else{
             resourses = macResources;
@@ -51,7 +52,6 @@ public class InputClass {
 
     /***
      * Fuellt die Klasse abilities aus der Ability.txt
-     * @throws FileNotFoundException
      */
     public static void abilities() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Ability.txt"));
@@ -72,7 +72,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse Armors aus der Armor.txt
-     * @throws FileNotFoundException
      */
     public static void armors() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Armor.txt"));
@@ -90,7 +89,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse Artifacts aus der Artifact.txt
-     * @throws FileNotFoundException
      */
     public static void artifacts() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Artifact.txt"));
@@ -112,7 +110,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse CharacterTypes aus der CharType.txt
-     * @throws FileNotFoundException
      */
     public static void classTypes() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "CharacterType.txt"));
@@ -129,7 +126,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse EffectCards aus der EffectCard.txt
-     * @throws FileNotFoundException
      */
     public static void effectCards() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "EffectCard.txt"));
@@ -151,7 +147,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse StartDecks aus der StartDeck.txt.txt
-     * @throws FileNotFoundException
      */
     public static void startDecks() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "StartDeck.txt"));
@@ -174,7 +169,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse WarriorCards aus der Warrior.txt
-     * @throws FileNotFoundException
      */
     public static void warriorCards() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "WarriorCard.txt"));
@@ -198,7 +192,6 @@ public class InputClass {
     }
     /***
      * Fuellt die Klasse Weapons aus der Weapon.txt
-     * @throws FileNotFoundException
      */
     public static void weapons() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Weapon.txt"));

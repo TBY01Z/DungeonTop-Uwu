@@ -26,10 +26,8 @@ public class SaveData implements Serializable {
 
             oos.writeObject(player); //Aktueller Zustand von Player wird von ObjectOutputStream in die Datei geschrieben
 
-        } catch (FileNotFoundException notfound) {
+        } catch (IOException notfound) {
             notfound.printStackTrace();
-        } catch (IOException io) {
-            io.printStackTrace();
         }
     }
 
@@ -46,10 +44,8 @@ public class SaveData implements Serializable {
 
             player = (Player) ois.readObject(); //ObjectInputStream wird mit player gleichgesetzt, Zustand "geladen"
 
-        } catch (FileNotFoundException notfound) {
+        } catch (IOException notfound) {
             notfound.printStackTrace();
-        } catch (IOException io) {
-            io.printStackTrace();
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
  * Klasse für den Zwischenspeicher der Objekte vom Typ Weapon
  * vor der Serialisierung.
  */
+@SuppressWarnings("ALL")
 public class Weapons {
     private static ObservableList<Weapon> weapons = FXCollections.observableArrayList();
 

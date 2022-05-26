@@ -40,7 +40,7 @@ public class Deck {
     }
 
     public void removeEffect(EffectCard e){
-        effectCards.remove(effectCards.indexOf(e));
+        effectCards.remove(e);
     }
     /**
      * toString() Rueckgabe von den Attributen
@@ -59,6 +59,6 @@ public class Deck {
             stringBuilder.append(e.toString());
         }
 
-        return "Deck{"+ stringBuilder.toString() +"};";
+        return "Deck{"+ stringBuilder +"};";
     }
 }

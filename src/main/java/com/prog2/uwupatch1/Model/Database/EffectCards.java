@@ -10,6 +10,7 @@ import javafx.collections.ObservableList;
  * Klasse für das zwischenspeichern der Objekte vom Typ EffectCard
  * vor der Serialisierung.
  */
+@SuppressWarnings("SameReturnValue")
 public class EffectCards {
     private static ObservableList<EffectCard> effectCards = FXCollections.observableArrayList();
 
@@ -24,13 +25,14 @@ public class EffectCards {
         return EffectCards.getEffectCards().get(i);
     }
 
+    @SuppressWarnings("SameReturnValue")
     public static EffectCards setEffectCards(ObservableList<EffectCard> effectCards) {
         EffectCards.effectCards = effectCards;
         return null;
     }
 
-    public static EffectCards add(EffectCard effectCard){
+    @SuppressWarnings("SameReturnValue")
+    public static void add(EffectCard effectCard){
         effectCards.add(effectCard);
-        return null;
     }
 }

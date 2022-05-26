@@ -10,14 +10,16 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class Start extends Application {
 
-    private Pane pane = new Pane();
-    private Sprite playerInDungeon = new Sprite(300, 750, 40, 40, "playerInDungeon", Color.GREEN);
+    private final Pane pane = new Pane();
+    private final Sprite playerInDungeon = new Sprite();
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Start.class.getResource("StartStage.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(Start.class.getResource("StartStage.fxml")));
         Scene scene = new Scene(root);
         pane.getChildren().add(playerInDungeon);
         stage.setResizable(false);
@@ -28,19 +30,11 @@ public class Start extends Application {
         stage.show();
 
         scene.setOnKeyPressed( e -> {
-            switch(e.getCode()){
-                case W:
-                    playerInDungeon.moveUp();
-                    break;
-                case A:
-                    playerInDungeon.moveLeft();
-                    break;
-                case S:
-                    playerInDungeon.moveDown();
-                    break;
-                case D:
-                    playerInDungeon.moveRight();
-                    break;
+            switch (e.getCode()) {
+                case W -> playerInDungeon.moveUp();
+                case A -> playerInDungeon.moveLeft();
+                case S -> playerInDungeon.moveDown();
+                case D -> playerInDungeon.moveRight();
             }
         });
     }
@@ -57,11 +51,11 @@ public class Start extends Application {
     private static class Sprite extends Rectangle{
         final String type;
 
-        Sprite(int x, int y, int w, int h, String type, Color color){
-            super(w, h, color);
-            this.type = type;
-            setTranslateX(x);
-            setTranslateY(y);
+        Sprite(){
+            super(40, 40, Color.GREEN);
+            this.type = "playerInDungeon";
+            setTranslateX(300);
+            setTranslateY(750);
         }
 
         //movement
