@@ -2,11 +2,20 @@ package com.prog2.uwupatch1.Model.Cards;
 
 import com.prog2.uwupatch1.Model.PlayerAttachment.Usable;
 
+/**
+ * @author Niclas Rieckers
+ *  Diese Klasse ist die Basis von unseren Karten jede Karte erbt somit von dieser Klasse.
+ * Um spaeter von dem Deck gecastet werden zu koennen, um so die Karten auch in der Gui gecastet werden zu koennen.
+ */
 public class Card extends Usable {
     /**
      * Hier wird der Mana Aufbrauch pro Beschwoerung referenziert.TODO: Check Grammatical
      */
     private int summonCost;
+    /**
+     * Hier wird das Level der Karte referenziert.
+     *
+     */
     private int level;
 
     public Card(int ID, String objName, String iconPath, int summonCost, int level) {
@@ -53,5 +62,13 @@ public class Card extends Usable {
     public Card setLevel(int level) {
         this.level = level;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" + super.toString() +
+                "summonCost=" + summonCost +
+                ", level=" + level +
+                '}';
     }
 }

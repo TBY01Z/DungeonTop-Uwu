@@ -35,6 +35,7 @@ public class InputClass {
             warriorCards();
             startDecks();
             weapons();
+            weaponCards();
             res = true;
         }catch (Exception ex){
             ex.printStackTrace();
@@ -53,7 +54,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse abilities aus der Ability.txt
      */
-    public static void abilities() throws FileNotFoundException {
+    private static void abilities() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Ability.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -73,7 +74,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse Armors aus der Armor.txt
      */
-    public static void armors() throws FileNotFoundException {
+    private static void armors() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Armor.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -90,7 +91,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse Artifacts aus der Artifact.txt
      */
-    public static void artifacts() throws FileNotFoundException {
+    private static void artifacts() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Artifact.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -111,7 +112,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse CharacterTypes aus der CharType.txt
      */
-    public static void classTypes() throws FileNotFoundException {
+    private static void classTypes() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "CharacterType.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -127,7 +128,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse EffectCards aus der EffectCard.txt
      */
-    public static void effectCards() throws FileNotFoundException {
+    private static void effectCards() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "EffectCard.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -148,7 +149,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse StartDecks aus der StartDeck.txt.txt
      */
-    public static void startDecks() throws FileNotFoundException {
+    private static void startDecks() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "StartDeck.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -170,7 +171,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse WarriorCards aus der Warrior.txt
      */
-    public static void warriorCards() throws FileNotFoundException {
+    private static void warriorCards() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "WarriorCard.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -193,7 +194,7 @@ public class InputClass {
     /***
      * Fuellt die Klasse Weapons aus der Weapon.txt
      */
-    public static void weapons() throws FileNotFoundException {
+    private static void weapons() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(resourses + "Weapon.txt"));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -210,4 +211,18 @@ public class InputClass {
         }
     }
     //Weapon(int ID, String objName, String iconPath, int level, double hit, int range, int cost)
+    private static void weaponCards() throws FileNotFoundException{
+        Scanner scanner = new Scanner(new File(resourses + "WeaponCard.txt"));
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            String[] activeLine = line.split("-");
+            WeaponCards.add(new WeaponCard(
+                    Integer.parseInt(activeLine[0]),
+                    activeLine[1],
+                    activeLine[2],
+                    Integer.parseInt(activeLine[3]),
+                    Integer.parseInt(activeLine[4]),
+                    Double.parseDouble(activeLine[5])));
+        }
+    }//public WeaponCard(int ID, String objName, String iconPath, int summonCost, int level,double cardDamage) {
 }

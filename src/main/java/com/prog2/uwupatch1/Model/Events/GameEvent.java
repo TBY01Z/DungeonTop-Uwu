@@ -10,9 +10,8 @@ import javafx.collections.ObservableList;
  * TODO: Check Grammatical
  */
 public class GameEvent {
-    private int MAX_EVENT_VALUE = 3;
     private final ObservableList<Trader> traderlist = FXCollections.observableArrayList(); //ObservableList Instanz wird erzeugt
-
+    private final int MAX_EVENT_VALUE = 3;
     /**
      * GameEvent konstruktor
      * @param trader ObservableList
@@ -26,11 +25,12 @@ public class GameEvent {
     public void randomEvent(){
         //maximale Anzahl von möglichen Events
 
+
         int randy = (MyIO.random()% MAX_EVENT_VALUE) + 1 ;   //feld "randy" bekommt zufälligen int
         //switch bekommt feld "randy" übergeben, um je nach case ein anderes GameEvent zu erzeugen
         switch(randy){
             case 1: System.out.println("event 1");
-            case 2: System.out.println("event 2");
+            case 2: System.out.println("Treasures");
             case 3: System.out.println("Trader Event");
             default:
         }

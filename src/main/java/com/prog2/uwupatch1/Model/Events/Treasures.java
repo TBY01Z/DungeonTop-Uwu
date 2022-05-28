@@ -15,8 +15,6 @@ import static com.prog2.uwupatch1.util.MyIO.random;
  * TODO: Check Grammatical
  */
 public class Treasures {
-    private int ID_PARAMETER = 100;
-    private int CONST_OF_RANDOM = -1;
     private Adventurer player01;
     private DungeonMaster player02;
 
@@ -44,14 +42,16 @@ public class Treasures {
      * 2=DungeonMaster
      */
     public Treasures luck(int player){
+        int CONST_OF_RANDOM = -1;
+        int ID_PARAMETER = 100;
         if(player == 1){
             int zen = this.player01.zen();
             Deck deck = this.player01.cards();
             ObservableList<Usable> inv = this.player01.inventory();
 
-            this.player01.setZen((zen + (random()%ID_PARAMETER*(int) this.player01.level())));
-            deck.add(EffectCards.get((random()%ID_PARAMETER)+CONST_OF_RANDOM));
-            deck.add(WarriorCards.get((random()%ID_PARAMETER)+CONST_OF_RANDOM));
+            this.player01.setZen((zen + (random()% ID_PARAMETER *(int) this.player01.level())));
+            deck.add(EffectCards.get((random()% ID_PARAMETER)+ CONST_OF_RANDOM));
+            deck.add(WarriorCards.get((random()% ID_PARAMETER)+ CONST_OF_RANDOM));
             this.player01.setCards(deck);
             this.player01.inventory().add(Weapons.get(random() % Weapons.weapons().size()));
             this.player01.inventory().add(Armors.get(random() % Armors.armors().size()));
@@ -61,9 +61,9 @@ public class Treasures {
             Deck deck = this.player02.cards();
             ObservableList<Usable> inv = this.player02.inventory();
 
-            this.player02.setZen((zen + (random()%ID_PARAMETER*(int) this.player01.level())));
-            deck.add(EffectCards.get((random()%ID_PARAMETER)+CONST_OF_RANDOM));
-            deck.add(WarriorCards.get((random()%ID_PARAMETER)+CONST_OF_RANDOM));
+            this.player02.setZen((zen + (random()% ID_PARAMETER *(int) this.player01.level())));
+            deck.add(EffectCards.get((random()% ID_PARAMETER)+ CONST_OF_RANDOM));
+            deck.add(WarriorCards.get((random()% ID_PARAMETER)+ CONST_OF_RANDOM));
             this.player02.setCards(deck);
             this.player02.inventory().add(Weapons.get(random() % Weapons.weapons().size()));
             this.player02.inventory().add(Armors.get(random() % Armors.armors().size()));

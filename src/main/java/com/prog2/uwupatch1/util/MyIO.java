@@ -11,8 +11,8 @@ import java.util.Random;
  * TODO: Check Grammatical
  */
 public class MyIO {
-    private static int MIN_RANDOM_VALUE = 0;
-    private static int MAX_RANDOM_VALUE = 999999999;
+    private static final int MIN_RANDOM_VALUE = 0;
+    private static final int MAX_RANDOM_VALUE = 999999999;
 
     /**
      *

@@ -4,7 +4,7 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
  * TODO: Check Grammatical
  */
 public class Weapon extends Usable {
-
+    private double DAMAGE_ADD_PER_LEVEL= 0.25;
 
     private int level;
     private double hit;
@@ -29,7 +29,7 @@ public class Weapon extends Usable {
     }
 
     public double hit() {
-        return hit+(hit*(level()*0.2));
+        return hit+((hit*DAMAGE_ADD_PER_LEVEL)*(level()));
     }
 
     public Weapon setHit(double hit) {

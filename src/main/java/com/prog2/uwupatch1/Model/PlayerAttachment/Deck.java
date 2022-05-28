@@ -1,8 +1,10 @@
 package com.prog2.uwupatch1.Model.PlayerAttachment;
 
 
+import com.prog2.uwupatch1.Model.Cards.Card;
 import com.prog2.uwupatch1.Model.Cards.EffectCard;
 import com.prog2.uwupatch1.Model.Cards.SummonedWarriorCard;
+import com.prog2.uwupatch1.Model.Cards.WeaponCard;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -14,52 +16,32 @@ import static com.prog2.uwupatch1.util.MyIO.random;
  * TODO: Check Grammatical
  */
 public class Deck {
-    private final ObservableList<EffectCard> effectCards = FXCollections.observableArrayList();
-    private final ObservableList<SummonedWarriorCard> summonedWarriorCards = FXCollections.observableArrayList();
+    private int INDEX_CONST=-1;
 
+    private final ObservableList<Card> cardDeck = FXCollections.observableArrayList();
 
-    public EffectCard draweffect(){
-        return effectCards.get((random()%(effectCards.size()-1)));
-    }
-    public SummonedWarriorCard drawSummon(){
-        return summonedWarriorCards.get((random()%(summonedWarriorCards.size()-1)));
-    }
+    public void add(EffectCard addedCard){cardDeck.add((Card) addedCard);}
 
-    public void add(EffectCard addedCard){
-        effectCards.add(addedCard);
-    }
-    public void add(SummonedWarriorCard addedCard){
-        summonedWarriorCards.add(addedCard);
-    }
+    public void add(SummonedWarriorCard addedCard){cardDeck.add((Card) addedCard);}
 
-    public ObservableList<EffectCard> getEffectCards() {
-        return effectCards;
-    }
+    public void add(WeaponCard addedCard){cardDeck.add((Card) addedCard);}
 
-    public ObservableList<SummonedWarriorCard> getSummonedWarriorCards() {
-        return summonedWarriorCards;
-    }
-
-    public void removeEffect(EffectCard e){
-        effectCards.remove(e);
-    }
+    public Card draw(){return cardDeck.get((random()%cardDeck.size()+INDEX_CONST));}
     /**
      * toString() Rueckgabe von den Attributen
      * @return String
-     * Hier werden die Attribute von der Warrior Karte zuruek gegeben.
+     * Hier werden die Attribute vom Deck zuruek gegeben.
      */
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (EffectCard e:
-             effectCards) {
-            stringBuilder.append(e.toString());
-        }
-        for (SummonedWarriorCard e:
-             summonedWarriorCards) {
+        for (Card e : cardDeck){
             stringBuilder.append(e.toString());
         }
 
+
         return "Deck{"+ stringBuilder +"};";
     }
+
+
 }
