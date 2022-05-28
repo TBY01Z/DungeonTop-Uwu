@@ -16,15 +16,15 @@ import static com.prog2.uwupatch1.util.MyIO.random;
  * TODO: Check Grammatical
  */
 public class Deck {
-    private int INDEX_CONST=-1;
+    private final int INDEX_CONST=-1;
 
     private final ObservableList<Card> cardDeck = FXCollections.observableArrayList();
 
-    public void add(EffectCard addedCard){cardDeck.add((Card) addedCard);}
+    public void add(EffectCard addedCard){cardDeck.add(addedCard);}
 
-    public void add(SummonedWarriorCard addedCard){cardDeck.add((Card) addedCard);}
+    public void add(SummonedWarriorCard addedCard){cardDeck.add(addedCard);}
 
-    public void add(WeaponCard addedCard){cardDeck.add((Card) addedCard);}
+    public void add(WeaponCard addedCard){cardDeck.add(addedCard);}
 
     public Card draw(){return cardDeck.get((random()%cardDeck.size()+INDEX_CONST));}
     /**
