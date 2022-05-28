@@ -2,6 +2,7 @@ package com.prog2.uwupatch1.Model.PlayerAttachment;
 
 /**
  * @author Niclas Rieckers
+ * @Info
  * Klasse Artifact, erbt von Superklasse Ability. Wird gebraucht, um Spiel-Objekte "Artifacts"
  * erzeugen zu können. Da Atrifact quasie wie Ability ist nur der Timer ist auf -1 um denn Effekt unendlich zu taetigen.
  * TODO: Check Grammatical

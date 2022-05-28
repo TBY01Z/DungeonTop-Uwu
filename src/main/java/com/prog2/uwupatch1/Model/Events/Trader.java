@@ -40,12 +40,13 @@ public class Trader {
     private void fillTrader() {
         for (int i:
              this.IDs) {
-            switch (i/100){
+            switch (i/ID_PARAMETER){
                 case 0: cardsForSale.add(WarriorCards.get(i% ID_PARAMETER));
                 case 1: cardsForSale.add(EffectCards.get(i% ID_PARAMETER));
                 case 3: armorForSale.add(Armors.get(i% ID_PARAMETER));
                 case 4: weaponsForSale.add(Weapons.get(i% ID_PARAMETER));
                 case 5: artifactsForSale.add(Artifacts.get(i% ID_PARAMETER));
+                case 6: cardsForSale.add(WeaponCards.get(i% ID_PARAMETER));
             }
         }
     }
