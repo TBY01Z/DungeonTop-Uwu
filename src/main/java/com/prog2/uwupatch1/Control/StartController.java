@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class StartContoller {
+public class StartController {
     private Parent root;
     private Scene scene;
     private Stage stage;
