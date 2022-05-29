@@ -1,0 +1,9 @@
+module:com.prog.uwupatch
+com.prog2.uwupatch1
+com.prog2.uwupatch1.Control
+com.prog2.uwupatch1.Model.Cards
+com.prog2.uwupatch1.Model.Database
+com.prog2.uwupatch1.Model.Events
+com.prog2.uwupatch1.Model.PlayerAttachment
+com.prog2.uwupatch1.util
+com.prog2.uwupatch1.View

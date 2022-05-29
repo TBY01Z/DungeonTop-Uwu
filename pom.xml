@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--suppress ALL -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,25 +15,25 @@
     </properties>
 
     <dependencies>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>18.0.1</version>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>18.0.1</version>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
             <version>18.0.1</version>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
@@ -45,7 +44,7 @@
             <artifactId>controlsfx</artifactId>
             <version>11.1.1</version>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>com.dlsc.formsfx</groupId>
             <artifactId>formsfx-core</artifactId>
@@ -57,7 +56,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>net.synedra</groupId>
             <artifactId>validatorfx</artifactId>
@@ -69,7 +68,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-javafx</artifactId>
@@ -80,7 +79,7 @@
             <artifactId>bootstrapfx-core</artifactId>
             <version>0.4.0</version>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>eu.hansolo</groupId>
             <artifactId>tilesfx</artifactId>
@@ -92,7 +91,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--suppress MavenModelInspection -->
+
         <dependency>
             <groupId>com.github.almasb</groupId>
             <artifactId>fxgl</artifactId>
@@ -135,7 +134,7 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
+
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>com.prog2.uwupatch1/com.prog2.uwupatch1.Start</mainClass>

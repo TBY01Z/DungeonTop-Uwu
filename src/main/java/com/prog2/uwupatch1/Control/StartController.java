@@ -15,11 +15,6 @@ import java.util.Objects;
 
 public class StartController {
     private Parent root;
-    private Scene scene;
-    private Stage stage;
-
-    private final Pane pane = new Pane();
-
     @FXML
     protected void onSettingChange(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(Start.class.getResource("SettingStage.fxml")));
