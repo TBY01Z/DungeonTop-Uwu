@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<GridPane prefHeight="246.0" prefWidth="479.0"
-         xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-         fx:controller="de.prog2.uwupatch1.contoller.StartController">
+<GridPane prefHeight="246.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.StartController">
     <BorderPane prefHeight="246.0" prefWidth="479.0">
       <left>
          <VBox BorderPane.alignment="CENTER">
@@ -44,7 +46,7 @@
            </rowConstraints>
             <children>
                <Button mnemonicParsing="false" onAction="#onCharacterChose" text="New Game" />
-               <Button mnemonicParsing="false" text="Load Game" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#goToDungeonScene" text="Load Game" GridPane.rowIndex="1" />
             </children>
          </GridPane>
       </center></BorderPane>
