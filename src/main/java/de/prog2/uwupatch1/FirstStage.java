@@ -1,6 +1,7 @@
 package de.prog2.uwupatch1;
 
 import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
+import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,28 +11,18 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class FirstStage extends Application {
-    private static final String winResources = System.getProperty("user.dir") + "\\src\\";
-    private static final String macResources = System.getProperty("user.dir") + "/src/";
-    private static String resourses;
-    private static void fillRes() {
-        if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
-            resourses = winResources;
-        }else{
-            resourses = macResources;
-        }
-    }
 
     //    private static int resWidth;
     //    private static int resHeight;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FirstStage.class.getResource("StartStage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), SettingStageControl.WIDTH(), SettingStageControl.HIGHT());
         stage.setTitle("DungeonTop UWU");
+        stage.setFullScreenExitHint("");
         stage.setScene(scene);
         stage.show();
-        fillRes();
-        MadeCharacterStageController.fillStartImages(resourses);
+        MadeCharacterStageController.fillStartImages();
     }
 
 

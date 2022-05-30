@@ -32,7 +32,9 @@
                </right>
                <center>
                   <ImageView fx:id="startDeckIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                     </ImageView>
+                      <image>
+                          <Image url="@startIcon02.png" />
+                      </image></ImageView>
                </center>
             </BorderPane>
             <BorderPane prefHeight="200.0" prefWidth="200.0">
