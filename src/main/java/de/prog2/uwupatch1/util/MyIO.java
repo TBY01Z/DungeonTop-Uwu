@@ -4,6 +4,7 @@
  */
 package de.prog2.uwupatch1.util;
 import de.prog2.uwupatch1.FirstStage;
+import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -38,7 +39,7 @@ public class MyIO {
             FXMLLoader fxmlLoader = new FXMLLoader(FirstStage.class.getResource(source));
             root = fxmlLoader.load();
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
+            Scene scene = new Scene(root, SettingStageControl.WIDTH(), SettingStageControl.HIGHT());
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
