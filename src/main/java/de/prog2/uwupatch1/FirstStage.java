@@ -1,13 +1,25 @@
 package de.prog2.uwupatch1;
 
+import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class FirstStage extends Application {
+    private static final String winResources = System.getProperty("user.dir") + "\\src\\";
+    private static final String macResources = System.getProperty("user.dir") + "/src/";
+    private static String resourses;
+    private static void fillRes() {
+        if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
+            resourses = winResources;
+        }else{
+            resourses = macResources;
+        }
+    }
 
     //    private static int resWidth;
     //    private static int resHeight;
@@ -18,7 +30,10 @@ public class FirstStage extends Application {
         stage.setTitle("DungeonTop UWU");
         stage.setScene(scene);
         stage.show();
+        fillRes();
+        MadeCharacterStageController.fillStartImages(resourses);
     }
+
 
     public static void main(String[] args) {
         launch();
