@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="35" height="32" tilewidth="16" tileheight="16" nextobjectid="167">
+ <tileset firstgid="1" name="tilemap_packed" tilewidth="16" tileheight="16" tilecount="136" columns="17">
+  <image source="../Downloads/kenney_monochromerpg/Monochrome/Tilemap/tilemap_packed.png" width="272" height="128"/>
+ </tileset>
+ <layer name="Kachelebene 1" width="35" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,0,
+0,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,0,
+0,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,0,
+0,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,0,
+0,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,0,
+0,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,0,
+0,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,0,
+0,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,0,
+0,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,0,
+0,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,0,
+0,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,0,
+0,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,0,
+0,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,0,
+0,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,0,
+0,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,0,
+0,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,0,
+0,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,0,
+0,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,0,
+0,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,0,
+0,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,0,
+0,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,0,
+0,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,0,
+0,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,0,
+0,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,0,
+0,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,0,
+0,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,0,
+0,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,0,
+0,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,0,
+0,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,25,26,27,22,23,24,0,
+0,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,42,43,44,39,40,41,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Objektebene 1">
+  <object id="4" name="GameEventObjectTile" type="gameEvent" x="48.5603" y="16.5712" width="15.1377" height="15.4233"/>
+  <object id="7" name="GameEventObjectTile" type="gameEvent" x="96.6866" y="16" width="15.1377" height="15.4233"/>
+  <object id="8" name="GameEventObjectTile" type="gameEvent" x="143.528" y="16.8568" width="15.1377" height="15.4233"/>
+  <object id="10" name="GameEventObjectTile" type="gameEvent" x="192.082" y="16" width="15.1377" height="15.4233"/>
+  <object id="11" name="GameEventObjectTile" type="gameEvent" x="241.208" y="16.5712" width="15.1377" height="15.4233"/>
+  <object id="12" name="GameEventObjectTile" type="gameEvent" x="286.907" y="15.7144" width="15.1377" height="15.4233"/>
+  <object id="13" name="GameEventObjectTile" type="gameEvent" x="94.1161" y="66.2685" width="15.1377" height="15.4233"/>
+  <object id="14" name="GameEventObjectTile" type="gameEvent" x="145.241" y="63.6979" width="15.1377" height="15.4233"/>
+  <object id="15" name="GameEventObjectTile" type="gameEvent" x="193.796" y="63.1267" width="15.1377" height="15.4233"/>
+  <object id="16" name="GameEventObjectTile" type="gameEvent" x="286.621" y="65.126" width="15.1377" height="15.4233"/>
+  <object id="17" name="GameEventObjectTile" type="gameEvent" x="239.209" y="64.2692" width="15.1377" height="15.4233"/>
+  <object id="18" name="GameEventObjectTile" type="gameEvent" x="46.7037" y="63.6979" width="15.1377" height="15.4233"/>
+  <object id="19" name="GameEventObjectTile" type="gameEvent" x="96.401" y="113.966" width="15.1377" height="15.4233"/>
+  <object id="20" name="GameEventObjectTile" type="gameEvent" x="96.401" y="207.649" width="15.1377" height="15.4233"/>
+  <object id="21" name="GameEventObjectTile" type="gameEvent" x="191.797" y="159.951" width="15.1377" height="15.4233"/>
+  <object id="22" name="GameEventObjectTile" type="gameEvent" x="191.226" y="208.505" width="15.1377" height="15.4233"/>
+  <object id="23" name="GameEventObjectTile" type="gameEvent" x="239.495" y="111.681" width="15.1377" height="15.4233"/>
+  <object id="24" name="GameEventObjectTile" type="gameEvent" x="335.747" y="160.807" width="15.1377" height="15.4233"/>
+  <object id="25" name="GameEventObjectTile" type="gameEvent" x="287.764" y="209.648" width="15.1377" height="15.4233"/>
+  <object id="26" name="GameEventObjectTile" type="gameEvent" x="286.621" y="304.187" width="15.1377" height="15.4233"/>
+  <object id="27" name="GameEventObjectTile" type="gameEvent" x="334.319" y="257.631" width="15.1377" height="15.4233"/>
+  <object id="28" name="GameEventObjectTile" type="gameEvent" x="478.841" y="302.759" width="15.1377" height="15.4233"/>
+  <object id="29" name="GameEventObjectTile" type="gameEvent" x="478.841" y="208.22" width="15.1377" height="15.4233"/>
+  <object id="30" name="GameEventObjectTile" type="gameEvent" x="480.269" y="400.44" width="15.1377" height="15.4233"/>
+  <object id="31" name="GameEventObjectTile" type="gameEvent" x="480.726" y="64.6612" width="15.1377" height="15.4233"/>
+  <object id="32" name="GameEventObjectTile" type="gameEvent" x="95.9267" y="352.236" width="15.1377" height="15.4233"/>
+  <object id="34" name="GameEventObjectTile" type="gameEvent" x="96.201" y="401.333" width="15.1377" height="15.4233"/>
+  <object id="35" name="GameEventObjectTile" type="gameEvent" x="47.9276" y="353.059" width="15.1377" height="15.4233"/>
+  <object id="36" name="GameEventObjectTile" type="gameEvent" x="49.299" y="447.686" width="15.1377" height="15.4233"/>
+  <object id="37" name="GameEventObjectTile" type="gameEvent" x="239.924" y="447.96" width="15.1377" height="15.4233"/>
+  <object id="38" name="GameEventObjectTile" type="gameEvent" x="240.198" y="398.864" width="15.1377" height="15.4233"/>
+  <object id="39" name="GameEventObjectTile" type="gameEvent" x="240.473" y="353.882" width="15.1377" height="15.4233"/>
+  <object id="40" name="GameEventObjectTile" type="gameEvent" x="192.199" y="401.333" width="15.1377" height="15.4233"/>
+  <object id="41" name="GameEventObjectTile" type="gameEvent" x="336.197" y="447.412" width="15.1377" height="15.4233"/>
+  <object id="42" name="GameEventObjectTile" type="gameEvent" x="383.647" y="448.783" width="15.1377" height="15.4233"/>
+  <object id="43" name="GameEventObjectTile" type="gameEvent" x="288.746" y="400.235" width="15.1377" height="15.4233"/>
+  <object id="44" name="GameEventObjectTile" type="gameEvent" x="384.196" y="353.059" width="15.1377" height="15.4233"/>
+  <object id="45" name="GameEventObjectTile" type="gameEvent" x="528.193" y="401.607" width="15.1377" height="15.4233"/>
+  <object id="46" name="GameEventObjectTile" type="gameEvent" x="144.424" y="256.443" width="15.1377" height="15.4233"/>
+  <object id="48" name="Border" type="border" x="0.876271" y="1.75254" width="14.0203" height="509.113"/>
+  <object id="51" name="Border" type="border" x="18.0518" y="3.61037" width="540.833" height="11.5532"/>
+  <object id="53" name="Border" type="border" x="544.454" y="17.7815" width="15.2413" height="493.649"/>
+  <object id="55" name="Border" type="border" x="17.7815" y="496.19" width="525.826" height="14.3946"/>
+  <object id="56" name="MapTile" type="mapTile" x="20.3083" y="19.8468" width="44.3091" height="40.6166"/>
+  <object id="58" name="MapTile" type="mapTile" x="66.002" y="16.1544" width="44.3091" height="40.6166"/>
+  <object id="59" name="MapTile" type="mapTile" x="114.003" y="18.9237" width="44.3091" height="40.6166"/>
+  <object id="60" name="MapTile" type="mapTile" x="162.928" y="19.3852" width="44.3091" height="40.6166"/>
+  <object id="61" name="MapTile" type="mapTile" x="209.545" y="20.7699" width="44.3091" height="40.6166"/>
+  <object id="62" name="MapTile" type="mapTile" x="257.085" y="19.3852" width="44.3091" height="40.6166"/>
+  <object id="63" name="MapTile" type="mapTile" x="307.856" y="20.3083" width="44.3091" height="40.6166"/>
+  <object id="64" name="MapTile" type="mapTile" x="354.934" y="18.0006" width="44.3091" height="40.6166"/>
+  <object id="65" name="MapTile" type="mapTile" x="402.012" y="19.8468" width="44.3091" height="40.6166"/>
+  <object id="66" name="MapTile" type="mapTile" x="450.475" y="19.3852" width="44.3091" height="40.6166"/>
+  <object id="67" name="MapTile" type="mapTile" x="498.015" y="20.3083" width="44.3091" height="40.6166"/>
+  <object id="68" name="MapTile" type="mapTile" x="18.0005" y="66.9252" width="44.3091" height="40.6166"/>
+  <object id="69" name="MapTile" type="mapTile" x="66.9251" y="68.7714" width="44.3091" height="40.6166"/>
+  <object id="70" name="MapTile" type="mapTile" x="114.003" y="66.9252" width="44.3091" height="40.6166"/>
+  <object id="71" name="MapTile" type="mapTile" x="161.543" y="68.7714" width="44.3091" height="40.6166"/>
+  <object id="72" name="MapTile" type="mapTile" x="209.545" y="66.9252" width="44.3091" height="40.6166"/>
+  <object id="73" name="MapTile" type="mapTile" x="258.008" y="67.3867" width="44.3091" height="40.6166"/>
+  <object id="74" name="MapTile" type="mapTile" x="306.009" y="67.3867" width="44.3091" height="40.6166"/>
+  <object id="75" name="MapTile" type="mapTile" x="354.472" y="66.4636" width="44.3091" height="40.6166"/>
+  <object id="76" name="MapTile" type="mapTile" x="402.474" y="67.8483" width="44.3091" height="40.6166"/>
+  <object id="77" name="MapTile" type="mapTile" x="449.091" y="66.9252" width="44.3091" height="40.6166"/>
+  <object id="78" name="MapTile" type="mapTile" x="498.938" y="68.7714" width="44.3091" height="40.6166"/>
+  <object id="79" name="MapTile" type="mapTile" x="17.539" y="114.927" width="44.3091" height="40.6166"/>
+  <object id="80" name="MapTile" type="mapTile" x="65.0789" y="116.311" width="44.3091" height="40.6166"/>
+  <object id="81" name="MapTile" type="mapTile" x="114.465" y="116.311" width="44.3091" height="40.6166"/>
+  <object id="82" name="MapTile" type="mapTile" x="163.39" y="116.773" width="44.3091" height="40.6166"/>
+  <object id="83" name="MapTile" type="mapTile" x="209.545" y="114.927" width="44.3091" height="40.6166"/>
+  <object id="84" name="MapTile" type="mapTile" x="258.469" y="115.388" width="44.3091" height="40.6166"/>
+  <object id="85" name="MapTile" type="mapTile" x="306.009" y="115.85" width="44.3091" height="40.6166"/>
+  <object id="86" name="MapTile" type="mapTile" x="353.088" y="114.927" width="44.3091" height="40.6166"/>
+  <object id="87" name="MapTile" type="mapTile" x="402.474" y="116.311" width="44.3091" height="40.6166"/>
+  <object id="88" name="MapTile" type="mapTile" x="450.937" y="114.927" width="44.3091" height="40.6166"/>
+  <object id="89" name="MapTile" type="mapTile" x="498.015" y="114.465" width="44.3091" height="40.6166"/>
+  <object id="90" name="MapTile" type="mapTile" x="497.554" y="163.39" width="44.3091" height="40.6166"/>
+  <object id="91" name="MapTile" type="mapTile" x="449.552" y="164.774" width="44.3091" height="40.6166"/>
+  <object id="92" name="MapTile" type="mapTile" x="401.551" y="162.928" width="44.3091" height="40.6166"/>
+  <object id="93" name="MapTile" type="mapTile" x="354.011" y="164.313" width="44.3091" height="40.6166"/>
+  <object id="94" name="MapTile" type="mapTile" x="306.471" y="163.851" width="44.3091" height="40.6166"/>
+  <object id="95" name="MapTile" type="mapTile" x="258.008" y="162.467" width="44.3091" height="40.6166"/>
+  <object id="96" name="MapTile" type="mapTile" x="210.006" y="163.39" width="44.3091" height="40.6166"/>
+  <object id="97" name="MapTile" type="mapTile" x="161.543" y="163.851" width="44.3091" height="40.6166"/>
+  <object id="98" name="MapTile" type="mapTile" x="113.542" y="163.39" width="44.3091" height="40.6166"/>
+  <object id="99" name="MapTile" type="mapTile" x="64.6174" y="163.39" width="44.3091" height="40.6166"/>
+  <object id="100" name="MapTile" type="mapTile" x="15.2312" y="160.62" width="44.3091" height="40.6166"/>
+  <object id="101" name="MapTile" type="mapTile" x="17.539" y="212.314" width="44.3091" height="40.6166"/>
+  <object id="102" name="MapTile" type="mapTile" x="65.5405" y="211.391" width="44.3091" height="40.6166"/>
+  <object id="103" name="MapTile" type="mapTile" x="112.619" y="213.237" width="44.3091" height="40.6166"/>
+  <object id="104" name="MapTile" type="mapTile" x="162.467" y="211.853" width="44.3091" height="40.6166"/>
+  <object id="105" name="MapTile" type="mapTile" x="210.468" y="212.776" width="44.3091" height="40.6166"/>
+  <object id="106" name="MapTile" type="mapTile" x="256.623" y="212.314" width="44.3091" height="40.6166"/>
+  <object id="107" name="MapTile" type="mapTile" x="306.009" y="212.776" width="44.3091" height="40.6166"/>
+  <object id="108" name="MapTile" type="mapTile" x="354.934" y="212.314" width="44.3091" height="40.6166"/>
+  <object id="109" name="MapTile" type="mapTile" x="402.012" y="212.776" width="44.3091" height="40.6166"/>
+  <object id="110" name="MapTile" type="mapTile" x="450.475" y="212.776" width="44.3091" height="40.6166"/>
+  <object id="111" name="MapTile" type="mapTile" x="497.092" y="211.853" width="44.3091" height="40.6166"/>
+  <object id="112" name="MapTile" type="mapTile" x="496.631" y="258.931" width="44.3091" height="40.6166"/>
+  <object id="113" name="MapTile" type="mapTile" x="448.168" y="260.316" width="44.3091" height="40.6166"/>
+  <object id="114" name="MapTile" type="mapTile" x="402.012" y="258.931" width="44.3091" height="40.6166"/>
+  <object id="115" name="MapTile" type="mapTile" x="353.549" y="259.854" width="44.3091" height="40.6166"/>
+  <object id="116" name="MapTile" type="mapTile" x="305.086" y="258.931" width="44.3091" height="40.6166"/>
+  <object id="117" name="MapTile" type="mapTile" x="258.469" y="260.316" width="44.3091" height="40.6166"/>
+  <object id="118" name="MapTile" type="mapTile" x="209.545" y="259.854" width="44.3091" height="40.6166"/>
+  <object id="119" name="MapTile" type="mapTile" x="162.005" y="259.854" width="44.3091" height="40.6166"/>
+  <object id="120" name="MapTile" type="mapTile" x="114.465" y="259.393" width="44.3091" height="40.6166"/>
+  <object id="121" name="MapTile" type="mapTile" x="65.0789" y="259.854" width="44.3091" height="40.6166"/>
+  <object id="122" name="MapTile" type="mapTile" x="17.539" y="259.393" width="44.3091" height="40.6166"/>
+  <object id="123" name="MapTile" type="mapTile" x="17.0774" y="308.779" width="44.3091" height="40.6166"/>
+  <object id="124" name="MapTile" type="mapTile" x="66.002" y="308.317" width="44.3091" height="40.6166"/>
+  <object id="125" name="MapTile" type="mapTile" x="114.003" y="308.779" width="44.3091" height="40.6166"/>
+  <object id="126" name="MapTile" type="mapTile" x="162.467" y="307.856" width="44.3091" height="40.6166"/>
+  <object id="127" name="MapTile" type="mapTile" x="211.391" y="309.24" width="44.3091" height="40.6166"/>
+  <object id="128" name="MapTile" type="mapTile" x="257.546" y="308.317" width="44.3091" height="40.6166"/>
+  <object id="129" name="MapTile" type="mapTile" x="306.471" y="309.24" width="44.3091" height="40.6166"/>
+  <object id="130" name="MapTile" type="mapTile" x="354.472" y="307.394" width="44.3091" height="40.6166"/>
+  <object id="131" name="MapTile" type="mapTile" x="402.935" y="309.702" width="44.3091" height="40.6166"/>
+  <object id="132" name="MapTile" type="mapTile" x="448.629" y="306.471" width="44.3091" height="40.6166"/>
+  <object id="133" name="MapTile" type="mapTile" x="497.554" y="307.856" width="44.3091" height="40.6166"/>
+  <object id="134" name="MapTile" type="mapTile" x="497.554" y="354.934" width="44.3091" height="40.6166"/>
+  <object id="135" name="MapTile" type="mapTile" x="449.091" y="356.78" width="44.3091" height="40.6166"/>
+  <object id="136" name="MapTile" type="mapTile" x="402.474" y="354.934" width="44.3091" height="40.6166"/>
+  <object id="137" name="MapTile" type="mapTile" x="354.011" y="356.319" width="44.3091" height="40.6166"/>
+  <object id="138" name="MapTile" type="mapTile" x="306.009" y="355.396" width="44.3091" height="40.6166"/>
+  <object id="139" name="MapTile" type="mapTile" x="257.085" y="356.78" width="44.3091" height="40.6166"/>
+  <object id="140" name="MapTile" type="mapTile" x="209.545" y="354.934" width="44.3091" height="40.6166"/>
+  <object id="141" name="MapTile" type="mapTile" x="162.467" y="355.396" width="44.3091" height="40.6166"/>
+  <object id="142" name="MapTile" type="mapTile" x="113.542" y="355.396" width="44.3091" height="40.6166"/>
+  <object id="143" name="MapTile" type="mapTile" x="65.5405" y="354.934" width="44.3091" height="40.6166"/>
+  <object id="144" name="MapTile" type="mapTile" x="18.9236" y="354.472" width="44.3091" height="40.6166"/>
+  <object id="145" name="MapTile" type="mapTile" x="16.6159" y="404.782" width="44.3091" height="40.6166"/>
+  <object id="146" name="MapTile" type="mapTile" x="65.5405" y="403.397" width="44.3091" height="40.6166"/>
+  <object id="147" name="MapTile" type="mapTile" x="114.465" y="404.32" width="44.3091" height="40.6166"/>
+  <object id="148" name="MapTile" type="mapTile" x="162.928" y="403.859" width="44.3091" height="40.6166"/>
+  <object id="149" name="MapTile" type="mapTile" x="209.545" y="405.243" width="44.3091" height="40.6166"/>
+  <object id="150" name="MapTile" type="mapTile" x="258.931" y="403.397" width="44.3091" height="40.6166"/>
+  <object id="151" name="MapTile" type="mapTile" x="306.471" y="404.32" width="44.3091" height="40.6166"/>
+  <object id="152" name="MapTile" type="mapTile" x="354.011" y="403.859" width="44.3091" height="40.6166"/>
+  <object id="153" name="MapTile" type="mapTile" x="401.551" y="404.32" width="44.3091" height="40.6166"/>
+  <object id="154" name="MapTile" type="mapTile" x="450.014" y="403.859" width="44.3091" height="40.6166"/>
+  <object id="155" name="MapTile" type="mapTile" x="498.477" y="404.32" width="44.3091" height="40.6166"/>
+  <object id="156" name="MapTile" type="mapTile" x="497.554" y="451.86" width="44.3091" height="40.6166"/>
+  <object id="157" name="MapTile" type="mapTile" x="450.475" y="451.86" width="44.3091" height="40.6166"/>
+  <object id="158" name="MapTile" type="mapTile" x="402.012" y="450.937" width="44.3091" height="40.6166"/>
+  <object id="159" name="MapTile" type="mapTile" x="353.088" y="450.937" width="44.3091" height="40.6166"/>
+  <object id="160" name="MapTile" type="mapTile" x="306.009" y="450.475" width="44.3091" height="40.6166"/>
+  <object id="161" name="MapTile" type="mapTile" x="257.546" y="451.399" width="44.3091" height="40.6166"/>
+  <object id="162" name="MapTile" type="mapTile" x="209.545" y="451.399" width="44.3091" height="40.6166"/>
+  <object id="163" name="MapTile" type="mapTile" x="161.082" y="450.937" width="44.3091" height="40.6166"/>
+  <object id="164" name="MapTile" type="mapTile" x="113.08" y="450.014" width="44.3091" height="40.6166"/>
+  <object id="165" name="MapTile" type="mapTile" x="65.5405" y="451.86" width="44.3091" height="40.6166"/>
+  <object id="166" name="MapTile" type="mapTile" x="18.539" y="451.399" width="44.3091" height="40.6166"/>
+ </objectgroup>
+</map>
