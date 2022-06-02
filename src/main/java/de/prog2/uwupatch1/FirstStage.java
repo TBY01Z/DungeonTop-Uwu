@@ -1,5 +1,6 @@
 package de.prog2.uwupatch1;
 
+import com.almasb.fxgl.app.GameApplication;
 import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.application.Application;

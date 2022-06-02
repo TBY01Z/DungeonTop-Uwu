@@ -1,5 +1,6 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.DungeonApp;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
