@@ -22,7 +22,7 @@ public class DungeonController {
     }
 
     public void onTileEntered(ActionEvent event){
-        textLabel.setText("Was gerade passiert: " + GameEvent.getCurrentEvent());
+        textLabel.setText("Aktuelles GameEvent: " + GameEvent.getCurrentEvent());
     }
 
     public void onFightEntered(ActionEvent event) throws Exception{

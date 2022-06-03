@@ -21,7 +21,7 @@ public class StartController {
 
 
     public void goToDungeonScene(ActionEvent event) throws Exception{
-        MyIO.loadXML(event, "Dungeon.fxml");
+        MyIO.loadXML(event, "Battlefield.fxml");
     }
 
 

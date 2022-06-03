@@ -4,9 +4,6 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.DungeonController">
-   <bottom>
-      <Button mnemonicParsing="false" onAction="#goToMainMenu" text="Hauptmenü" BorderPane.alignment="CENTER" />
-   </bottom>
    <top>
       <Label fx:id="textLabel" prefHeight="17.0" prefWidth="264.0" text="Label" BorderPane.alignment="CENTER" />
    </top>
@@ -24,6 +21,19 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onFightEntered" prefHeight="228.0" prefWidth="262.0" text="Kampf betreten!" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="195.0" prefWidth="226.0" text="piss" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="172.0" prefWidth="337.0" text="coom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="161.0" prefWidth="241.0" text="poopoo" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
       </GridPane>
    </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#goToMainMenu" text="Button" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
 </BorderPane>
