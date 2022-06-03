@@ -1,5 +1,6 @@
 package de.prog2.uwupatch1.View;
 
+import de.prog2.uwupatch1.Model.Database.InputClass;
 import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.application.Application;
@@ -26,7 +27,9 @@ public class FirstStage extends Application {
 
 
     public static void main(String[] args) {
-        launch();
+        if(InputClass.inputFill()){
+            Application.launch(FirstStage.class, args);
+        }
     }
 }
     /**
@@ -43,16 +46,16 @@ public class FirstStage extends Application {
         stage.setScene(scene);
 //        ViewManager vm = new ViewManager();
 //        ViewManager.setHeight(720);
-//        ViewManager.setWidth(1280);       //so könnte man die einstellungen ändern
+//      public static void main(String[] args) {
+    //        if(InputClass.inputFill()){
+    //            Application.launch(FirstStage.class, args);
+    //        }
+    //    }  ViewManager.setWidth(1280);       //so könnte man die einstellungen ändern
 //        ViewManager.setFullscreen(true);    //TODO: grafische einstellungen in der UI implementieren mit menüs und so
  //       stage = vm.getMainStage();
         stage.show();
     }
 
-    public static void main(String[] args) {
-        if(InputClass.inputFill()){
-            Application.launch(FirstStage.class, args);
-        }
-    }
+
 
 }*/
