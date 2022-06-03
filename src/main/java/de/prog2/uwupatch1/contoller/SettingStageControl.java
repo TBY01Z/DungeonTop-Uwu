@@ -6,16 +6,12 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class SettingStageControl {
     private Scene scene;
     private Stage stage;
-    private static double WIDTH = 1500;
-    private static double HEIGHT = 800;
 
     @FXML
-    protected void onMainMenuChange(ActionEvent event) throws IOException {
+    protected void onMainMenuChange(ActionEvent event) {
         MyIO.loadXML(event, "StartStage.fxml");
     }
 
@@ -27,20 +23,18 @@ public class SettingStageControl {
     // getter & setter
 
     public static double WIDTH() {
-        return WIDTH;
+        return 1500;
     }
 
     public static void setWIDTH(double WIDTH) {
-        WIDTH = WIDTH;
 
     }
 
     public static double HIGHT() {
-        return HEIGHT;
+        return 800;
     }
 
     public static void setHEIGHT(double HEIGHT) {
-        HEIGHT = HEIGHT;
 
     }
 }

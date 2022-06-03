@@ -14,7 +14,7 @@ public class DungeonController {
     //GameEvent ge = new GameEvent(new Trader(new int[]{2, 2, 2, 2, 2})); //random ass trader lmao
 
     @FXML
-    public void goToMainMenu(ActionEvent event) throws Exception{
+    public void goToMainMenu(ActionEvent event) {
 
         MyIO.loadXML(event, "StartStage.fxml");
     }
@@ -23,7 +23,7 @@ public class DungeonController {
         textLabel.setText("Aktuelles GameEvent: " + GameEvent.getCurrentEvent());
     }
 
-    public void onFightEntered(ActionEvent event) throws Exception{
+    public void onFightEntered(ActionEvent event) {
         textLabel.setText("Sie haben einen Kampf betreten.");
         //nachher wird noch neue FXML Page geladen...
     }

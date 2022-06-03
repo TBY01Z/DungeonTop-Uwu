@@ -11,7 +11,6 @@ import javafx.collections.ObservableList;
  */
 public class GameEvent {
     private final ObservableList<Trader> traderlist = FXCollections.observableArrayList(); //ObservableList Instanz wird erzeugt
-    private final int MAX_EVENT_VALUE = 3;
 
     private static String currentEvent;
     /**
@@ -28,16 +27,14 @@ public class GameEvent {
         //maximale Anzahl von möglichen Events
 
 
+        int MAX_EVENT_VALUE = 3;
         int randy = (MyIO.random()% MAX_EVENT_VALUE) + 1 ;   //feld "randy" bekommt zufälligen int
         //switch bekommt feld "randy" übergeben, um je nach case ein anderes GameEvent zu erzeugen
-        switch(randy){
-            case 1: currentEvent = "event 1";
-                break;
-            case 2: currentEvent = "Treasures";
-                break;
-            case 3: currentEvent = "Trader Event";
-                break;
-            default: currentEvent = "kein Event :((";
+        switch (randy) {
+            case 1 -> currentEvent = "event 1";
+            case 2 -> currentEvent = "Treasures";
+            case 3 -> currentEvent = "Trader Event";
+            default -> currentEvent = "kein Event :((";
         }
     }
 

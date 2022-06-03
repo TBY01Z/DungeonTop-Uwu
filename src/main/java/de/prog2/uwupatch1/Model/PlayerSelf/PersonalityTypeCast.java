@@ -1,6 +1,5 @@
 package de.prog2.uwupatch1.Model.PlayerSelf;
 
-import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Ability;
 import javafx.scene.image.Image;
 
@@ -30,13 +29,12 @@ public class PersonalityTypeCast {
 
     private int groundHandLimit;
 
-    private final int ABILITY_TIMER_CONST = -1;
-
     //Constructor
     public PersonalityTypeCast(String personalityName, String specification, String icon, Ability ability, double groundDamage, double groundMana, double groundHealth, int groundDrawLimit) {
         this.personalityName = personalityName;
         this.specification = specification;
         this.icon = loadIcon(icon);
+        int ABILITY_TIMER_CONST = -1;
         this.ability = ability.setTimer(ABILITY_TIMER_CONST);
         this.groundDamage = groundDamage;
         this.groundMana = groundMana;

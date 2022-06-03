@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.io.File;
+import java.util.Objects;
 
 public class BattlefieldController {
 
@@ -44,7 +44,7 @@ public class BattlefieldController {
     @FXML
     ImageView tile16;      //fml dude
 
-    Image newCard = new Image(getClass().getResourceAsStream("hello.png"));
+    final Image newCard = new Image(Objects.requireNonNull(getClass().getResourceAsStream("hello.png")));
 
     public void placeTestCard(){
         tile1.setImage(newCard);

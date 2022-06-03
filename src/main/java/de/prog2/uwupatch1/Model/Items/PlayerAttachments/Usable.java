@@ -25,9 +25,6 @@ public class Usable {
 
     /**
      *
-     * @param ID
-     * @param objName
-     * @param iconPath
      */
 
     public Usable(int ID, String objName, String iconPath) {

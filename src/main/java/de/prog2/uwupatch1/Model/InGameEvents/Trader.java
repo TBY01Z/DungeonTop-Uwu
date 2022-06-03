@@ -14,7 +14,6 @@ import javafx.collections.ObservableList;
  * TODO: Check Grammatical Modulariesieren
  */
 public class Trader {
-    private final int ID_PARAMETER = 100;
 
     private final int[] IDs; //int array mit IDs
     private final Deck cardsForSale = new Deck(); //neues Deck wird erzeugt für den Verkauf von Karten
@@ -40,7 +39,8 @@ public class Trader {
     private void fillTrader() {
         for (int i:
              this.IDs) {
-            switch (i/ID_PARAMETER){
+            int ID_PARAMETER = 100;
+            switch (i/ ID_PARAMETER){
                 case 0: cardsForSale.add(WarriorCards.get(i% ID_PARAMETER));
                 case 1: cardsForSale.add(EffectCards.get(i% ID_PARAMETER));
                 case 3: armorForSale.add(Armors.get(i% ID_PARAMETER));

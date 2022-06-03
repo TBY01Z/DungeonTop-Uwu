@@ -9,8 +9,6 @@ public class WeaponCard extends Card {
     //Diese Variable stellt den Damage dar der von dieser Karte beim Beschwoeren einem anderem Spieler oder
     //einer anderen Karte hinzugefuegt wird.
     private double cardDamage;
-    //Diese Variable wird verwendet um den Schadenszuwachs pro Level zu darzustellen.
-    private final double CARD_DAMAGE_VALUE_PER_LEVEL = 0.25;
 
     /**
      * Hier wird das Objekt zu WeaponCard erstellt.
@@ -37,7 +35,9 @@ public class WeaponCard extends Card {
      * @return double
      */
     public double cardDamage() {
-        return cardDamage+((cardDamage*CARD_DAMAGE_VALUE_PER_LEVEL)*level());
+        //Diese Variable wird verwendet um den Schadenszuwachs pro Level zu darzustellen.
+        double CARD_DAMAGE_VALUE_PER_LEVEL = 0.25;
+        return cardDamage+((cardDamage* CARD_DAMAGE_VALUE_PER_LEVEL)*level());
     }
 
     public WeaponCard setCardDamage(double cardDamage) {

@@ -94,6 +94,7 @@ public class Player implements Serializable {
         effect().add(ability);
         return this;
     }
+    @SuppressWarnings("UnusedAssignment")
     public Player checkEffects(){   //keine ahnung was diese Methode genau macht
         for (Ability ability:
                 effect()) {
@@ -234,45 +235,40 @@ public class Player implements Serializable {
         return outComeDamage;
     }
 
-    public Player setOutComeDamage(double outComeDamage) {
+    public void setOutComeDamage(double outComeDamage) {
         this.outComeDamage = outComeDamage;
-        return this;
     }
 
     public double outComeManaPerRound() {
         return outComeManaPerRound;
     }
 
-    public Player setOutComeManaPerRound(double outComeManaPerRound) {
+    public void setOutComeManaPerRound(double outComeManaPerRound) {
         this.outComeManaPerRound = outComeManaPerRound;
-        return this;
     }
 
     public double outComeHealth() {
         return outComeHealth;
     }
 
-    public Player setOutComeHealth(double outComeHealth) {
+    public void setOutComeHealth(double outComeHealth) {
         this.outComeHealth = outComeHealth;
-        return this;
     }
 
     public int outComeDrawLimit() {
         return outComeDrawLimit;
     }
 
-    public Player setOutComeDrawLimit(int outComeDrawLimit) {
+    public void setOutComeDrawLimit(int outComeDrawLimit) {
         this.outComeDrawLimit = outComeDrawLimit;
-        return this;
     }
 
     public Deck cards() {
         return cards;
     }
 
-    public Player setCards(Deck cards) {
+    public void setCards(Deck cards) {
         this.cards = cards;
-        return this;
     }
 
     public ObservableList<Ability> effect() {
@@ -297,8 +293,7 @@ public class Player implements Serializable {
         return zen;
     }
 
-    public Player setZen(int zen) {
+    public void setZen(int zen) {
         this.zen = zen;
-        return this;
     }
 }

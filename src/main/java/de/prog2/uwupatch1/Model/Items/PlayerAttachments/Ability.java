@@ -11,7 +11,6 @@ public class Ability extends Usable {
 
     private int timer;//roundTimer
     private String name;
-    private String iconPath;
     //increase in percent 0.XX
     private double increaseHealth;
     private double increaseMana;
@@ -22,7 +21,6 @@ public class Ability extends Usable {
         super(ID,name,iconPath);
         this.timer = timer;
         this.name = name;
-        this.iconPath = iconPath;
         this.increaseHealth = increaseHealth;
         this.increaseMana = increaseMana;
         this.increaseDamage = increaseDamage;

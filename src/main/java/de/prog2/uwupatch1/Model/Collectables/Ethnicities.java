@@ -1,6 +1,5 @@
 package de.prog2.uwupatch1.Model.Collectables;
 
-import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Deck;
 import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

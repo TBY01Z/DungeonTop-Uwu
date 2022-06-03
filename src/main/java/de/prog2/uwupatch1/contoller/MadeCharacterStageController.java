@@ -2,16 +2,11 @@ package de.prog2.uwupatch1.contoller;
 
 import de.prog2.uwupatch1.Model.Collectables.Ethnicities;
 import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
-import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,7 +26,7 @@ public class MadeCharacterStageController implements Initializable {
     private ImageView deckIcon02 = new ImageView();
     @FXML
     private ImageView deckIcon03 = new ImageView();
-    private int ID_PARAMETER = 100000;
+    private final int ID_PARAMETER = 100000;
     private int startDeckCounter = ID_PARAMETER;
     private int charDeckCounter = ID_PARAMETER;
     @FXML
@@ -72,8 +67,6 @@ public class MadeCharacterStageController implements Initializable {
     }
 
     /**
-     * @param url
-     * @param resourceBundle
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

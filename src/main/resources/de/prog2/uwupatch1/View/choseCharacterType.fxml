@@ -3,32 +3,33 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.ChoseCharacterType">
-   <columnConstraints>
-      <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-       <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-      <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-       <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-      <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-   </rowConstraints>
-   <children>
-      <Button mnemonicParsing="false" onAction="#toAdventure" text="Adventurer" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-      <Button mnemonicParsing="false" onAction="#toDungeonMaster" text="Dungeon Master" GridPane.columnIndex="3" GridPane.rowIndex="11" />
-      <Button mnemonicParsing="false" onAction="#onMenu" text="Hauptmenü" GridPane.columnIndex="2" />
-   </children>
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="de.prog2.uwupatch1.contoller.ChoseCharacterType">
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" prefWidth="300.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="300.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="300.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="300.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="300.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+    </rowConstraints>
+    <Button mnemonicParsing="false" onAction="#toAdventure" text="Adventurer" GridPane.columnIndex="1"
+            GridPane.rowIndex="11"/>
+    <Button mnemonicParsing="false" onAction="#toDungeonMaster" text="Dungeon Master" GridPane.columnIndex="3"
+            GridPane.rowIndex="11"/>
+    <Button mnemonicParsing="false" onAction="#onMenu" text="Hauptmenü" GridPane.columnIndex="2"/>
 </GridPane>
