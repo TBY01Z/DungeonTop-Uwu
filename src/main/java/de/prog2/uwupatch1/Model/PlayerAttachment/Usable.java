@@ -1,5 +1,8 @@
 package de.prog2.uwupatch1.Model.PlayerAttachment;
 
+import de.prog2.uwupatch1.Icon.LoadIcons;
+import javafx.scene.image.Image;
+
 /**
  * @author Niclas Rieckers
  * Superklasse für alle vom Spieler nutzbare Items.
@@ -8,15 +11,18 @@ package de.prog2.uwupatch1.Model.PlayerAttachment;
 public class Usable {
     private int ID;
     private String objName;
-    private String iconPath;
+    private Image icon;
 
 
     public Usable(int ID, String objName, String iconPath) {
         this.ID = ID;
         this.objName = objName;
-        this.iconPath = iconPath;
+        icon = new Image(String.valueOf(LoadIcons.class.getResource(iconPath)));
     }
 
+
+
+    //Getter & Setter
     public int ID() {
         return ID;
     }
@@ -35,12 +41,12 @@ public class Usable {
         return this;
     }
 
-    public String iconPath() {
-        return iconPath;
+    public Image icon() {
+        return icon;
     }
 
-    public Usable setIconPath(String iconPath) {
-        this.iconPath = iconPath;
+    public Usable setIcon(Image icon) {
+        this.icon = icon;
         return this;
     }
 
@@ -49,7 +55,7 @@ public class Usable {
         return
                 "ID=" + ID +
                 ", objName='" + objName + '\'' +
-                ", iconPath='" + iconPath + "',"
+                ", iconPath='" + icon().getUrl()+ "',"
                 ;
     }
 }

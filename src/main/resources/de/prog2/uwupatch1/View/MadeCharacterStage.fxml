@@ -33,7 +33,7 @@
                <center>
                   <ImageView fx:id="startDeckIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                       <image>
-                          <Image url="@startIcon02.png" />
+                          <Image url="@../Icon/startIcon02.png" />
                       </image></ImageView>
                </center>
             </BorderPane>
@@ -47,7 +47,7 @@
                <center>
                   <ImageView fx:id="characterTypeIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                      <image>
-                        <Image url="@startIcon01.png" />
+                        <Image url="@../Icon/startIcon01.png" />
                      </image></ImageView>
                </center>
             </BorderPane>

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package de.prog2.uwupatch1.util;
-import de.prog2.uwupatch1.FirstStage;
+import de.prog2.uwupatch1.View.FirstStage;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

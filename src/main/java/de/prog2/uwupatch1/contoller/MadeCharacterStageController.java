@@ -1,6 +1,7 @@
 package de.prog2.uwupatch1.contoller;
 
-import de.prog2.uwupatch1.FirstStage;
+import de.prog2.uwupatch1.Icon.LoadIcons;
+import de.prog2.uwupatch1.View.FirstStage;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -19,9 +20,9 @@ public class MadeCharacterStageController implements Initializable {
 
     private static ObservableList<Image> startImages= FXCollections.observableArrayList();
     public static void fillStartImages(){
-        startImages.add(new Image(String.valueOf(FirstStage.class.getResource("startIcon01.png"))));
-        startImages.add(new Image(String.valueOf(FirstStage.class.getResource("startIcon02.png"))));
-        startImages.add(new Image(String.valueOf(FirstStage.class.getResource("startIcon03.png"))));
+        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon01.png"))));
+        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon02.png"))));
+        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon03.png"))));
 
     }
     @FXML

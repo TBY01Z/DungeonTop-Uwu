@@ -1,6 +1,5 @@
-package de.prog2.uwupatch1;
+package de.prog2.uwupatch1.View;
 
-import com.almasb.fxgl.app.GameApplication;
 import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.application.Application;
@@ -9,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
 
 public class FirstStage extends Application {
 
