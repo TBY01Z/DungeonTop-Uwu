@@ -1,4 +1,4 @@
-package de.prog2.uwupatch1.View.FXGL;
+package de.prog2.uwupatch1;
 
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;

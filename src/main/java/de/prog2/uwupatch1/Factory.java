@@ -1,4 +1,4 @@
-package de.prog2.uwupatch1.View.FXGL;
+package de.prog2.uwupatch1;
 
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.*;
@@ -10,7 +10,7 @@ import com.almasb.fxgl.physics.PhysicsComponent;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 
-import static de.prog2.uwupatch1.View.FXGL.Type.*;
+import static de.prog2.uwupatch1.Type.*;
 
 public class Factory implements EntityFactory {
 

@@ -19,7 +19,7 @@ module com.prog.uwupatch {
     exports de.prog2.uwupatch1.Model.PlayerAttachment;
     opens de.prog2.uwupatch1.Model.Events to javafx.fxml;
     exports de.prog2.uwupatch1.Model.Events;
-    opens de.prog2.uwupatch1.View.FXGL to javafx.fxml;
-    exports de.prog2.uwupatch1.View.FXGL;
+    exports de.prog2.uwupatch1;
+    opens de.prog2.uwupatch1 to javafx.fxml;
 
 }

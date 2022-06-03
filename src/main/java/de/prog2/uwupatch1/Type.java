@@ -1,4 +1,4 @@
-package de.prog2.uwupatch1.View.FXGL;
+package de.prog2.uwupatch1;
 
 public enum Type {
     PLAYER, INTERACTABLE, MAP_BORDER, MAP_TILE
