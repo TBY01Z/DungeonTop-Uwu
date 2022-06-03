@@ -1,5 +1,7 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.Database.CharacterTypes;
+import de.prog2.uwupatch1.Model.Database.StartDecks;
 import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,10 +16,15 @@ import java.util.ResourceBundle;
 public class MadeCharacterStageController implements Initializable {
     @FXML
     private ImageView startDeckIcon = new ImageView();
+    @FXML
+    private ImageView charDeckIcon = new ImageView();
     private int ID_PARAMETER = 1000;
     private int startDeckCounter = ID_PARAMETER;
+    private int charDeckCounter = ID_PARAMETER;
 
     private static ObservableList<Image> startImages= FXCollections.observableArrayList();
+    private static ObservableList<Image> charImages= FXCollections.observableArrayList();
+
     public static void fillStartImages(){
         startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon01.png"))));
         startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon02.png"))));
@@ -31,10 +38,23 @@ public class MadeCharacterStageController implements Initializable {
     }
     @FXML
     public void startBackward(ActionEvent event) {
+        charDeckCounter--;
+        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
+    }
+
+    @FXML
+    public void charForward(ActionEvent event) {
+        charDeckCounter++;
+        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
+    }
+    @FXML
+    public void charBackward(ActionEvent event) {
         startDeckCounter--;
         startDeckIcon.setImage(startImages.get((startDeckCounter%startImages.size())));
     }
-
+    public static void fillCharImages(){
+        CharacterTypes.getClassTypes();
+    }
     /**
      * @param url
      * @param resourceBundle

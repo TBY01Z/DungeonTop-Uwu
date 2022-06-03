@@ -33,21 +33,21 @@
                <center>
                   <ImageView fx:id="startDeckIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                       <image>
-                          <Image url="@../Icon/startIcon02.png" />
+                          <Image url="" />
                       </image></ImageView>
                </center>
             </BorderPane>
             <BorderPane prefHeight="200.0" prefWidth="200.0">
                <left>
-                  <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#charBackward" text="&lt;-" BorderPane.alignment="CENTER" />
                </left>
                <right>
-                  <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#charForward" text="-&gt;" BorderPane.alignment="CENTER" />
                </right>
                <center>
-                  <ImageView fx:id="characterTypeIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                  <ImageView fx:id="charDeckIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                      <image>
-                        <Image url="@../Icon/startIcon01.png" />
+                        <Image url="" />
                      </image></ImageView>
                </center>
             </BorderPane>
