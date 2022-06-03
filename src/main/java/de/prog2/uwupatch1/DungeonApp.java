@@ -20,7 +20,7 @@ public class DungeonApp extends GameApplication {
     protected void initGame() {
         super.initGame();
         FXGL.getGameWorld().addEntityFactory(new Factory());
-        FXGL.setLevelFromMap("tmx/derDungeon.tmx");
+        FXGL.setLevelFromMap("tmx\\derDungeon.tmx");
     }
 
     @Override
