@@ -1,4 +1,8 @@
 package de.prog2.uwupatch1.Model.PlayerAttachment;
+
+import de.prog2.uwupatch1.Model.Icon.LoadIcons;
+import javafx.scene.image.Image;
+
 /**
  * @author Mark Fischer
  * Klasse CharacterType, wird gebraucht, um Spiel-Objekte "CharacterTypes"
@@ -7,28 +11,39 @@ package de.prog2.uwupatch1.Model.PlayerAttachment;
  */
 public class CharacterType {
     private String name;
-    private String iconpath;
+
+    public String name() {
+        return name;
+    }
+
+    private Image icon;
     private Ability ability;
 
     public CharacterType(String name, String iconpath, Ability ability) {
         this.name = name;
-        this.iconpath = iconpath;
+        icon = new Image(String.valueOf(LoadIcons.class.getResource(iconpath)));
         this.ability = ability;
     }
 
+    public Image icon() {
+        return icon;
+    }
 
+    public CharacterType setIcon(Image icon) {
+        this.icon = icon;
+        return this;
+    }
+
+    public Ability ability() {
+        return ability;
+    }
     public String getName(){
         return name;
     }
     public void setName(String name){
         this.name = name;
     }
-    public String getIconpath(){
-        return iconpath;
-    }
-    public void setIconpath(String iconpath){
-        this.iconpath = iconpath;
-    }
+
     public int getAbilityID(){
         return ability.ID();
     }
@@ -47,7 +62,7 @@ public class CharacterType {
     public String toString() {
         return "CharacterType{" +
                 "name='" + name + '\'' +
-                ", iconpath='" + iconpath + '\'' +
+                ", iconpath='" + icon.getUrl() + '\'' +
                 ", ability=" + ability +
                 '}';
     }

@@ -2,6 +2,7 @@ package de.prog2.uwupatch1.Model.Database;
 
 import de.prog2.uwupatch1.Model.PlayerAttachment.Armor;
 
+import de.prog2.uwupatch1.Model.PlayerAttachment.Usable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 /**
