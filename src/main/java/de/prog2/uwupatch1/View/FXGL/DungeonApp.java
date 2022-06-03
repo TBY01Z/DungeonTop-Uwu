@@ -1,4 +1,4 @@
-package de.prog2.uwupatch1;
+package de.prog2.uwupatch1.View.FXGL;
 
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;
@@ -20,7 +20,7 @@ public class DungeonApp extends GameApplication {
     protected void initGame() {
         super.initGame();
         FXGL.getGameWorld().addEntityFactory(new Factory());
-        FXGL.setLevelFromMap("tmx\\derDungeon.tmx");
+        FXGL.setLevelFromMap(String.valueOf(getClass().getResource("derDungeon.tmx")));
     }
 
     @Override

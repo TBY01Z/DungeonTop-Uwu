@@ -1,21 +1,16 @@
-package de.prog2.uwupatch1;
+package de.prog2.uwupatch1.View.FXGL;
 
-import com.almasb.fxgl.dsl.EntityBuilder;
 import com.almasb.fxgl.dsl.FXGL;
-import com.almasb.fxgl.dsl.components.LiftComponent;
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.entity.components.CollidableComponent;
 import com.almasb.fxgl.input.view.KeyView;
 import com.almasb.fxgl.physics.BoundingShape;
-import com.almasb.fxgl.physics.BoxShapeData;
 import com.almasb.fxgl.physics.HitBox;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.util.Duration;
 
-import static de.prog2.uwupatch1.Type.*;
+import static de.prog2.uwupatch1.View.FXGL.Type.*;
 
 public class Factory implements EntityFactory {
 

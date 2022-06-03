@@ -33,7 +33,7 @@ Scene Factory: class com.almasb.fxgl.app.scene.SceneFactory
 17:33:11.140 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 1280.0 x 720.0
 17:33:11.140 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 1296.0 x 759.0
 17:33:11.145 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
-17:33:11.170 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class de.prog2.uwupatch1.DungeonApp
+17:33:11.170 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class de.prog2.uwupatch1.View.FXGL.DungeonApp
 17:33:11.170 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
 17:33:11.171 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Mark/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/css/fxgl_dark.css
 17:33:11.206 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
@@ -93,7 +93,7 @@ Caused by: java.lang.IllegalArgumentException: Loading level failed. Asset not f
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.app.services.FXGLAssetLoaderService.loadLevel(FXGLAssetLoaderService.kt:443)
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.dsl.FXGL$Companion.setLevelFromMap(FXGL.kt:634)
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.dsl.FXGL.setLevelFromMap(FXGL.kt)
-	at com.prog.uwupatch/de.prog2.uwupatch1.DungeonApp.initGame(DungeonApp.java:23)
+	at com.prog.uwupatch/de.prog2.uwupatch1.View.FXGL.DungeonApp.initGame(DungeonApp.java:23)
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.app.FXGLApplication$InitAppTask.initGame(FXGLApplication.kt:339)
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.app.FXGLApplication$InitAppTask.call(FXGLApplication.kt:319)
 	at com.almasb.fxgl.all@17.1/com.almasb.fxgl.app.FXGLApplication$InitAppTask.call(FXGLApplication.kt:311)
@@ -200,7 +200,7 @@ Caused by: java.lang.IllegalArgumentException: Loading level failed. Asset not f
 17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - urlGithub: https://github.com/AlmasB/FXGL
 17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - urlLeaderboard: http://fxgl-top.herokuapp.com/
 17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - urlPOM: https://raw.githubusercontent.com/AlmasB/FXGL/release/README.md
-17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class de.prog2.uwupatch1.DungeonApp
+17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class de.prog2.uwupatch1.View.FXGL.DungeonApp
 17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - version: 0.0
 17:33:14.420 [FXGL Background Thread 3 ] DEBUG Engine               - versionCheckDays: 7
 17:33:14.421 [FXGL Background Thread 3 ] DEBUG Engine               - width: 1280
