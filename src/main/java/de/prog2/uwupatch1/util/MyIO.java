@@ -59,7 +59,7 @@ public class MyIO {
 
     }
     public static Image loadIcon(String path){
-        return new Image(LoadIcons.class.getResource(path).getFile());
+        return new Image(String.valueOf(LoadIcons.class.getResource(path)));
     }
     public static int random(){
         Random rn = new Random();

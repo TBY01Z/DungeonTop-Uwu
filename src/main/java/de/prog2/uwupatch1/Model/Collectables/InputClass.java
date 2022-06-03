@@ -115,8 +115,7 @@ public class InputClass {
                     Double.parseDouble(activeLine[4]),
                     Double.parseDouble(activeLine[5]),
                     Double.parseDouble(activeLine[6]),
-                    Integer.parseInt(activeLine[7]),
-                    Integer.parseInt(activeLine[8])
+                    Integer.parseInt(activeLine[7])
 
             ));
         }
@@ -169,7 +168,7 @@ public class InputClass {
                 }
 
             }
-            Ethnicities.add(new Ethnicity(strings[0],strings[1],strings[3],activeDeck));
+            Ethnicities.add(new Ethnicity(strings[0],strings[1],strings[2],activeDeck));
         }
     }
     /***

@@ -33,7 +33,7 @@ public class PersonalityTypeCast {
     private final int ABILITY_TIMER_CONST = -1;
 
     //Constructor
-    public PersonalityTypeCast(String personalityName, String specification, String icon, Ability ability, double groundDamage, double groundMana, double groundHealth, int groundDrawLimit, int groundHandLimit) {
+    public PersonalityTypeCast(String personalityName, String specification, String icon, Ability ability, double groundDamage, double groundMana, double groundHealth, int groundDrawLimit) {
         this.personalityName = personalityName;
         this.specification = specification;
         this.icon = loadIcon(icon);
@@ -42,7 +42,6 @@ public class PersonalityTypeCast {
         this.groundMana = groundMana;
         this.groundHealth = groundHealth;
         this.groundDrawLimit = groundDrawLimit;
-        this.groundHandLimit = groundHandLimit;
     }
     //Own methods
 
