@@ -25,10 +25,7 @@ public class MyIO {
     private static final int MIN_RANDOM_VALUE = 0;
     private static final int MAX_RANDOM_VALUE = 999999999;
 
-    /**
-     *
-     * @param arg ausgabe des Strings "arg" in der Console.
-     */
+
     private static Character getResourceSlasch() {
         if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
             return '\\';
@@ -36,6 +33,10 @@ public class MyIO {
             return '/';
         }
     }
+    /**
+     *
+     * @param arg ausgabe des Strings "arg" in der Console.
+     */
     public static void print(String arg){
         System.out.println(arg);
        
