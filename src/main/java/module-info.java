@@ -11,13 +11,15 @@ module com.prog.uwupatch {
     exports de.prog2.uwupatch1.View;
     opens de.prog2.uwupatch1.contoller to javafx.fxml;
     exports de.prog2.uwupatch1.contoller;
-    opens de.prog2.uwupatch1.Model.Database to javafx.fxml;
-    exports de.prog2.uwupatch1.Model.Database;
-    opens de.prog2.uwupatch1.Model.Cards to javafx.fxml;
-    exports de.prog2.uwupatch1.Model.Cards;
-    opens de.prog2.uwupatch1.Model.PlayerAttachment to javafx.fxml;
-    exports de.prog2.uwupatch1.Model.PlayerAttachment;
-    opens de.prog2.uwupatch1.Model.Events to javafx.fxml;
-    exports de.prog2.uwupatch1.Model.Events;
+    opens de.prog2.uwupatch1.Model.Collectables to javafx.fxml;
+    exports de.prog2.uwupatch1.Model.Collectables;
+    opens de.prog2.uwupatch1.Model.Items.Cards to javafx.fxml;
+    exports de.prog2.uwupatch1.Model.Items.Cards;
+    opens de.prog2.uwupatch1.Model.PlayerSelf to javafx.fxml;
+    exports de.prog2.uwupatch1.Model.PlayerSelf;
+    opens de.prog2.uwupatch1.Model.InGameEvents to javafx.fxml;
+    exports de.prog2.uwupatch1.Model.InGameEvents;
+    exports de.prog2.uwupatch1.Model.Items.PlayerAttachments;
+    opens de.prog2.uwupatch1.Model.Items.PlayerAttachments to javafx.fxml;
 
 }

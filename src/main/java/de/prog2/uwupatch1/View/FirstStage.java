@@ -1,6 +1,6 @@
 package de.prog2.uwupatch1.View;
 
-import de.prog2.uwupatch1.Model.Database.InputClass;
+import de.prog2.uwupatch1.Model.Collectables.InputClass;
 import de.prog2.uwupatch1.contoller.MadeCharacterStageController;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.application.Application;

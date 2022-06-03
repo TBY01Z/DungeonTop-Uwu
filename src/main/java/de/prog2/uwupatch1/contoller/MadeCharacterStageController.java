@@ -1,9 +1,8 @@
 package de.prog2.uwupatch1.contoller;
 
-import de.prog2.uwupatch1.Model.Database.CharacterTypes;
-import de.prog2.uwupatch1.Model.Database.StartDecks;
+import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
 import de.prog2.uwupatch1.Model.Icon.LoadIcons;
-import de.prog2.uwupatch1.Model.PlayerAttachment.CharacterType;
+import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -54,8 +53,8 @@ public class MadeCharacterStageController implements Initializable {
         charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
     }
     public static void fillCharImages(){
-        ObservableList<CharacterType> aracterTypes = CharacterTypes.getClassTypes();
-        for (CharacterType charrr:
+        ObservableList<PersonalityTypeCast> aracterTypes = PersonalityTypeCasts.getClassTypes();
+        for (PersonalityTypeCast charrr:
              aracterTypes) {
             charImages.add(charrr.icon());
         }

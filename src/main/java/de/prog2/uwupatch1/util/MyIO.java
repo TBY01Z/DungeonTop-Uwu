@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package de.prog2.uwupatch1.util;
+import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import de.prog2.uwupatch1.View.FirstStage;
 import de.prog2.uwupatch1.contoller.SettingStageControl;
 import javafx.event.ActionEvent;
@@ -10,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -56,7 +58,9 @@ public class MyIO {
         }
 
     }
-
+    public static Image loadIcon(String path){
+        return new Image(LoadIcons.class.getResource(path).getFile());
+    }
     public static int random(){
         Random rn = new Random();
         return rn.nextInt(MAX_RANDOM_VALUE-MIN_RANDOM_VALUE+1)+MIN_RANDOM_VALUE;
