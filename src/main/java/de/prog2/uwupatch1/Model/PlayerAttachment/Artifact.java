@@ -30,7 +30,7 @@ public class Artifact extends Ability {
         return "Artifact{" +
                 "timer=" + super.timer() +
                 ", name='" + super.name() + '\'' +
-                ", iconPath='" + super.iconPath() + '\'' +
+                ", iconPath='" + super.icon().getUrl() + '\'' +
                 ", increaseHealth=" + super.increaseHealth() +
                 ", increaseMana=" + super.increaseMana() +
                 ", increaseDamage=" + super.increaseDamage() +
