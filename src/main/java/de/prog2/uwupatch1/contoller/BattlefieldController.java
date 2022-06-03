@@ -1,5 +1,6 @@
 package de.prog2.uwupatch1.contoller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -51,7 +52,7 @@ public class BattlefieldController implements Initializable {
 
     private final Image newCard = loadIcon("hello.png");
 
-    public void placeTestCard(){
+    public void placeTestCard(ActionEvent event){
         tile1.setImage(newCard);
     }
 
