@@ -3,6 +3,7 @@ package de.prog2.uwupatch1.contoller;
 import de.prog2.uwupatch1.Model.Database.CharacterTypes;
 import de.prog2.uwupatch1.Model.Database.StartDecks;
 import de.prog2.uwupatch1.Model.Icon.LoadIcons;
+import de.prog2.uwupatch1.Model.PlayerAttachment.CharacterType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -49,11 +50,15 @@ public class MadeCharacterStageController implements Initializable {
     }
     @FXML
     public void charBackward(ActionEvent event) {
-        startDeckCounter--;
-        startDeckIcon.setImage(startImages.get((startDeckCounter%startImages.size())));
+        charDeckCounter--;
+        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
     }
     public static void fillCharImages(){
-        CharacterTypes.getClassTypes();
+        ObservableList<CharacterType> aracterTypes = CharacterTypes.getClassTypes();
+        for (CharacterType charrr:
+             aracterTypes) {
+            charImages.add(new Image(String.valueOf(LoadIcons.class.getResource(charrr.getIconpath()))));
+        }
     }
     /**
      * @param url
@@ -61,6 +66,8 @@ public class MadeCharacterStageController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        charDeckIcon.setImage(charImages.get(0));
+        startDeckIcon.setImage(startImages.get(0));
 
 
     }

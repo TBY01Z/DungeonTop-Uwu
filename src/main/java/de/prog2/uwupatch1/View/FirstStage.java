@@ -23,6 +23,7 @@ public class FirstStage extends Application {
         stage.setScene(scene);
         stage.show();
         MadeCharacterStageController.fillStartImages();
+        MadeCharacterStageController.fillCharImages();
     }
 
 
