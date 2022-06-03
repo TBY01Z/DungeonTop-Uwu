@@ -9,15 +9,15 @@
    <top>
       <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="gegnerLabel" prefHeight="27.0" prefWidth="99.0" text="Label">
-               <opaqueInsets>
-                  <Insets top="20.0" />
-               </opaqueInsets>
-            </Label>
-            <Button mnemonicParsing="false" text="Button">
-               <HBox.margin>
-                  <Insets left="449.0" />
-               </HBox.margin></Button>
+            <BorderPane prefHeight="200.0" prefWidth="699.0">
+               <left>
+                  <Label fx:id="gegnerLabel" prefHeight="27.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets top="20.0" />
+                     </opaqueInsets>
+                  </Label>
+               </left>
+            </BorderPane>
          </children>
       </HBox>
    </top>
@@ -39,39 +39,43 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="tile1" fitHeight="86.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="tile1" fitHeight="86.0" fitWidth="51.0" onMouseClicked="#onTile1Place" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Model/Icon/penis.jpg" />
                </image></ImageView>
-            <ImageView fx:id="tile2" fitHeight="72.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-            <ImageView fx:id="tile3" fitHeight="72.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
-            <ImageView fx:id="tile4" fitHeight="72.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
-            <ImageView fx:id="tile5" fitHeight="72.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-            <ImageView fx:id="tile6" fitHeight="70.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ImageView fx:id="tile7" fitHeight="70.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <ImageView fx:id="tile8" fitHeight="72.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <ImageView fx:id="tile9" fitHeight="71.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
-            <ImageView fx:id="tile10" fitHeight="72.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ImageView fx:id="tile11" fitHeight="73.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <ImageView fx:id="tile12" fitHeight="71.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ImageView fx:id="tile13" fitHeight="72.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
-            <ImageView fx:id="tile14" fitHeight="70.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <ImageView fx:id="tile15" fitHeight="71.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <ImageView fx:id="tile16" fitHeight="72.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ImageView fx:id="tile2" fitHeight="72.0" fitWidth="51.0" onMouseClicked="#onTile2Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="tile3" fitHeight="72.0" fitWidth="50.0" onMouseClicked="#onTile3Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="tile4" fitHeight="72.0" fitWidth="52.0" onMouseClicked="#onTile4Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fx:id="tile5" fitHeight="72.0" fitWidth="51.0" onMouseClicked="#onTile5Place" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="tile6" fitHeight="70.0" fitWidth="51.0" onMouseClicked="#onTile6Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="tile7" fitHeight="70.0" fitWidth="51.0" onMouseClicked="#onTile7Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="tile8" fitHeight="72.0" fitWidth="51.0" onMouseClicked="#onTile8Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="tile9" fitHeight="71.0" fitWidth="53.0" onMouseClicked="#onTile9Place" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="tile10" fitHeight="72.0" fitWidth="51.0" onMouseClicked="#onTile10Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="tile11" fitHeight="73.0" fitWidth="52.0" onMouseClicked="#onTile11Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="tile12" fitHeight="71.0" fitWidth="53.0" onMouseClicked="#onTile12Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fx:id="tile13" fitHeight="72.0" fitWidth="50.0" onMouseClicked="#onTile13Place" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+            <ImageView fx:id="tile14" fitHeight="70.0" fitWidth="51.0" onMouseClicked="#onTile14Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="tile15" fitHeight="71.0" fitWidth="51.0" onMouseClicked="#onTile15Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ImageView fx:id="tile16" fitHeight="72.0" fitWidth="52.0" onMouseClicked="#onTile16Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </center>
    <left>
       <ImageView fitHeight="216.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
    </left>
-   <right>
-      <ImageView fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
-   </right>
    <bottom>
       <ButtonBar prefHeight="59.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <buttons>
-          <Button mnemonicParsing="false" onAction="#placeTestCard" text="karte platzieren" />
+          <Button mnemonicParsing="false" onAction="#onMainMenuChange" text="Main Menu" />
         </buttons>
       </ButtonBar>
    </bottom>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#getLabelFeedback" text="Button" />
+         </children>
+      </VBox>
+   </right>
 </BorderPane>

@@ -1,5 +1,6 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.util.MyIO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,40 +21,100 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ImageView tile1 = new ImageView();
     @FXML
-    ImageView tile2;
+    private ImageView tile2 = new ImageView();
     @FXML
-    ImageView tile3;
+    private ImageView tile3 = new ImageView();
     @FXML
-    ImageView tile4;
+    private ImageView tile4 = new ImageView();
     @FXML
-    ImageView tile5;
+    private ImageView tile5 = new ImageView();
     @FXML
-    ImageView tile6;
+    private ImageView tile6 = new ImageView();
     @FXML
-    ImageView tile7;
+    private ImageView tile7 = new ImageView();
     @FXML
-    ImageView tile8;
+    private ImageView tile8 = new ImageView();
     @FXML
-    ImageView tile9;
+    private ImageView tile9 = new ImageView();
     @FXML
-    ImageView tile10;
+    private ImageView tile10 = new ImageView();
     @FXML
-    ImageView tile11;
+    private ImageView tile11 = new ImageView();
     @FXML
-    ImageView tile12;
+    private ImageView tile12 = new ImageView();
     @FXML
-    ImageView tile13;
+    private ImageView tile13 = new ImageView();
     @FXML
-    ImageView tile14;
+    private ImageView tile14 = new ImageView();
     @FXML
-    ImageView tile15;
+    private ImageView tile15 = new ImageView();
     @FXML
-    ImageView tile16;      //fml dude
+    private ImageView tile16 = new ImageView();
 
     private final Image newCard = loadIcon("hello.png");
 
-    public void placeTestCard(ActionEvent event){
+    public void onTile1Place(){
         tile1.setImage(newCard);
+    }
+
+    public void onTile2Place(){
+        tile2.setImage(newCard);
+    }
+
+    public void onTile3Place(){
+        tile3.setImage(newCard);
+    }
+
+    public void onTile4Place(){
+        tile4.setImage(newCard);
+    }
+
+    public void onTile5Place(){
+        tile5.setImage(newCard);
+    }
+
+    public void onTile6Place(){
+        tile6.setImage(newCard);
+    }
+
+    public void onTile7Place(){
+        tile7.setImage(newCard);
+    }
+
+    public void onTile8Place(){
+        tile8.setImage(newCard);
+    }
+
+    public void onTile9Place(){
+        tile9.setImage(newCard);
+    }
+
+    public void onTile10Place(){
+        tile10.setImage(newCard);
+    }
+
+    public void onTile11Place(){
+        tile11.setImage(newCard);
+    }
+
+    public void onTile12Place(){
+        tile12.setImage(newCard);
+    }
+
+    public void onTile13Place(){
+        tile13.setImage(newCard);
+    }
+
+    public void onTile14Place(){
+        tile14.setImage(newCard);
+    }
+
+    public void onTile15Place(){
+        tile15.setImage(newCard);
+    }
+
+    public void onTile16Place(){
+        tile16.setImage(newCard);
     }
 
     /**
@@ -68,5 +129,29 @@ public class BattlefieldController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tile1.setImage(loadIcon("penis.jpg"));
+        tile2.setImage(loadIcon("penis.jpg"));
+        tile3.setImage(loadIcon("penis.jpg"));
+        tile4.setImage(loadIcon("penis.jpg"));
+        tile5.setImage(loadIcon("penis.jpg"));
+        tile6.setImage(loadIcon("penis.jpg"));
+        tile7.setImage(loadIcon("penis.jpg"));
+        tile8.setImage(loadIcon("penis.jpg"));
+        tile9.setImage(loadIcon("penis.jpg"));
+        tile10.setImage(loadIcon("penis.jpg"));
+        tile11.setImage(loadIcon("penis.jpg"));
+        tile12.setImage(loadIcon("penis.jpg"));
+        tile13.setImage(loadIcon("penis.jpg"));
+        tile14.setImage(loadIcon("penis.jpg"));
+        tile15.setImage(loadIcon("penis.jpg"));
+        tile16.setImage(loadIcon("penis.jpg"));
+    }
+
+    public void getLabelFeedback(ActionEvent event){
+        gegnerLabel.setText("Das war der bisher nutzlose Button :)");
+    }
+
+    @FXML
+    protected void onMainMenuChange(ActionEvent event) {
+        MyIO.loadXML(event, "StartStage.fxml");
     }
 }
