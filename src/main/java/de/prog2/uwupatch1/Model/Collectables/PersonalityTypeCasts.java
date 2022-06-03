@@ -12,20 +12,21 @@ import javafx.collections.ObservableList;
 @SuppressWarnings("ALL")
 public class PersonalityTypeCasts {
 
-    private static final ObservableList<PersonalityTypeCast> PERSONALITY_TYPE_CASTS = FXCollections.observableArrayList();
-    public PersonalityTypeCasts(){
+    private static ObservableList<PersonalityTypeCast> personalityTypeCasts = FXCollections.observableArrayList();
 
-    }
-    public static ObservableList<PersonalityTypeCast> getClassTypes() {
-        return PERSONALITY_TYPE_CASTS;
-    }
-
-    public static void get(int i){
-        PERSONALITY_TYPE_CASTS.get(i);
+    public static PersonalityTypeCast get(int i){
+        return personalityTypeCasts.get(i);
     }
 
     public static void add(PersonalityTypeCast personalityTypeCast){
-        PERSONALITY_TYPE_CASTS.add(personalityTypeCast);
+        personalityTypeCasts.add(personalityTypeCast);
+    }
 
+    public static ObservableList<PersonalityTypeCast> personalityTypeCasts() {
+        return personalityTypeCasts;
+    }
+
+    public static void setPersonalityTypeCasts(ObservableList<PersonalityTypeCast> personalityTypeCasts) {
+        PersonalityTypeCasts.personalityTypeCasts = personalityTypeCasts;
     }
 }

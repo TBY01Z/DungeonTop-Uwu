@@ -22,8 +22,7 @@ public class FirstStage extends Application {
         stage.setFullScreenExitHint("");
         stage.setScene(scene);
         stage.show();
-        MadeCharacterStageController.fillStartImages();
-        MadeCharacterStageController.fillCharImages();
+
     }
 
 

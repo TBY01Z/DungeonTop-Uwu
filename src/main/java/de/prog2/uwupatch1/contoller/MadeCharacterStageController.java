@@ -1,13 +1,16 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.Collectables.Ethnicities;
 import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
 import de.prog2.uwupatch1.Model.Icon.LoadIcons;
+import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.net.URL;
@@ -18,55 +21,64 @@ public class MadeCharacterStageController implements Initializable {
     private ImageView startDeckIcon = new ImageView();
     @FXML
     private ImageView charDeckIcon = new ImageView();
-    private int ID_PARAMETER = 1000;
+    @FXML
+    private Label ethnicityLabel = new Label();
+    @FXML
+    private Label personalityLabel = new Label();
+    @FXML
+    private ImageView deckIcon01 = new ImageView();
+    @FXML
+    private ImageView deckIcon02 = new ImageView();
+    @FXML
+    private ImageView deckIcon03 = new ImageView();
+    private int ID_PARAMETER = 100000;
     private int startDeckCounter = ID_PARAMETER;
     private int charDeckCounter = ID_PARAMETER;
-
-    private static ObservableList<Image> startImages= FXCollections.observableArrayList();
-    private static ObservableList<Image> charImages= FXCollections.observableArrayList();
-
-    public static void fillStartImages(){
-        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon01.png"))));
-        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon02.png"))));
-        startImages.add(new Image(String.valueOf(LoadIcons.class.getResource("startIcon03.png"))));
-
-    }
     @FXML
-    public void startForward(ActionEvent event) {
+    public void startForward() {
         startDeckCounter++;
-        startDeckIcon.setImage(startImages.get((startDeckCounter%startImages.size())));
-    }
-    @FXML
-    public void startBackward(ActionEvent event) {
-        charDeckCounter--;
-        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
+        loadDeckOnScreen();
     }
 
+
+
     @FXML
-    public void charForward(ActionEvent event) {
+    public void startBackward() {
+        startDeckCounter--;
+        loadDeckOnScreen();
+    }
+
+    private void loadDeckOnScreen() {
+        Ethnicity active = Ethnicities.get((startDeckCounter%Ethnicities.ethnicities().size()));
+        startDeckIcon.setImage(active.icon());
+        ethnicityLabel.setText(active.ethnicityName());
+        deckIcon01.setImage(active.ethnicityDeck().get(0).icon());
+        deckIcon02.setImage(active.ethnicityDeck().get(1).icon());
+        deckIcon03.setImage(active.ethnicityDeck().get(2).icon());
+    }
+    @FXML
+    public void charForward() {
         charDeckCounter++;
-        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
+        PersonalityTypeCast active = PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size());
+        charDeckIcon.setImage(active.icon());
+        personalityLabel.setText(active.personalityName());
     }
     @FXML
-    public void charBackward(ActionEvent event) {
+    public void charBackward() {
         charDeckCounter--;
-        charDeckIcon.setImage(charImages.get((charDeckCounter%charImages.size())));
+        PersonalityTypeCast active = PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size());
+        charDeckIcon.setImage(active.icon());
+        personalityLabel.setText(active.personalityName());
     }
-    public static void fillCharImages(){
-        ObservableList<PersonalityTypeCast> aracterTypes = PersonalityTypeCasts.getClassTypes();
-        for (PersonalityTypeCast charrr:
-             aracterTypes) {
-            charImages.add(charrr.icon());
-        }
-    }
+
     /**
      * @param url
      * @param resourceBundle
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        charDeckIcon.setImage(charImages.get(0));
-        startDeckIcon.setImage(startImages.get(0));
+        startBackward();
+        charBackward();
 
 
     }

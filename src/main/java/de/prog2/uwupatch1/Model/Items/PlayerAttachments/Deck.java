@@ -25,6 +25,9 @@ public class Deck {
     public void add(SummonedWarriorCard addedCard){cardDeck.add(addedCard);}
 
     public void add(WeaponCard addedCard){cardDeck.add(addedCard);}
+    public Card get(int i){
+        return cardDeck.get(i);
+    }
 
     public Card draw(){return cardDeck.get((random()%cardDeck.size()));}
     /**
