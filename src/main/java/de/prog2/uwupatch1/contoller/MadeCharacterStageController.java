@@ -1,7 +1,6 @@
 package de.prog2.uwupatch1.contoller;
 
-import de.prog2.uwupatch1.Icon.LoadIcons;
-import de.prog2.uwupatch1.View.FirstStage;
+import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

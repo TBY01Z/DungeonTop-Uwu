@@ -1,6 +1,6 @@
 package de.prog2.uwupatch1.Model.PlayerAttachment;
 
-import de.prog2.uwupatch1.Icon.LoadIcons;
+import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import javafx.scene.image.Image;
 
 /**

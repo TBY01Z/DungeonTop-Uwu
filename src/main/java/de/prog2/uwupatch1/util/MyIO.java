@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -28,6 +29,13 @@ public class MyIO {
      *
      * @param arg ausgabe des Strings "arg" in der Console.
      */
+    private static Character getResourceSlasch() {
+        if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
+            return '\\';
+        }else{
+            return '/';
+        }
+    }
     public static void print(String arg){
         System.out.println(arg);
        

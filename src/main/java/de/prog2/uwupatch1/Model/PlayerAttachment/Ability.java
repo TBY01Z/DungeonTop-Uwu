@@ -52,15 +52,6 @@ public class Ability extends Usable {
         return this;
     }
 
-    public String iconPath() {
-        return iconPath;
-    }
-
-    public Ability setIconPath(String iconPath) {
-        this.iconPath = iconPath;
-        return this;
-    }
-
     public double increaseHealth() {
         return increaseHealth;
     }
