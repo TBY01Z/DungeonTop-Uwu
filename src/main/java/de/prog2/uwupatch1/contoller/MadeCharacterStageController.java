@@ -57,7 +57,7 @@ public class MadeCharacterStageController implements Initializable {
         ObservableList<CharacterType> aracterTypes = CharacterTypes.getClassTypes();
         for (CharacterType charrr:
              aracterTypes) {
-            charImages.add(new Image(String.valueOf(LoadIcons.class.getResource(charrr.getIconpath()))));
+            charImages.add(charrr.icon());
         }
     }
     /**
