@@ -12,7 +12,7 @@ public class SettingStageControl {
     private Scene scene;
     private Stage stage;
     private static double WIDTH = 1500;
-    private static double HIGHT = 800;
+    private static double HEIGHT = 800;
 
     @FXML
     protected void onMainMenuChange(ActionEvent event) throws IOException {
@@ -36,11 +36,11 @@ public class SettingStageControl {
     }
 
     public static double HIGHT() {
-        return HIGHT;
+        return HEIGHT;
     }
 
-    public static void setHIGHT(double HIGHT) {
-        HIGHT = HIGHT;
+    public static void setHEIGHT(double HEIGHT) {
+        HEIGHT = HEIGHT;
 
     }
 }
