@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="80" height="45" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="tilemap_packed" tilewidth="16" tileheight="16" tilecount="136" columns="17">
-  <image source="../IdeaProjects/webetestin/src/main/resources/assets/levels/tmx/tilemap_packed.png" width="272" height="128"/>
+  <image source="..\\IdeaProjects\\DungeonTop-Uwu\\src\\main\\resources\\assets\\levels\\tmx\\tilemap_packed.png" width="272" height="128"/>
  </tileset>
  <layer name="Kachelebene 1" width="80" height="45">
   <data encoding="csv">
