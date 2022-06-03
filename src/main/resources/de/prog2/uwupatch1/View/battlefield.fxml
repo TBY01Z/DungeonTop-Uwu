@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 <!--suppress ALL -->
-<BorderPane fx:id="genericLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.BattlefieldController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.BattlefieldController">
    <top>
        <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
            <Label prefHeight="27.0" prefWidth="99.0" text="Label">
@@ -14,7 +14,7 @@
                   <Insets top="20.0"/>
               </opaqueInsets>
            </Label>
-           <Button mnemonicParsing="false" text="Button">
+           <Button onAction="#placeTestCard" mnemonicParsing="false" text="Button">
               <HBox.margin>
                   <Insets left="449.0"/>
               </HBox.margin>
@@ -39,7 +39,7 @@
                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
            </rowConstraints>
            <ImageView fx:id="tile1" fitHeight="86.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../Model/Icon/penis.jpg"/>
+
            </ImageView>
            <ImageView fx:id="tile2" fitHeight="72.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true"
                       GridPane.columnIndex="1"/>

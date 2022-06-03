@@ -1,18 +1,23 @@
 package de.prog2.uwupatch1.contoller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.net.URL;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
-public class BattlefieldController {
+import static de.prog2.uwupatch1.util.MyIO.loadIcon;
+
+public class BattlefieldController implements Initializable {
 
     @FXML
     Label gegnerLabel;  //verwendet fuer die anzeige der gegnernamen.
     @FXML
-    ImageView tile1;
+    private ImageView tile1 = new ImageView();
     @FXML
     ImageView tile2;
     @FXML
@@ -44,10 +49,23 @@ public class BattlefieldController {
     @FXML
     ImageView tile16;      //fml dude
 
-    final Image newCard = new Image(Objects.requireNonNull(getClass().getResourceAsStream("hello.png")));
+    private final Image newCard = loadIcon("hello.png");
 
     public void placeTestCard(){
         tile1.setImage(newCard);
     }
 
+    /**
+     * Called to initialize a controller after its root element has been
+     * completely processed.
+     *
+     * @param location  The location used to resolve relative paths for the root object, or
+     *                  {@code null} if the location is not known.
+     * @param resources The resources used to localize the root object, or {@code null} if
+     *                  the root object was not localized.
+     */
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        tile1.setImage(loadIcon("penis.jpg"));
+    }
 }
