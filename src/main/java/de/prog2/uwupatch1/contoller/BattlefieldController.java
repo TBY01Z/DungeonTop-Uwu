@@ -166,6 +166,7 @@ public class BattlefieldController implements Initializable {
     public void updateMana(){
         setManaBarProgress(getManaBarProgress() + 0.1);
         manaBar.setProgress(getManaBarProgress());
+        //TODO: vielleicht noch ein art "prestige-system" entwerfen, damit mana val nicht immer 0-1 sein muss...?
     }
     public double getManaBarProgress() {
         return manaBarProgress;
@@ -173,5 +174,15 @@ public class BattlefieldController implements Initializable {
 
     public void setManaBarProgress(double manaBarProgress) {
         this.manaBarProgress = manaBarProgress;
+    }
+
+    public void onEndTurn(ActionEvent event){
+        gegnerLabel.setText("Zug wurde beendet!");
+        setManaBarProgress(getManaBarProgress() - 0.8); //weil wieso auch nicht?
+    }
+
+    public void onShowDeck(ActionEvent event){
+        gegnerLabel.setText("Deck wird gezeigt! jk funktioniert noch nicht");
+        setManaBarProgress(getManaBarProgress() - 0.2); //weil wieso auch nicht?
     }
 }
