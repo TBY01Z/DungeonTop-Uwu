@@ -54,9 +54,9 @@ public class Usable {
         return this;
     }
 
-    public Image icon() {
+    public static Image icon() {
         return icon;
-    }
+    }   //TODO: niclas, iconpath als String soll bitte back home kommen :(
 
     public Usable setIcon(Image icon) {
         this.icon = icon;

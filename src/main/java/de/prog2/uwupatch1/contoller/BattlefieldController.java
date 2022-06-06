@@ -1,5 +1,7 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.Items.Cards.EffectCard;
+import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Usable;
 import de.prog2.uwupatch1.Model.PlayerSelf.Player;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.event.ActionEvent;
@@ -7,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -55,9 +58,12 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ProgressBar manaBar = new ProgressBar();
     private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
+    @FXML
+    private ImageView effectView = new ImageView();
 
 
     private final Image newCard = loadIcon("hello.png");
+    private final Image showEffect = loadIcon(EffectCard.icon()); //siehste? hier will die methode nen string
 
     public void onTile1Place(){
         tile1.setImage(newCard);
@@ -150,6 +156,7 @@ public class BattlefieldController implements Initializable {
         tile14.setImage(loadIcon("penis.jpg"));
         tile15.setImage(loadIcon("penis.jpg"));
         tile16.setImage(loadIcon("penis.jpg"));
+//        effectView.setImage(loadIcon(EffectCard.icon()));     //TODO: standard image muss provided werden.
         manaBar.setStyle("-fx-accent: blue;");
     }
 
