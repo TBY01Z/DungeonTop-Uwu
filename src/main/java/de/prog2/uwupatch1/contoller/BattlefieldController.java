@@ -1,10 +1,12 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.PlayerSelf.Player;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -50,6 +52,10 @@ public class BattlefieldController implements Initializable {
     private ImageView tile15 = new ImageView();
     @FXML
     private ImageView tile16 = new ImageView();
+    @FXML
+    private ProgressBar manaBar = new ProgressBar();
+    private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
+
 
     private final Image newCard = loadIcon("hello.png");
 
@@ -144,14 +150,28 @@ public class BattlefieldController implements Initializable {
         tile14.setImage(loadIcon("penis.jpg"));
         tile15.setImage(loadIcon("penis.jpg"));
         tile16.setImage(loadIcon("penis.jpg"));
+        manaBar.setStyle("-fx-accent: blue;");
     }
 
     public void getLabelFeedback(ActionEvent event){
         gegnerLabel.setText("Das war der bisher nutzlose Button :)");
+        updateMana();
     }
 
     @FXML
     protected void onMainMenuChange(ActionEvent event) {
         MyIO.loadXML(event, "StartStage.fxml");
+    }
+
+    public void updateMana(){
+        setManaBarProgress(getManaBarProgress() + 0.1);
+        manaBar.setProgress(getManaBarProgress());
+    }
+    public double getManaBarProgress() {
+        return manaBarProgress;
+    }
+
+    public void setManaBarProgress(double manaBarProgress) {
+        this.manaBarProgress = manaBarProgress;
     }
 }

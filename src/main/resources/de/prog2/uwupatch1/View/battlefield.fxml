@@ -17,6 +17,13 @@
                      </opaqueInsets>
                   </Label>
                </left>
+               <right>
+                  <Button mnemonicParsing="false" text="Options" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="27.0" right="5.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </right>
             </BorderPane>
          </children>
       </HBox>
@@ -61,9 +68,6 @@
          </children>
       </GridPane>
    </center>
-   <left>
-      <ImageView fitHeight="216.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
-   </left>
    <bottom>
       <ButtonBar prefHeight="59.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <buttons>
@@ -74,8 +78,27 @@
    <right>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#getLabelFeedback" text="Button" />
+            <Button mnemonicParsing="false" onAction="#getLabelFeedback" text="try it out!">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </right>
+   <left>
+      <VBox prefHeight="279.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="manaPrestige" prefHeight="27.0" prefWidth="43.0" textAlignment="CENTER" textFill="BLUE">
+               <VBox.margin>
+                  <Insets top="230.0" />
+               </VBox.margin>
+            </Label>
+            <ProgressBar fx:id="manaBar" prefWidth="200.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </ProgressBar>
+         </children>
+      </VBox>
+   </left>
 </BorderPane>
