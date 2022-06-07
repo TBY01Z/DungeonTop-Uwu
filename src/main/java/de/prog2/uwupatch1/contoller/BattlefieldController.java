@@ -172,7 +172,7 @@ public class BattlefieldController implements Initializable {
     }
 
     public void updateMana(){
-        setManaBarProgress(getManaBarProgress() + 0.1);
+        increaseMana(0.2);
         manaBar.setProgress(getManaBarProgress());
         //TODO: vielleicht noch ein art "prestige-system" entwerfen, damit mana val nicht immer 0-1 sein muss...?
     }
@@ -184,23 +184,39 @@ public class BattlefieldController implements Initializable {
         this.manaBarProgress = manaBarProgress;
     }
 
+    public void decreaseMana(double decrementVal){
+        if(getManaBarProgress() != 0 && getManaBarProgress() >= decrementVal) {
+            setManaBarProgress(getManaBarProgress() - decrementVal);
+            manaBar.setProgress(getManaBarProgress());
+        } else{
+            System.out.print("decreaseMana() not possible - Mana is =0 and/or smaller than the decrementVal \n");
+        }
+    }
+
+    public void increaseMana(double incrementVal){
+        if(getManaBarProgress() < 1 && getManaBarProgress() < 1 + incrementVal) {
+            setManaBarProgress(getManaBarProgress() + incrementVal);
+            manaBar.setProgress(getManaBarProgress());
+        } else{
+            System.out.print("increaseMana() not possible - Mana is bigger than 1 and/or the incrementVal won't fit! \n");
+        }
+    }
+
     public void onEndTurn(ActionEvent event){
         gegnerLabel.setText("Zug wurde beendet!");
-        setManaBarProgress(getManaBarProgress() - 0.8); //weil wieso auch nicht?
-        manaBar.setProgress(getManaBarProgress());
+        decreaseMana(0.1);
     }
 
     public void onShowDeck(ActionEvent event){
         gegnerLabel.setText("Deck wird gezeigt! jk funktioniert noch nicht");
-        setManaBarProgress(getManaBarProgress() - 0.2); //weil wieso auch nicht?
-        manaBar.setProgress(getManaBarProgress());
+        decreaseMana(0.1);
     }
 
     public void updateEffectIcon(){
         effectView.setImage(EffectCard.icon()); //currently not in use.
     }
 
-    public void onOpenOptions(ActionEvent event){
+    public void onShowOptions(ActionEvent event){
         System.out.print("settings lol ");
     }
 }

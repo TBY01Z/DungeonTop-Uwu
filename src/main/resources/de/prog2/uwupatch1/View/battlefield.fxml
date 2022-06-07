@@ -18,7 +18,7 @@
                   </Label>
                </left>
                <right>
-                  <Button mnemonicParsing="false" text="Options" BorderPane.alignment="CENTER" onAction="#onOpenOptions">
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onShowOptions" text="Options" BorderPane.alignment="CENTER_RIGHT">
                      <BorderPane.margin>
                         <Insets bottom="27.0" right="5.0" />
                      </BorderPane.margin>
