@@ -63,7 +63,7 @@ public class BattlefieldController implements Initializable {
 
 
     private final Image newCard = loadIcon("hello.png");
-    private final Image showEffect = loadIcon(EffectCard.icon().toString());
+//    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
         tile1.setImage(newCard);
@@ -156,7 +156,8 @@ public class BattlefieldController implements Initializable {
         tile14.setImage(loadIcon("penis.jpg"));
         tile15.setImage(loadIcon("penis.jpg"));
         tile16.setImage(loadIcon("penis.jpg"));
-        effectView.setImage(loadIcon(EffectCard.icon().toString()));
+//        effectView.setImage(loadIcon(EffectCard.icon().toString()));
+
         manaBar.setStyle("-fx-accent: blue;");
     }
 
@@ -186,14 +187,20 @@ public class BattlefieldController implements Initializable {
     public void onEndTurn(ActionEvent event){
         gegnerLabel.setText("Zug wurde beendet!");
         setManaBarProgress(getManaBarProgress() - 0.8); //weil wieso auch nicht?
+        manaBar.setProgress(getManaBarProgress());
     }
 
     public void onShowDeck(ActionEvent event){
         gegnerLabel.setText("Deck wird gezeigt! jk funktioniert noch nicht");
         setManaBarProgress(getManaBarProgress() - 0.2); //weil wieso auch nicht?
+        manaBar.setProgress(getManaBarProgress());
     }
 
     public void updateEffectIcon(){
-        effectView.setImage(EffectCard.icon());
+        effectView.setImage(EffectCard.icon()); //currently not in use.
+    }
+
+    public void onOpenOptions(ActionEvent event){
+        System.out.print("settings lol ");
     }
 }
