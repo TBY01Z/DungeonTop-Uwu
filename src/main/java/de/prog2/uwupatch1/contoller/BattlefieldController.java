@@ -63,7 +63,7 @@ public class BattlefieldController implements Initializable {
 
 
     private final Image newCard = loadIcon("hello.png");
-    private final Image showEffect = loadIcon(EffectCard.icon()); //siehste? hier will die methode nen string
+    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
         tile1.setImage(newCard);
@@ -191,5 +191,9 @@ public class BattlefieldController implements Initializable {
     public void onShowDeck(ActionEvent event){
         gegnerLabel.setText("Deck wird gezeigt! jk funktioniert noch nicht");
         setManaBarProgress(getManaBarProgress() - 0.2); //weil wieso auch nicht?
+    }
+
+    public void updateEffectIcon(){
+        effectView.setImage(EffectCard.icon());
     }
 }

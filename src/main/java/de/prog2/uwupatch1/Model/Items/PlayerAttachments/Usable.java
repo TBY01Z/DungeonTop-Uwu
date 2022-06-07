@@ -20,7 +20,7 @@ public class Usable {
     /**
      * @info Hier wird das Icon deklariert, welches benoetigt wird um ein Bild anzeigen zu lassen.
      */
-    private Image icon;
+    private static Image icon;
     //Constructor
 
     /**
@@ -56,7 +56,7 @@ public class Usable {
 
     public static Image icon() {
         return icon;
-    }   //TODO: niclas, iconpath als String soll bitte back home kommen :(
+    }
 
     public Usable setIcon(Image icon) {
         this.icon = icon;
