@@ -156,7 +156,7 @@ public class BattlefieldController implements Initializable {
         tile14.setImage(loadIcon("penis.jpg"));
         tile15.setImage(loadIcon("penis.jpg"));
         tile16.setImage(loadIcon("penis.jpg"));
-//        effectView.setImage(loadIcon(EffectCard.icon()));     //TODO: standard image muss provided werden.
+        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         manaBar.setStyle("-fx-accent: blue;");
     }
 
