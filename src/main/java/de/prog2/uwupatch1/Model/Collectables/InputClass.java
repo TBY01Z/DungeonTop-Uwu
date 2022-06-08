@@ -32,9 +32,10 @@ public class InputClass {
             personalityTypeCast();
             effectCards();
             warriorCards();
-            startDecks();
             weapons();
             weaponCards();
+            startDecks();
+
             res = true;
         }catch (Exception ex){
             ex.printStackTrace();
@@ -158,10 +159,11 @@ public class InputClass {
                  activeLine) {
                 if(i>2){
                     int id = Integer.parseInt(obj);
-                    if (id>=0 && id<=99){
-                        activeDeck.add(WarriorCards.get(id));
-                    }else{
-                        activeDeck.add(EffectCards.get((id % 100)));
+                    int ID_PARAMETER = 100;
+                    switch (id / ID_PARAMETER){
+                        case 0:activeDeck.add(WarriorCards.get(id));
+                        case 1:activeDeck.add(EffectCards.get(id % ID_PARAMETER));
+                        case 6:activeDeck.add(WeaponCards.get(id % ID_PARAMETER));
                     }
                 }else {
                     strings[i] = obj;

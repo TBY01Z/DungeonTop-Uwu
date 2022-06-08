@@ -213,7 +213,7 @@ public class BattlefieldController implements Initializable {
     }
 
     public void updateEffectIcon(){
-        effectView.setImage(EffectCard.icon()); //currently not in use.
+        //effectView.setImage(EffectCard.icon()); //currently not in use.
     }
 
     public void onShowOptions(ActionEvent event){

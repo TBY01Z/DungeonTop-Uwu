@@ -3,6 +3,8 @@ package de.prog2.uwupatch1.Model.Items.PlayerAttachments;
 import de.prog2.uwupatch1.Model.Icon.LoadIcons;
 import javafx.scene.image.Image;
 
+import static de.prog2.uwupatch1.util.MyIO.loadIcon;
+
 /**
  * @author Niclas Rieckers
  * Superklasse für alle vom Spieler nutzbare Items.
@@ -20,7 +22,7 @@ public class Usable {
     /**
      * @info Hier wird das Icon deklariert, welches benoetigt wird um ein Bild anzeigen zu lassen.
      */
-    private static Image icon;
+    private Image icon;
     //Constructor
 
     /**
@@ -30,7 +32,9 @@ public class Usable {
     public Usable(int ID, String objName, String iconPath) {
         this.ID = ID;
         this.objName = objName;
-        icon = new Image(String.valueOf(LoadIcons.class.getResource(iconPath)));
+        icon = loadIcon(iconPath);
+        System.out.println(ID + ":" + iconPath);//TODO CHek
+        System.out.println(icon.getUrl());
     }
 
 
@@ -54,7 +58,7 @@ public class Usable {
         return this;
     }
 
-    public static Image icon() {
+    public Image icon() {
         return icon;
     }
 

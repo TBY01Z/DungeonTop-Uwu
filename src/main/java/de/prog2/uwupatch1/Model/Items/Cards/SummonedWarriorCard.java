@@ -224,7 +224,7 @@ public class SummonedWarriorCard extends Card {
                 ", abilities=" + abilities +
                 ", hitRange=" + hitRange +
                 ", moveRange=" + moveRange +
-                ", canSummon=" + super.summonCost() +
+                ", summonCost=" + super.summonCost() +
                 ", buyCost=" + buyCost +
                 '}';
     }

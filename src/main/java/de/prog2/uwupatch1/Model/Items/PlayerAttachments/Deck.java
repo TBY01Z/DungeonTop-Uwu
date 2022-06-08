@@ -28,6 +28,16 @@ public class Deck {
     public Card get(int i){
         return cardDeck.get(i);
     }
+    public Card getByID(int ID){
+        for (Card e:
+             cardDeck) {
+            if (e.ID() == ID){
+                return e;
+            }
+        }
+
+        return null;
+    }
 
     public Card draw(){return cardDeck.get((random()%cardDeck.size()));}
     /**
