@@ -232,7 +232,7 @@ public class Player implements Serializable {
     }
 
     public double outComeDamage() {
-        return outComeDamage;
+        return outComeDamage + weapon().hit();
     }
 
     public void setOutComeDamage(double outComeDamage) {
@@ -248,7 +248,7 @@ public class Player implements Serializable {
     }
 
     public double outComeHealth() {
-        return outComeHealth;
+        return outComeHealth + armor().health();
     }
 
     public void setOutComeHealth(double outComeHealth) {

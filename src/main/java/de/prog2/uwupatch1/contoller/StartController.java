@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 
 public class StartController {
 
-    public void onCharacterChose(ActionEvent event) {
+    public void onlineChose(ActionEvent event) {
         MyIO.loadXML(event, "choseCharacterType.fxml");
     }
 
@@ -18,7 +18,7 @@ public class StartController {
     }
 
 
-    public void goToDungeonScene(ActionEvent event) {
+    public void onLocalChose(ActionEvent event) {
         MyIO.loadXML(event, "Battlefield.fxml");
     }
 

@@ -50,7 +50,6 @@ public class MadeCharacterStageController implements Initializable {
         deckIcon01.setImage(active.ethnicityDeck().get(0).icon());
         deckIcon02.setImage(active.ethnicityDeck().get(1).icon());
         deckIcon03.setImage(active.ethnicityDeck().get(2).icon());
-        System.out.println(active.ethnicityDeck().toString());
     }
     @FXML
     public void charForward() {
