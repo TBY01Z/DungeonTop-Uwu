@@ -16,7 +16,7 @@ public class FirstStage extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(FirstStage.class.getResource("StartStage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), SettingStageControl.WIDTH(), SettingStageControl.HIGHT());
         stage.setTitle("DungeonTop UWU");
-        stage.setFullScreenExitHint("");
+        stage.setMaximized(!stage.isMaximized());
         stage.setScene(scene);
         stage.show();
 

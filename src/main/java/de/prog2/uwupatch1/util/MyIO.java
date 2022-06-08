@@ -50,8 +50,7 @@ public class MyIO {
             FXMLLoader fxmlLoader = new FXMLLoader(FirstStage.class.getResource(source));
             root = fxmlLoader.load();
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root, SettingStageControl.WIDTH(), SettingStageControl.HIGHT());
-            stage.setScene(scene);
+            stage.getScene().setRoot(root);
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
