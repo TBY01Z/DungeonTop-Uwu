@@ -62,7 +62,7 @@ public class BattlefieldController implements Initializable {
     private ImageView effectView = new ImageView();
 
 
-    private final Image newCard = loadIcon("hello.png");
+    private final Image newCard = loadIcon("testImg1.png");
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
@@ -140,22 +140,22 @@ public class BattlefieldController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        tile1.setImage(loadIcon("penis.jpg"));
-        tile2.setImage(loadIcon("penis.jpg"));
-        tile3.setImage(loadIcon("penis.jpg"));
-        tile4.setImage(loadIcon("penis.jpg"));
-        tile5.setImage(loadIcon("penis.jpg"));
-        tile6.setImage(loadIcon("penis.jpg"));
-        tile7.setImage(loadIcon("penis.jpg"));
-        tile8.setImage(loadIcon("penis.jpg"));
-        tile9.setImage(loadIcon("penis.jpg"));
-        tile10.setImage(loadIcon("penis.jpg"));
-        tile11.setImage(loadIcon("penis.jpg"));
-        tile12.setImage(loadIcon("penis.jpg"));
-        tile13.setImage(loadIcon("penis.jpg"));
-        tile14.setImage(loadIcon("penis.jpg"));
-        tile15.setImage(loadIcon("penis.jpg"));
-        tile16.setImage(loadIcon("penis.jpg"));
+        tile1.setImage(loadIcon("testImg2.jpg"));
+        tile2.setImage(loadIcon("testImg2.jpg"));
+        tile3.setImage(loadIcon("testImg2.jpg"));
+        tile4.setImage(loadIcon("testImg2.jpg"));
+        tile5.setImage(loadIcon("testImg2.jpg"));
+        tile6.setImage(loadIcon("testImg2.jpg"));
+        tile7.setImage(loadIcon("testImg2.jpg"));
+        tile8.setImage(loadIcon("testImg2.jpg"));
+        tile9.setImage(loadIcon("testImg2.jpg"));
+        tile10.setImage(loadIcon("testImg2.jpg"));
+        tile11.setImage(loadIcon("testImg2.jpg"));
+        tile12.setImage(loadIcon("testImg2.jpg"));
+        tile13.setImage(loadIcon("testImg2.jpg"));
+        tile14.setImage(loadIcon("testImg2.jpg"));
+        tile15.setImage(loadIcon("testImg2.jpg"));
+        tile16.setImage(loadIcon("testImg2.jpg"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
 
         manaBar.setStyle("-fx-accent: blue;");

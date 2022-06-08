@@ -48,7 +48,7 @@
          <children>
             <ImageView fx:id="tile1" fitHeight="86.0" fitWidth="51.0" onMouseClicked="#onTile1Place" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Model/Icon/penis.jpg" />
+                  <Image url="@../Model/Icon/testImg2.jpg" />
                </image></ImageView>
             <ImageView fx:id="tile2" fitHeight="72.0" fitWidth="51.0" onMouseClicked="#onTile2Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
             <ImageView fx:id="tile3" fitHeight="72.0" fitWidth="50.0" onMouseClicked="#onTile3Place" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
