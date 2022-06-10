@@ -177,15 +177,16 @@ public class BattlefieldController implements Initializable {
     public void getLabelFeedback(ActionEvent event){
         gegnerLabel.setText("UI test: sound played? mana increased? button responsive?");
         increaseMana(0.2);
-        if(mediaView.getMediaPlayer() == null){     //FIXME: sound wird nicht abgespielt...
-            try {                                   //TODO: Ali's klasse ausprobieren!
-                String fileName = getClass().getResource("/menuClick.wav").toURI().toString();
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-        }
-        mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
-        mediaView.getMediaPlayer().play();
+        AudioController audio = new AudioController("menuClick");
+//        if(mediaView.getMediaPlayer() == null){     //FIXME: sound wird nicht abgespielt...
+//            try {                                   //TODO: Ali's klasse ausprobieren!
+//                String fileName = getClass().getResource("/menuClick.wav").toURI().toString();
+//            } catch (URISyntaxException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
+//        mediaView.getMediaPlayer().play();
     }
 
     @FXML

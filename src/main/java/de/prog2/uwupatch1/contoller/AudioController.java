@@ -28,6 +28,7 @@ public class AudioController {
 			player = AudioSystem.getClip();
 			System.out.print(n);
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource("/" + n + ".wav")));
+			//FIXME: datei wird nicht gefunden
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
 			player.start();
 		} catch (LineUnavailableException e) {
