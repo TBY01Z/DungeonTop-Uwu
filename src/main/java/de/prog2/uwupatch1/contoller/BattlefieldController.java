@@ -179,7 +179,7 @@ public class BattlefieldController implements Initializable {
         increaseMana(0.2);
         if(mediaView.getMediaPlayer() == null){     //FIXME: sound wird nicht abgespielt...
             try {                                   //TODO: Ali's klasse ausprobieren!
-                String fileName = getClass().getResource("/11.wav").toURI().toString();
+                String fileName = getClass().getResource("/menuClick.wav").toURI().toString();
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }

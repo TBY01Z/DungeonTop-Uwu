@@ -4,6 +4,7 @@ module com.prog.uwupatch {
     requires javafx.graphics;
     requires javafx.base;
     requires javafx.media;
+    requires java.desktop;
 
 
     opens de.prog2.uwupatch1.View to javafx.fxml;
