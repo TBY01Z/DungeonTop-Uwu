@@ -24,7 +24,7 @@ public class AudioController {
 	
 	public void playSoundClip() {
 		try {
-			String n = String.valueOf(trackName);
+			String n = trackName;
 			player = AudioSystem.getClip();
 			System.out.print(n);
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource("/" + n + ".wav")));
