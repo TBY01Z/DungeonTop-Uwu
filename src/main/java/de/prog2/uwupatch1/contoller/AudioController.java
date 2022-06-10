@@ -12,22 +12,22 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  * //TODO: check grammar und Text neu schreiben
  */
 
-public class SoundPlayer {
+public class AudioController {
 	
 	Clip player;
-	int number;
+	String trackName;
 	
-	public SoundPlayer(int number) {
-		this.number = number;
+	public AudioController(String trackName) {
+		this.trackName = trackName;
 		playSoundClip();
 	}
 	
 	public void playSoundClip() {
 		try {
-			String n = String.valueOf(number);
+			String n = String.valueOf(trackName);
 			player = AudioSystem.getClip();
-			System.out.println(n);
-			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n+".wav")));
+			System.out.print(n);
+			player.open(AudioSystem.getAudioInputStream(getClass().getResource("/" + n + ".wav")));
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
 			player.start();
 		} catch (LineUnavailableException e) {
