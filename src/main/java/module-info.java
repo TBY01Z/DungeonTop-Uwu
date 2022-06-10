@@ -3,6 +3,7 @@ module com.prog.uwupatch {
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.base;
+    requires javafx.media;
 
 
     opens de.prog2.uwupatch1.View to javafx.fxml;

@@ -1,9 +1,13 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.Items.Cards.Card;
 import de.prog2.uwupatch1.Model.Items.Cards.EffectCard;
+import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Deck;
 import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Usable;
 import de.prog2.uwupatch1.Model.PlayerSelf.Player;
 import de.prog2.uwupatch1.util.MyIO;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,7 +16,9 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.MediaView;
 
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
@@ -60,6 +66,13 @@ public class BattlefieldController implements Initializable {
     private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
     @FXML
     private ImageView effectView = new ImageView();
+    @FXML
+    private ImageView deckSlot1 = new ImageView();
+
+    ObservableList<Card> tmpDeckList = FXCollections.observableArrayList();
+
+    @FXML
+    private MediaView mediaView;
 
 
     private final Image newCard = loadIcon("testImg1.png");
@@ -157,13 +170,22 @@ public class BattlefieldController implements Initializable {
         tile15.setImage(loadIcon("testImg2.jpg"));
         tile16.setImage(loadIcon("testImg2.jpg"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
-
+        deckSlot1.setImage(loadIcon("testImg2.jpg"));
         manaBar.setStyle("-fx-accent: blue;");
     }
 
     public void getLabelFeedback(ActionEvent event){
-        gegnerLabel.setText("Das war der bisher nutzlose Button :)");
-        updateMana();
+        gegnerLabel.setText("UI test: sound played? mana increased? button responsive?");
+        increaseMana(0.2);
+        if(mediaView.getMediaPlayer() == null){     //FIXME: sound wird nicht abgespielt...
+            try {                                   //TODO: Ali's klasse ausprobieren!
+                String fileName = getClass().getResource("/11.wav").toURI().toString();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        }
+        mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
+        mediaView.getMediaPlayer().play();
     }
 
     @FXML
@@ -171,11 +193,6 @@ public class BattlefieldController implements Initializable {
         MyIO.loadXML(event, "StartStage.fxml");
     }
 
-    public void updateMana(){
-        increaseMana(0.2);
-        manaBar.setProgress(getManaBarProgress());
-        //TODO: vielleicht noch ein art "prestige-system" entwerfen, damit mana val nicht immer 0-1 sein muss...?
-    }
     public double getManaBarProgress() {
         return manaBarProgress;
     }
@@ -207,16 +224,19 @@ public class BattlefieldController implements Initializable {
         decreaseMana(0.1);
     }
 
-    public void onShowDeck(ActionEvent event){
-        gegnerLabel.setText("Deck wird gezeigt! jk funktioniert noch nicht");
-        decreaseMana(0.1);
-    }
-
     public void updateEffectIcon(){
         //effectView.setImage(EffectCard.icon()); //currently not in use.
     }
 
     public void onShowOptions(ActionEvent event){
         System.out.print("settings lol ");
+    }
+
+    public void deckList(ActionEvent event){
+        while(tmpDeckList.size() != 6) {
+            tmpDeckList.add(Deck.draw());
+            System.out.println(tmpDeckList);
+        }
+
     }
 }

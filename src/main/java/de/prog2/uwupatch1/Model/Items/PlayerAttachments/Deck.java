@@ -18,7 +18,7 @@ import static de.prog2.uwupatch1.util.MyIO.random;
 public class Deck {
 
 
-    private final ObservableList<Card> cardDeck = FXCollections.observableArrayList();
+    private static final ObservableList<Card> cardDeck = FXCollections.observableArrayList();
 
     public void add(EffectCard addedCard){cardDeck.add(addedCard);}
 
@@ -39,7 +39,7 @@ public class Deck {
         return null;
     }
 
-    public Card draw(){return cardDeck.get((random()%cardDeck.size()));}
+    public static Card draw(){return cardDeck.get((random()%cardDeck.size()));}
     /**
      * toString() Rueckgabe von den Attributen
      * @return String
