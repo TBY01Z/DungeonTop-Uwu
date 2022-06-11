@@ -82,7 +82,7 @@ public class BattlefieldController implements Initializable {
     private ToggleButton card4;
     @FXML
     private ToggleButton card5;
-    private ToggleGroup deckSelector;
+    private ToggleGroup deckSelector = new ToggleGroup();
 
 
 
@@ -239,14 +239,9 @@ public class BattlefieldController implements Initializable {
     public void cardSelector(ImageView tile){
 
         deckList();     //something something make it work aaaaa
+        deckSelector.getToggles().addAll(card1, card2, card3, card4, card5);    //damit nur eine auf einmal gewaehlt werden kann
 
-        card1.setToggleGroup(deckSelector);
-        card2.setToggleGroup(deckSelector);
-        card3.setToggleGroup(deckSelector);
-        card4.setToggleGroup(deckSelector);
-        card5.setToggleGroup(deckSelector);
-
-        if(card1.isSelected() == true){
+        if(card1.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
 //            tile.setImage();
             System.out.print("card1");
@@ -254,7 +249,7 @@ public class BattlefieldController implements Initializable {
             card1.setSelected(false);
             card1.setVisible(false);
         }
-        if(card2.isSelected() == true){
+        if(card2.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
 //            tile.setImage();
             System.out.print("card2");
@@ -262,7 +257,7 @@ public class BattlefieldController implements Initializable {
             card2.setSelected(false);
             card2.setVisible(false);
         }
-        if(card3.isSelected() == true){
+        if(card3.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
 //            tile.setImage();
             System.out.print("card3");
@@ -270,7 +265,7 @@ public class BattlefieldController implements Initializable {
             card3.setSelected(false);
             card3.setVisible(false);
         }
-        if(card4.isSelected() == true){
+        if(card4.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
 //            tile.setImage();
             System.out.print("card4");
@@ -278,7 +273,7 @@ public class BattlefieldController implements Initializable {
             card4.setSelected(false);
             card4.setVisible(false);
         }
-        if(card5.isSelected() == true){
+        if(card5.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
 //            tile.setImage();
             System.out.print("card5");
