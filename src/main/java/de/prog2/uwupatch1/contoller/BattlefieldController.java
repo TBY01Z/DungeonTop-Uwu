@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
@@ -75,10 +76,18 @@ public class BattlefieldController implements Initializable {
     @FXML
     private MediaView mediaView;
     @FXML
-    private ToggleButton togglyBoy;
+    private ToggleButton card1;
+    @FXML
+    private ToggleButton card2;
+    @FXML
+    private ToggleButton card3;
+    @FXML
+    private ToggleButton card4;
+    @FXML
+    private ToggleButton card5;
 
 
-    private final Image newCard = loadIcon("testImg1.png");
+    private Image newCard = loadIcon("testImg1.png");
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
@@ -175,6 +184,7 @@ public class BattlefieldController implements Initializable {
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         deckSlot1.setImage(loadIcon("testImg2.jpg"));
         manaBar.setStyle("-fx-accent: blue;");
+//        card1.setStyle("-fx-graphic: testImg1;");     //TODO: alle toggle buttons mit den karten versehen usw usw
     }
 
     public void getLabelFeedback(ActionEvent event){
@@ -244,9 +254,26 @@ public class BattlefieldController implements Initializable {
 
     }
 
-    public void cardSelector(ActionEvent event){
-        if(togglyBoy.isSelected() == true){
-            //something something set die geclickte ImageView tile dem image path aus der ObservableList gleich
+    public void cardSelector(){
+        if(card1.isSelected() == true){
+            Image newCard = loadIcon("testImg1.png");
+            System.out.print("card1");
+        }
+        if(card2.isSelected() == true){
+            Image newCard = loadIcon("testImg1.png");
+            System.out.print("card2");
+        }
+        if(card3.isSelected() == true){
+            Image newCard = loadIcon("testImg1.png");
+            System.out.print("card3");
+        }
+        if(card4.isSelected() == true){
+            Image newCard = loadIcon("testImg1.png");
+            System.out.print("card4");
+        }
+        if(card5.isSelected() == true){
+            Image newCard = loadIcon("testImg1.png");
+            System.out.print("card5");
         }
     }
 }
