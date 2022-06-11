@@ -11,10 +11,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleButton;
+import javafx.scene.control.*;
 import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -85,73 +82,75 @@ public class BattlefieldController implements Initializable {
     private ToggleButton card4;
     @FXML
     private ToggleButton card5;
+    private ToggleGroup deckSelector;
+
 
 
     private Image newCard = loadIcon("testImg1.png");
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
-        tile1.setImage(newCard);
+        cardSelector(tile1);
     }
 
     public void onTile2Place(){
-        tile2.setImage(newCard);
+        cardSelector(tile2);
     }
 
     public void onTile3Place(){
-        tile3.setImage(newCard);
+        cardSelector(tile3);
     }
 
     public void onTile4Place(){
-        tile4.setImage(newCard);
+        cardSelector(tile4);
     }
 
     public void onTile5Place(){
-        tile5.setImage(newCard);
+        cardSelector(tile5);
     }
 
     public void onTile6Place(){
-        tile6.setImage(newCard);
+        cardSelector(tile6);
     }
 
     public void onTile7Place(){
-        tile7.setImage(newCard);
+        cardSelector(tile7);
     }
 
     public void onTile8Place(){
-        tile8.setImage(newCard);
+        cardSelector(tile8);
     }
 
     public void onTile9Place(){
-        tile9.setImage(newCard);
+        cardSelector(tile9);
     }
 
     public void onTile10Place(){
-        tile10.setImage(newCard);
+        cardSelector(tile10);
     }
 
     public void onTile11Place(){
-        tile11.setImage(newCard);
+        cardSelector(tile11);
     }
 
     public void onTile12Place(){
-        tile12.setImage(newCard);
+        cardSelector(tile12);
     }
 
     public void onTile13Place(){
-        tile13.setImage(newCard);
+        cardSelector(tile13);
     }
 
     public void onTile14Place(){
-        tile14.setImage(newCard);
+        cardSelector(tile14);
     }
 
     public void onTile15Place(){
-        tile15.setImage(newCard);
+        cardSelector(tile15);
     }
 
     public void onTile16Place(){
-        tile16.setImage(newCard);
+        cardSelector(tile16);
     }
 
     /**
@@ -188,18 +187,9 @@ public class BattlefieldController implements Initializable {
     }
 
     public void getLabelFeedback(ActionEvent event){
-        gegnerLabel.setText("UI test: sound played? mana increased? button responsive?");
+        gegnerLabel.setText("reagiert button? updated mana? spielt sound?");
         increaseMana(0.2);
-        AudioController audio = new AudioController("menuClick");
-//        if(mediaView.getMediaPlayer() == null){     //FIXME: sound wird nicht abgespielt...
-//            try {                                   //TODO: Ali's klasse ausprobieren!
-//                String fileName = getClass().getResource("/menuClick.wav").toURI().toString();
-//            } catch (URISyntaxException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
-//        mediaView.getMediaPlayer().play();
+        new AudioController("menuClick");
     }
 
     @FXML
@@ -235,18 +225,10 @@ public class BattlefieldController implements Initializable {
 
     public void onEndTurn(ActionEvent event){
         gegnerLabel.setText("Zug wurde beendet!");
-        decreaseMana(0.1);
+        increaseMana(0.2);
     }
 
-    public void updateEffectIcon(){
-        //effectView.setImage(EffectCard.icon()); //currently not in use.
-    }
-
-    public void onShowOptions(ActionEvent event){
-        System.out.print("settings lol ");
-    }
-
-    public void deckList(ActionEvent event){
+    public void deckList(){
         while(tmpDeckList.size() != 6) {
             tmpDeckList.add(Deck.draw());
             System.out.println(tmpDeckList);
@@ -254,26 +236,55 @@ public class BattlefieldController implements Initializable {
 
     }
 
-    public void cardSelector(){
+    public void cardSelector(ImageView tile){
+
+        deckList();     //something something make it work aaaaa
+
+        card1.setToggleGroup(deckSelector);
+        card2.setToggleGroup(deckSelector);
+        card3.setToggleGroup(deckSelector);
+        card4.setToggleGroup(deckSelector);
+        card5.setToggleGroup(deckSelector);
+
         if(card1.isSelected() == true){
-            Image newCard = loadIcon("testImg1.png");
+//            Image newCard = loadIcon("testImg1.png");
+//            tile.setImage();
             System.out.print("card1");
+            decreaseMana(0.3);
+            card1.setSelected(false);
+            card1.setVisible(false);
         }
         if(card2.isSelected() == true){
-            Image newCard = loadIcon("testImg1.png");
+//            Image newCard = loadIcon("testImg1.png");
+//            tile.setImage();
             System.out.print("card2");
+            decreaseMana(0.3);
+            card2.setSelected(false);
+            card2.setVisible(false);
         }
         if(card3.isSelected() == true){
-            Image newCard = loadIcon("testImg1.png");
+//            Image newCard = loadIcon("testImg1.png");
+//            tile.setImage();
             System.out.print("card3");
+            decreaseMana(0.3);
+            card3.setSelected(false);
+            card3.setVisible(false);
         }
         if(card4.isSelected() == true){
-            Image newCard = loadIcon("testImg1.png");
+//            Image newCard = loadIcon("testImg1.png");
+//            tile.setImage();
             System.out.print("card4");
+            decreaseMana(0.3);
+            card4.setSelected(false);
+            card4.setVisible(false);
         }
         if(card5.isSelected() == true){
-            Image newCard = loadIcon("testImg1.png");
+//            Image newCard = loadIcon("testImg1.png");
+//            tile.setImage();
             System.out.print("card5");
+            decreaseMana(0.3);
+            card5.setSelected(false);
+            card5.setVisible(false);
         }
     }
 }
