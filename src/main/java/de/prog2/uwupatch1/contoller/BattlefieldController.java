@@ -246,7 +246,7 @@ public class BattlefieldController implements Initializable {
 
     public void cardSelector(ActionEvent event){
         if(togglyBoy.isSelected() == true){
-            //something something set die geclickte ImageView tile == dem image path aus der ObservableList
+            //something something set die geclickte ImageView tile dem image path aus der ObservableList gleich
         }
     }
 }
