@@ -1,5 +1,7 @@
 package de.prog2.uwupatch1.contoller;
 
+import javafx.scene.media.AudioClip;
+
 import java.io.IOException;
 
 import javax.sound.sampled.AudioSystem;
@@ -13,21 +15,23 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  */
 
 public class AudioController {
-	
+
+//	AudioClip audioClip;
 	Clip player;
 	String trackName;
-	
+
 	public AudioController(String trackName) {
 		this.trackName = trackName;
 		playSoundClip();
 	}
-	
+
 	public void playSoundClip() {
 		try {
-			String n = trackName;
+			String n = this.trackName;
 			player = AudioSystem.getClip();
 			System.out.print(n);
-			player.open(AudioSystem.getAudioInputStream(getClass().getResource("/" + n + ".wav")));
+			//TODO: wenn app zu jar gepackaged wird, dateipfad immer mit "jar:" beginnen lassen
+			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n + ".wav")));
 			//FIXME: datei wird nicht gefunden
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
 			player.start();
@@ -39,5 +43,5 @@ public class AudioController {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
