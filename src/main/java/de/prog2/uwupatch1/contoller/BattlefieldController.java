@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -73,6 +74,8 @@ public class BattlefieldController implements Initializable {
 
     @FXML
     private MediaView mediaView;
+    @FXML
+    private ToggleButton togglyBoy;
 
 
     private final Image newCard = loadIcon("testImg1.png");
@@ -239,5 +242,11 @@ public class BattlefieldController implements Initializable {
             System.out.println(tmpDeckList);
         }
 
+    }
+
+    public void cardSelector(ActionEvent event){
+        if(togglyBoy.isSelected() == true){
+            //something something set die geclickte ImageView tile == dem image path aus der ObservableList
+        }
     }
 }

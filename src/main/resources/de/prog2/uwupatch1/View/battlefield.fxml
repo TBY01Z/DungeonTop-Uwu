@@ -4,7 +4,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.media.MediaView?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.BattlefieldController">
    <top>
@@ -75,6 +74,7 @@
             <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deckList" text="Show Deck" />
           <Button mnemonicParsing="false" onAction="#onMainMenuChange" text="Main Menu" />
             <Button defaultButton="true" mnemonicParsing="false" onAction="#onEndTurn" text="End Turn" />
+            <ToggleButton fx:id="togglyBoy" mnemonicParsing="false" text="ToggleButton" />
         </buttons>
       </ButtonBar>
    </bottom>
