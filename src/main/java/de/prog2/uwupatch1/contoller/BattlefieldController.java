@@ -58,15 +58,9 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ProgressBar manaBar = new ProgressBar();
     private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
-    @FXML
-    private ImageView effectView = new ImageView();
-    @FXML
-    private ImageView deckSlot1 = new ImageView();
 
     ObservableList<Card> tmpDeckList = FXCollections.observableArrayList();
-
-    @FXML
-    private MediaView mediaView;
+    ObservableList<String> hand = FXCollections.observableArrayList();
     @FXML
     private ToggleButton card1;
     @FXML
@@ -79,9 +73,7 @@ public class BattlefieldController implements Initializable {
     private ToggleButton card5;
     private ToggleGroup deckSelector = new ToggleGroup();
 
-
-
-    private Image newCard = loadIcon("testImg1.png");
+    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
@@ -159,24 +151,23 @@ public class BattlefieldController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        tile1.setImage(loadIcon("battlefieldTile.jpg"));
-        tile2.setImage(loadIcon("battlefieldTile.jpg"));
-        tile3.setImage(loadIcon("battlefieldTile.jpg"));
-        tile4.setImage(loadIcon("battlefieldTile.jpg"));
-        tile5.setImage(loadIcon("battlefieldTile.jpg"));
-        tile6.setImage(loadIcon("battlefieldTile.jpg"));
-        tile7.setImage(loadIcon("battlefieldTile.jpg"));
-        tile8.setImage(loadIcon("battlefieldTile.jpg"));
-        tile9.setImage(loadIcon("battlefieldTile.jpg"));
-        tile10.setImage(loadIcon("battlefieldTile.jpg"));
-        tile11.setImage(loadIcon("battlefieldTile.jpg"));
-        tile12.setImage(loadIcon("battlefieldTile.jpg"));
-        tile13.setImage(loadIcon("battlefieldTile.jpg"));
-        tile14.setImage(loadIcon("battlefieldTile.jpg"));
-        tile15.setImage(loadIcon("battlefieldTile.jpg"));
-        tile16.setImage(loadIcon("battlefieldTile.jpg"));
+        tile1.setImage(loadIcon("battlefieldTile.png"));
+        tile2.setImage(loadIcon("battlefieldTile.png"));
+        tile3.setImage(loadIcon("battlefieldTile.png"));
+        tile4.setImage(loadIcon("battlefieldTile.png"));
+        tile5.setImage(loadIcon("battlefieldTile.png"));
+        tile6.setImage(loadIcon("battlefieldTile.png"));
+        tile7.setImage(loadIcon("battlefieldTile.png"));
+        tile8.setImage(loadIcon("battlefieldTile.png"));
+        tile9.setImage(loadIcon("battlefieldTile.png"));
+        tile10.setImage(loadIcon("battlefieldTile.png"));
+        tile11.setImage(loadIcon("battlefieldTile.png"));
+        tile12.setImage(loadIcon("battlefieldTile.png"));
+        tile13.setImage(loadIcon("battlefieldTile.png"));
+        tile14.setImage(loadIcon("battlefieldTile.png"));
+        tile15.setImage(loadIcon("battlefieldTile.png"));
+        tile16.setImage(loadIcon("battlefieldTile.png"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
-        deckSlot1.setImage(loadIcon("testImg2.jpg"));
         manaBar.setStyle("-fx-accent: blue;");
 //        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
     }
@@ -190,6 +181,7 @@ public class BattlefieldController implements Initializable {
     @FXML
     protected void onMainMenuChange(ActionEvent event) {
         MyIO.loadXML(event, "StartStage.fxml");
+        new AudioController("menuClick");
     }
 
     public double getManaBarProgress() {
@@ -221,20 +213,28 @@ public class BattlefieldController implements Initializable {
     public void onEndTurn(ActionEvent event){
         gegnerLabel.setText("Zug wurde beendet!");
         increaseMana(0.2);
+        new AudioController("menuClick");
     }
 
     public void deckList(){
-        while(tmpDeckList.size() != 6) {
+        while(tmpDeckList.size() != 20) {
             tmpDeckList.add(Deck.draw());
             System.out.println(tmpDeckList);
         }
 
     }
 
+    public void hand(){
+        while(hand.size() != 20){
+            hand.add(Deck.draw().icon().toString());
+        }
+        System.out.println(hand);
+    }
+
     public void cardSelector(ImageView tile){
 
-        deckList();
-        deckSelector.getToggles().addAll(card1, card2, card3, card4, card5);    //damit nur eine auf einmal gewaehlt werden kann
+//        deckList();
+//        deckSelector.getToggles().addAll(card1, card2, card3, card4, card5);    //damit nur eine auf einmal gewaehlt werden kann
 
         if(card1.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
@@ -243,6 +243,7 @@ public class BattlefieldController implements Initializable {
             decreaseMana(0.3);
             card1.setSelected(false);
             card1.setVisible(false);
+            new AudioController("menuClick");
         }
         if(card2.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
@@ -251,6 +252,7 @@ public class BattlefieldController implements Initializable {
             decreaseMana(0.3);
             card2.setSelected(false);
             card2.setVisible(false);
+            new AudioController("menuClick");
         }
         if(card3.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
@@ -259,6 +261,7 @@ public class BattlefieldController implements Initializable {
             decreaseMana(0.3);
             card3.setSelected(false);
             card3.setVisible(false);
+            new AudioController("menuClick");
         }
         if(card4.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
@@ -267,6 +270,7 @@ public class BattlefieldController implements Initializable {
             decreaseMana(0.3);
             card4.setSelected(false);
             card4.setVisible(false);
+            new AudioController("menuClick");
         }
         if(card5.isSelected() == true && manaBarProgress >= 0.3){
 //            Image newCard = loadIcon("testImg1.png");
@@ -275,6 +279,11 @@ public class BattlefieldController implements Initializable {
             decreaseMana(0.3);
             card5.setSelected(false);
             card5.setVisible(false);
+            new AudioController("menuClick");
         }
+    }
+
+    public void testDraw(ActionEvent event){
+        hand();
     }
 }

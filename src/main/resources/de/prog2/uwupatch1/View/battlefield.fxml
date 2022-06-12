@@ -23,67 +23,67 @@
          <children>
             <ImageView fx:id="tile1" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile1Place" pickOnBounds="true">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile2" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile2Place" pickOnBounds="true" GridPane.columnIndex="1">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile3" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile3Place" pickOnBounds="true" GridPane.columnIndex="2">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile5" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile5Place" pickOnBounds="true" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile6" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile6Place" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile7" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile7Place" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile9" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile9Place" pickOnBounds="true" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile10" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile10Place" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile11" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile11Place" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile13" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile13Place" pickOnBounds="true" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile14" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile14Place" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile15" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile15Place" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile4" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile4Place" pickOnBounds="true" GridPane.columnIndex="3">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile8" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile8Place" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile12" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile12Place" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
             <ImageView fx:id="tile16" fitHeight="102.0" fitWidth="150.0" onMouseClicked="#onTile16Place" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../Model/Icon/testImg2.jpg" />
+                  <Image url="@../Model/Icon/battlefieldTile.png" />
                </image></ImageView>
          </children>
       </GridPane>
@@ -101,5 +101,6 @@
          </font>
       </Label>
       <Button layoutX="1138.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLabelFeedback" text="UI TEST" />
+      <Button layoutX="187.0" layoutY="242.0" mnemonicParsing="false" onAction="#testDraw" text="Button" />
    </children>
 </AnchorPane>
