@@ -99,16 +99,16 @@
       <ProgressBar fx:id="manaBar" layoutX="37.0" layoutY="521.0" prefHeight="18.0" prefWidth="176.0" progress="0.0" />
       <Button layoutX="1189.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMainMenuChange" text="Main Menu" />
       <Button defaultButton="true" layoutX="1138.0" layoutY="612.0" mnemonicParsing="false" onAction="#onEndTurn" prefHeight="75.0" prefWidth="103.0" text="End Turn" />
-      <ToggleButton fx:id="card1" layoutX="418.0" layoutY="590.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" text="card1" visible="false" />
-      <ToggleButton fx:id="card2" layoutX="507.0" layoutY="590.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" text="card2" visible="false" />
-      <ToggleButton fx:id="card3" layoutX="596.0" layoutY="590.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" text="card3" visible="false" />
-      <ToggleButton fx:id="card4" layoutX="685.0" layoutY="590.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" text="card4" visible="false" />
-      <ToggleButton fx:id="card5" layoutX="774.0" layoutY="590.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" text="card5" visible="false" />
       <Label fx:id="gegnerLabel" layoutX="37.0" layoutY="27.0" prefHeight="47.0" prefWidth="304.0" textFill="BLUE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <Button layoutX="1138.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLabelFeedback" text="UI TEST" />
+      <ToggleButton fx:id="card5" layoutX="774.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
+      <ToggleButton fx:id="card4" layoutX="685.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
+      <ToggleButton fx:id="card3" layoutX="596.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
+      <ToggleButton fx:id="card2" layoutX="507.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
+      <ToggleButton fx:id="card1" layoutX="418.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
    </children>
 </AnchorPane>

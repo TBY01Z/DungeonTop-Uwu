@@ -262,7 +262,7 @@ public class BattlefieldController implements Initializable {
             System.out.print("card1");
             decreaseMana(0.3);
             card1.setSelected(false);
-            card1.setVisible(false);
+            card1View.setVisible(false);
             new AudioController("menuClick");
         }
         if(card2.isSelected() == true && manaBarProgress >= 0.3){
@@ -271,7 +271,7 @@ public class BattlefieldController implements Initializable {
             System.out.print("card2");
             decreaseMana(0.3);
             card2.setSelected(false);
-            card2.setVisible(false);
+            card2View.setVisible(false);
             new AudioController("menuClick");
         }
         if(card3.isSelected() == true && manaBarProgress >= 0.3){
@@ -280,7 +280,7 @@ public class BattlefieldController implements Initializable {
             System.out.print("card3");
             decreaseMana(0.3);
             card3.setSelected(false);
-            card3.setVisible(false);
+            card3View.setVisible(false);
             new AudioController("menuClick");
         }
         if(card4.isSelected() == true && manaBarProgress >= 0.3){
@@ -289,7 +289,7 @@ public class BattlefieldController implements Initializable {
             System.out.print("card4");
             decreaseMana(0.3);
             card4.setSelected(false);
-            card4.setVisible(false);
+            card4View.setVisible(false);
             new AudioController("menuClick");
         }
         if(card5.isSelected() == true && manaBarProgress >= 0.3){
@@ -298,7 +298,7 @@ public class BattlefieldController implements Initializable {
             System.out.print("card5");
             decreaseMana(0.3);
             card5.setSelected(false);
-            card5.setVisible(false);
+            card5View.setVisible(false);
             new AudioController("menuClick");
         }
     }
