@@ -184,6 +184,7 @@ public class BattlefieldController implements Initializable {
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         manaBar.setStyle("-fx-accent: blue;");
 //        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
+        hand();
     }
 
     public void getLabelFeedback(ActionEvent event){
@@ -239,10 +240,15 @@ public class BattlefieldController implements Initializable {
     }
 
     public void hand(){
-        while(iconTmpDeck.size() != 5){
-            iconTmpDeck.add(Deck.draw().icon());
-        }
+//        while(iconTmpDeck.size() != 5){
+//            iconTmpDeck.add(Deck.draw().icon());
+//        }
         System.out.println(iconTmpDeck);
+        card1View.setImage(Deck.draw().icon());
+        card2View.setImage(Deck.draw().icon());
+        card3View.setImage(Deck.draw().icon());
+        card4View.setImage(Deck.draw().icon());
+        card5View.setImage(Deck.draw().icon());
     }
 
     public void cardSelector(ImageView tile){
