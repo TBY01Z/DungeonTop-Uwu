@@ -178,7 +178,7 @@ public class BattlefieldController implements Initializable {
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         deckSlot1.setImage(loadIcon("testImg2.jpg"));
         manaBar.setStyle("-fx-accent: blue;");
-//        card1.setStyle("-fx-graphic: testImg1;");     //TODO: alle toggle buttons mit den karten versehen usw usw
+        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
     }
 
     public void getLabelFeedback(ActionEvent event){
