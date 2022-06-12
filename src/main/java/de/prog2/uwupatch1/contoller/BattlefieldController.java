@@ -1,10 +1,8 @@
 package de.prog2.uwupatch1.contoller;
 
+import de.prog2.uwupatch1.Model.Audio.AudioController;
 import de.prog2.uwupatch1.Model.Items.Cards.Card;
-import de.prog2.uwupatch1.Model.Items.Cards.EffectCard;
 import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Deck;
-import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Usable;
-import de.prog2.uwupatch1.Model.PlayerSelf.Player;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,14 +10,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.MediaView;
 
-import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 import static de.prog2.uwupatch1.util.MyIO.loadIcon;

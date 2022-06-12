@@ -21,5 +21,7 @@ module com.prog.uwupatch {
     exports de.prog2.uwupatch1.Model.InGameEvents;
     exports de.prog2.uwupatch1.Model.Items.PlayerAttachments;
     opens de.prog2.uwupatch1.Model.Items.PlayerAttachments to javafx.fxml;
+    exports de.prog2.uwupatch1.Model.Audio;
+    opens de.prog2.uwupatch1.Model.Audio to javafx.fxml;
 
 }

@@ -1,4 +1,4 @@
-package de.prog2.uwupatch1.contoller;
+package de.prog2.uwupatch1.Model.Audio;
 
 import javafx.scene.media.AudioClip;
 
