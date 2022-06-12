@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 public class StartController {
 
     public void onlineChose(ActionEvent event) {
-        MyIO.loadXML(event, "choseCharacterType.fxml");
+        MyIO.loadXML(event, "onOnlineMode.fxml");
     }
 
     public void onSettingChange(ActionEvent event) {

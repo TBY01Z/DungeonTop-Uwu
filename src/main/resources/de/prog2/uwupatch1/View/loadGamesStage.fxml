@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="de.prog2.uwupatch1.contoller.LoadGamesStageController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.LoadGamesStageController">
+   <children>
+      <VBox layoutX="244.0" layoutY="34.0" prefHeight="278.0" prefWidth="111.0">
+         <children>
+            <Button fx:id="save00" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save01" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save02" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save03" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save04" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save05" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save06" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save07" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save08" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save09" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save10" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save11" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+            <Button fx:id="save12" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" text="Button" visible="false" />
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

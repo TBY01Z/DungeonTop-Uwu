@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="de.prog2.uwupatch1.contoller.OnLocalModeControl"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <GridPane layoutX="-1.0" layoutY="152.0" prefHeight="247.0" prefWidth="311.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label contentDisplay="CENTER" lineSpacing="2.0" prefHeight="32.0" prefWidth="38.0" text="Online" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" underline="true" GridPane.halignment="CENTER" />
+                <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#choseCharacterStage" text="New Game" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                <Button fx:id="loadGameButton" mnemonicParsing="false" onAction="#loadGame" text="Load Game" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+    </children>
+
+</AnchorPane>

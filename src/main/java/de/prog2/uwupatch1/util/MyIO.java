@@ -24,6 +24,7 @@ import java.util.Random;
  * TODO: Check Grammatical
  */
 public class MyIO {
+    private static boolean ONLINE_MODE;
     private static final int MIN_RANDOM_VALUE = 0;
     private static final int MAX_RANDOM_VALUE = 999999999;
 
@@ -43,6 +44,15 @@ public class MyIO {
         System.out.println(arg);
        
     }
+
+    public static boolean ONLINE_MODE() {
+        return ONLINE_MODE;
+    }
+
+    public static void setOnlineMode(boolean onlineMode) {
+        ONLINE_MODE = onlineMode;
+    }
+
     public static void loadXML(ActionEvent event, String source) {
 
         Parent root;
@@ -57,6 +67,8 @@ public class MyIO {
         }
 
     }
+
+
     public static Image loadIcon(String path){
         return new Image(String.valueOf(LoadIcons.class.getResource(path)));
     }
