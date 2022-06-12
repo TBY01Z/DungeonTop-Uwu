@@ -56,11 +56,13 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ImageView tile16 = new ImageView();
     @FXML
+    private ImageView battlefieldBackgroundImg = new ImageView();
+    @FXML
     private ProgressBar manaBar = new ProgressBar();
     private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
 
     ObservableList<Card> tmpDeckList = FXCollections.observableArrayList();
-    ObservableList<String> hand = FXCollections.observableArrayList();
+    ObservableList<Image> iconTmpDeck = FXCollections.observableArrayList();
     @FXML
     private ToggleButton card1;
     @FXML
@@ -72,6 +74,17 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ToggleButton card5;
     private ToggleGroup deckSelector = new ToggleGroup();
+
+    @FXML
+    private ImageView card1View = new ImageView();
+    @FXML
+    private ImageView card2View = new ImageView();
+    @FXML
+    private ImageView card3View = new ImageView();
+    @FXML
+    private ImageView card4View = new ImageView();
+    @FXML
+    private ImageView card5View = new ImageView();
 
     private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
@@ -167,6 +180,7 @@ public class BattlefieldController implements Initializable {
         tile14.setImage(loadIcon("battlefieldTile.png"));
         tile15.setImage(loadIcon("battlefieldTile.png"));
         tile16.setImage(loadIcon("battlefieldTile.png"));
+        battlefieldBackgroundImg.setImage(loadIcon("battlefieldBackground.png"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         manaBar.setStyle("-fx-accent: blue;");
 //        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
@@ -225,10 +239,10 @@ public class BattlefieldController implements Initializable {
     }
 
     public void hand(){
-        while(hand.size() != 20){
-            hand.add(Deck.draw().icon().toString());
+        while(iconTmpDeck.size() != 5){
+            iconTmpDeck.add(Deck.draw().icon());
         }
-        System.out.println(hand);
+        System.out.println(iconTmpDeck);
     }
 
     public void cardSelector(ImageView tile){
@@ -281,9 +295,5 @@ public class BattlefieldController implements Initializable {
             card5.setVisible(false);
             new AudioController("menuClick");
         }
-    }
-
-    public void testDraw(ActionEvent event){
-        hand();
     }
 }
