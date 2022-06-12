@@ -159,22 +159,22 @@ public class BattlefieldController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        tile1.setImage(loadIcon("testImg2.jpg"));
-        tile2.setImage(loadIcon("testImg2.jpg"));
-        tile3.setImage(loadIcon("testImg2.jpg"));
-        tile4.setImage(loadIcon("testImg2.jpg"));
-        tile5.setImage(loadIcon("testImg2.jpg"));
-        tile6.setImage(loadIcon("testImg2.jpg"));
-        tile7.setImage(loadIcon("testImg2.jpg"));
-        tile8.setImage(loadIcon("testImg2.jpg"));
-        tile9.setImage(loadIcon("testImg2.jpg"));
-        tile10.setImage(loadIcon("testImg2.jpg"));
-        tile11.setImage(loadIcon("testImg2.jpg"));
-        tile12.setImage(loadIcon("testImg2.jpg"));
-        tile13.setImage(loadIcon("testImg2.jpg"));
-        tile14.setImage(loadIcon("testImg2.jpg"));
-        tile15.setImage(loadIcon("testImg2.jpg"));
-        tile16.setImage(loadIcon("testImg2.jpg"));
+        tile1.setImage(loadIcon("battlefieldTile.jpg"));
+        tile2.setImage(loadIcon("battlefieldTile.jpg"));
+        tile3.setImage(loadIcon("battlefieldTile.jpg"));
+        tile4.setImage(loadIcon("battlefieldTile.jpg"));
+        tile5.setImage(loadIcon("battlefieldTile.jpg"));
+        tile6.setImage(loadIcon("battlefieldTile.jpg"));
+        tile7.setImage(loadIcon("battlefieldTile.jpg"));
+        tile8.setImage(loadIcon("battlefieldTile.jpg"));
+        tile9.setImage(loadIcon("battlefieldTile.jpg"));
+        tile10.setImage(loadIcon("battlefieldTile.jpg"));
+        tile11.setImage(loadIcon("battlefieldTile.jpg"));
+        tile12.setImage(loadIcon("battlefieldTile.jpg"));
+        tile13.setImage(loadIcon("battlefieldTile.jpg"));
+        tile14.setImage(loadIcon("battlefieldTile.jpg"));
+        tile15.setImage(loadIcon("battlefieldTile.jpg"));
+        tile16.setImage(loadIcon("battlefieldTile.jpg"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         deckSlot1.setImage(loadIcon("testImg2.jpg"));
         manaBar.setStyle("-fx-accent: blue;");
