@@ -71,8 +71,8 @@ public class BattlefieldController implements Initializable {
     private ProgressBar manaBar = new ProgressBar();
     private double manaBarProgress; //wertebereich: darf nur zwischen 0 und 1 liegen.
 
-    ObservableList<Card> tmpDeckList = FXCollections.observableArrayList();
-    ObservableList<Image> iconTmpDeck = FXCollections.observableArrayList();
+    private ObservableList<Card> tmpDeckList = FXCollections.observableArrayList();
+    private ObservableList<Image> iconTmpDeck = FXCollections.observableArrayList();
     @FXML
     private ToggleButton card1;
     @FXML
@@ -250,7 +250,7 @@ public class BattlefieldController implements Initializable {
 
     public void deckList(){
         while(tmpDeckList.size() != 20) {
-            tmpDeckList.add(Deck.draw());
+            tmpDeckList.add(player.cards().draw());
             System.out.println(tmpDeckList);
         }
     }
@@ -276,16 +276,16 @@ public class BattlefieldController implements Initializable {
     }
 
     public void hand(){
-        Image card1Drawn = Deck.draw().icon();
-        Image card2Drawn = Deck.draw().icon();
-        Image card3Drawn = Deck.draw().icon();
-        Image card4Drawn = Deck.draw().icon();
-        Image card5Drawn = Deck.draw().icon();
-        card1View.setImage(Deck.draw().icon());
-        card2View.setImage(Deck.draw().icon());
-        card3View.setImage(Deck.draw().icon());
-        card4View.setImage(Deck.draw().icon());
-        card5View.setImage(Deck.draw().icon());
+        Image card1Drawn = player.cards().draw().icon();
+        Image card2Drawn = player.cards().draw().icon();
+        Image card3Drawn = player.cards().draw().icon();
+        Image card4Drawn = player.cards().draw().icon();
+        Image card5Drawn = player.cards().draw().icon();
+        card1View.setImage(player.cards().draw().icon());
+        card2View.setImage(player.cards().draw().icon());
+        card3View.setImage(player.cards().draw().icon());
+        card4View.setImage(player.cards().draw().icon());
+        card5View.setImage(player.cards().draw().icon());
     }
 
     public void cardSelector(ImageView tile){
