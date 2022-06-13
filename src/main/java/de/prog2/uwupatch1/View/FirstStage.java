@@ -17,6 +17,7 @@ public class FirstStage extends Application {
         Scene scene = new Scene(fxmlLoader.load(), SettingStageControl.WIDTH(), SettingStageControl.HIGHT());
         stage.setTitle("DungeonTop UWU");
         stage.setMaximized(!stage.isMaximized());
+        stage.setFullScreenExitHint("");
         stage.setScene(scene);
         stage.show();
 

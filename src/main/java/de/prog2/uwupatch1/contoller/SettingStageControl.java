@@ -20,10 +20,11 @@ public class SettingStageControl {
     }
 
     @FXML
+    private CheckBox fsCheckbox;
     public void onFullscreenClick(ActionEvent event) {
         stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        stage.setFullScreen(!stage.isFullScreen()); //this.stage ist wohl null
-        stage.setFullScreenExitHint("");
+        fsCheckbox.setSelected(!stage.isFullScreen());
+        stage.setFullScreen(!stage.isFullScreen());
     }
 
     // getter & setter
