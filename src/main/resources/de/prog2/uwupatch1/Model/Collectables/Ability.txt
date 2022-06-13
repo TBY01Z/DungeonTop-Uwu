@@ -1,13 +1,20 @@
 200_3_FireBall_DAbility1.png_-0.5_0_0_0_0
 201_1_Local Hypnosis_DAbility2.png_0_0_0_0_-2
-202_3_Fire Eyes_DAbility3.png_-0.8_0_0_0_0
-203_3_Nova Prime_DAbility4.png_-0.9_0_0_0_0
-204_3_Nova Prime_DAbility5.png_-0.9_0_0_0_0
-205_3_Nova Prime_DAbility6.png_-0.9_0_0_0_0
-206_3_Nova Prime_DAbility7.png_-0.9_0_0_0_0
-207_3_Nova Prime_DAbility8.png_-0.9_0_0_0_0
-208_3_Nova Prime_DAbility9.png_-0.9_0_0_0_0
+203_-1_Nova Prime_DAbility4.png_-0.9_0_0_0_0
+204_3_911 Call_DAbility5.png_0_0_0_0_2
+205_3_Flash_DAbility6.png_-0.6_0_0_0_0
+206_3_Acid Rain_DAbility7.png_-0.9_0_0_0_0
 209_3_Nova Prime_DAbility10.png_-0.9_0_0_0_0
-250_3_Nova Prime_LAbility4.png_-0.9_0_0_0_0
-204_3_Nova Prime_DAbility4.png_-0.9_0_0_0_0
-Ability(int ID, int timer, String name, String iconPath, double increaseHealth, double increaseMana, double increaseDamage, double increaseArmor, int increaseDrawLimit)
+207_3_Healing talk_DAbility8.png_6_0_0_0_0
+208_3_Heel Fire_DAbility9.png_-0.9_0_0_0_0
+209_1_Invoice Call_DAbility10.png_-0.8_0_-0.2_0.2_2
+250_3_FireBall_HAbility1.png_-0.5_0_0_0_0
+251_3_pathFinder_HAbility2.png_-0.5_0_0_0_0
+252_3_Nova Prime_HAbility3.png_-0.9_0_0_0_0
+253_3_Hell Flame_HAbility4.png_-0.8_0_0_0_0
+254_3_helper call_HAbility5.png_6_8_8_10_0
+255_3_911 Call_HAbility7.png_0_0_0_0_2
+256_3_NOsta_HAbility6.png_-0.9_0_0_0_0
+257_3_Ex Prime_HAbility8.png_-0.5_0_0_0_0
+258_3_Invoice Call_HAbility9.png_-0.8_0_-0.2_0.2_-2
+259_3_Flash_HAbility10.png_-0.6_0_0_0_0
