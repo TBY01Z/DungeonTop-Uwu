@@ -75,6 +75,8 @@ public class Treasures {
     }
 
 
+
+
     /**
      * Getter Methode fuer den zweiten Player aka. DungeonMaster
      * @return DungeonMaster
