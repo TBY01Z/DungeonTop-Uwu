@@ -14,12 +14,12 @@ import java.util.Scanner;
 /**
  * @author Niclas Rieckers
  * Diese Klassebefuellt die DataBase Klassen.
- * TODO: Check Grammatical
  */
 
 public class InputClass {
     /**
-     *
+     * TODO:check ob mans besser ausdruecken kann?
+     *Methode prueft, ob alle Objekte mit Attributen befuellt wurden.
      * @return true
      * if @return true fill is positiv
      */
@@ -217,6 +217,9 @@ public class InputClass {
         }
     }
     //Weapon(int ID, String objName, String iconPath, int level, double hit, int range, int cost)
+    /***
+     * Fuellt die Klasse Weapons aus der WeaponCard.txt
+     */
     private static void weaponCards() throws FileNotFoundException{
         Scanner scanner = new Scanner(new File(Objects.requireNonNull(InputClass.class.getResource("WeaponCard.txt")).getFile()));
         while (scanner.hasNextLine()) {

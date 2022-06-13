@@ -20,8 +20,7 @@ import java.util.Random;
 
 /**
  *
- * @author rieck
- * TODO: Check Grammatical
+ * @author Niclas Rieckers
  */
 public class MyIO {
     private static boolean ONLINE_MODE;
@@ -29,6 +28,10 @@ public class MyIO {
     private static final int MAX_RANDOM_VALUE = 999999999;
 
 
+    /**
+     * Diese Methode erlaubt es, dieses Projekt auf Unix und Windows Betriebssystemen auszufuehren.
+     * @return das zum Dateisystem des Benutzers passende Slash (/ oder \\)
+     */
     private static Character getResourceSlasch() {
         if (Objects.equals(System.getProperty("os.name"), "Windows 10")){
             return '\\';
@@ -53,6 +56,11 @@ public class MyIO {
         ONLINE_MODE = onlineMode;
     }
 
+    /**
+     * Methode fuer das Laden von FXML Dateien.
+     * @param event ein ActionEvent, repraesentiert jegliche Aktionen wie z.B ein betaetigter Button.
+     * @param source der Name der gesuchten FXML-Datei.
+     */
     public static void loadXML(ActionEvent event, String source) {
         Parent root;
         try {
@@ -67,10 +75,19 @@ public class MyIO {
 
     }
 
-
+    /**
+     * Methode fuer das Laden von Icons aus resources directory.
+     * @param path der Name des gesuchten Icons
+     * @return das gesuchte Icon von Typ Icon
+     */
     public static Image loadIcon(String path){
         return new Image(String.valueOf(LoadIcons.class.getResource(path)));
     }
+
+    /**
+     * Methode fuer das Generieren von Pseudo-Zufaelligen Werten.
+     * @return ein Zufaelliger Wert vom Typ int.
+     */
     public static int random(){
         Random rn = new Random();
         return rn.nextInt(MAX_RANDOM_VALUE-MIN_RANDOM_VALUE+1)+MIN_RANDOM_VALUE;

@@ -98,8 +98,6 @@ public class BattlefieldController implements Initializable {
 
     private Player player = MadeCharacterStageController.player();
 
-//    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
-//    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
         cardSelector(tile1);
@@ -195,7 +193,6 @@ public class BattlefieldController implements Initializable {
         battlefieldBackgroundImg.setImage(loadIcon("battlefieldBackground.png"));
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         manaBar.setStyle("-fx-accent: blue;");
-//        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
         hand();
     }
 

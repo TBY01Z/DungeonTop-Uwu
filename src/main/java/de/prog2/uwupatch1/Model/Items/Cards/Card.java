@@ -4,12 +4,12 @@ import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Usable;
 
 /**
  * @author Niclas Rieckers
- *  Diese Klasse ist die Basis von unseren Karten jede Karte erbt somit von dieser Klasse.
- * Um spaeter von dem Deck gecastet werden zu koennen, um so die Karten auch in der Gui gecastet werden zu koennen.
+ *  Diese Klasse ist die Basis von allen Karten, jede Karte erbt von dieser Klasse.
+ *  Damit spaeter von dem Deck gecastet werden zu koennen, um so die Karten auch in der Gui gecastet werden zu koennen.
  */
 public class Card extends Usable {
     /**
-     * Hier wird der Mana Aufbrauch pro Beschwoerung referenziert.TODO: Check Grammatical
+     * Hier wird der Mana Aufbrauch pro Beschwoerung referenziert.
      */
     private int summonCost;
     /**
@@ -25,20 +25,18 @@ public class Card extends Usable {
     }
 
     /**
-     * Getter für die Manakosten für die Benutzung der Karte auf dem Spielfeld
-     * @return int
-     * Es wird der Preis der fuer eine Beschwoerung benoetigt wird zurueck gegeben.
+     * Getter für die Manakosten der Beschwoerung der jeweiligen Karte
+     * @return Beschwoerungskosten int
      */
     public int summonCost() {
         return summonCost;
     }
 
     /**
-     * Setter für die Manakosten für die Benutzung der Karte auf dem Spielfeld
+     * Setter für die Manakosten der Beschwoerung der jeweiligen Karte
      * @param summonCost
-     * Es wird der Preis der fuer eine Beschwoerung benoetigt wird gesetzt.
-     * @return Card
-     * Es wird eine neue Instanz von Karte zuruek gegeben.
+     * Es wird ein fuer die Beschwoerung benoetigte Preis gesetzt.
+     * @return neue Instanz von Card
      */
     public Card setSummonCost(int summonCost) {
         this.summonCost = summonCost;
@@ -46,18 +44,15 @@ public class Card extends Usable {
     }
     /**
      * Getter für das Level der Karte
-     * @return int
-     * Es wird das Level der Karte zuruek gegeben.
+     * @return int Level
      */
     public int level() {
         return level;
     }
     /**
      * Setter für das Level der Karte auf dem Spielfeld
-     * @param level
-     * Es wird das Level gesetzt.
-     * @return Card
-     * Es wird eine neue Instanz von Karte zuruek gegeben.
+     * @param level Das zu setzende Level als int.
+     * @return neue Instanz von Card
      */
     public Card setLevel(int level) {
         this.level = level;

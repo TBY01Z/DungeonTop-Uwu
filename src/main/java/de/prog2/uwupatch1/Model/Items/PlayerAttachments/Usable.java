@@ -8,7 +8,6 @@ import static de.prog2.uwupatch1.util.MyIO.loadIcon;
 /**
  * @author Niclas Rieckers
  * Superklasse für alle vom Spieler nutzbare Items.
- * TODO: Check Grammatical & Comments
  */
 public class Usable {
     /**
@@ -24,19 +23,11 @@ public class Usable {
      */
     private Image icon;
     //Constructor
-
-    /**
-     *
-     */
-
     public Usable(int ID, String objName, String iconPath) {
         this.ID = ID;
         this.objName = objName;
         icon = loadIcon(iconPath);
     }
-
-
-
     //Getter & Setter
     public int ID() {
         return ID;

@@ -12,14 +12,14 @@ import static de.prog2.uwupatch1.util.MyIO.random;
 
 /**
  * @author Niclas Rieckers
- * TODO: Check Grammatical Modulariesieren
+ * TODO: Modulariesieren
  */
 public class Treasures {
     private Player player01;
     private Player player02;
 
     /**
-     * Konstruktur der Klasse
+     * Konstruktor der Klasse
      */
     public Treasures(Player player01, Player player02) {
         this.player01 = player01;
@@ -75,10 +75,19 @@ public class Treasures {
     }
 
 
+    /**
+     * Getter Methode fuer den zweiten Player aka. DungeonMaster
+     * @return DungeonMaster
+     */
     public Player player02() {
         return player02;
     }
 
+    /**
+     * TODO: nicht sicher was hier passieren soll...?
+     * @param player02
+     * @return
+     */
     public Treasures setPlayer02(Player player02) {
         this.player02 = player02;
         return this;

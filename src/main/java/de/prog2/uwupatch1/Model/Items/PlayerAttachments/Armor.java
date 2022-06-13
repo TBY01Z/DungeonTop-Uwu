@@ -4,7 +4,6 @@ package de.prog2.uwupatch1.Model.Items.PlayerAttachments;
  * @author Niclas Rieckers
  * Klasse Armor, erbt von Superklasse Usable. Wird gebraucht, um Spiel-Objekte "Armor"
  * erzeugen zu können.
- * TODO: Check Grammatical
  */
 public class Armor extends Usable {
     private double health;

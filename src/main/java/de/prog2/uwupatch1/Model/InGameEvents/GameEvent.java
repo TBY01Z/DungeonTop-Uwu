@@ -7,7 +7,6 @@ import javafx.collections.ObservableList;
 /**
  * @author Mark Fisher
  * Klasse GameEvent für das generieren eines zufällig auftretenden Events im Spiel.
- * TODO: Check Grammatical
  */
 public class GameEvent {
     private final ObservableList<Trader> traderlist = FXCollections.observableArrayList(); //ObservableList Instanz wird erzeugt
@@ -38,6 +37,10 @@ public class GameEvent {
         }
     }
 
+    /**
+     * Getter Methode fuer ein aktuell Laufendes GameEvent
+     * @return aktuelles GameEvent
+     */
     public static String getCurrentEvent() {
         return currentEvent;
     }

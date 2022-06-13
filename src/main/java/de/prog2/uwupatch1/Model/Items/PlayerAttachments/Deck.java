@@ -13,7 +13,6 @@ import static de.prog2.uwupatch1.util.MyIO.random;
 /**
  * @author Niclas Rieckers
  * Klasse Deck, mit der ein Kartendeck erzeugt werden kann.
- * TODO: Check Grammatical
  */
 public class Deck {
 

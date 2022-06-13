@@ -3,9 +3,9 @@ package de.prog2.uwupatch1.Model.Items.PlayerAttachments;
 /**
  * @author Niclas Rieckers
  * {@code @Info}
- * Klasse Artifact, erbt von Superklasse Ability. Wird gebraucht, um Spiel-Objekte "Artifacts"
- * erzeugen zu können. Da Atrifact quasie wie Ability ist nur der Timer ist auf -1 um denn Effekt unendlich zu taetigen.
- * TODO: Check Grammatical
+ * Klasse Artifact wird gebraucht um Spiel-Objekte "Artifacts" erzeugen zu koennen. Erbt von Superklasse Ability,
+ * da Artifact die gleiche Funktion wie Ability hat, der Unterschied liegt lediglich beim Timer.
+ * Dieser ist auf -1 gesetzt, damit der Effekt endlos andauern kann.
  */
 public class Artifact extends Ability {
 

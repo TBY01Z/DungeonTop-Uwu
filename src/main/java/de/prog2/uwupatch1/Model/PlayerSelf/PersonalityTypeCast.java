@@ -9,7 +9,6 @@ import static de.prog2.uwupatch1.util.MyIO.loadIcon;
  * @author Mark Fischer
  * Klasse PersonalityTypeCast, wird gebraucht, um Spiel-Objekte "PersonalityTypeCasts"
  * erzeugen zu können.
- * TODO: Check Grammatical
  */
 public class PersonalityTypeCast {
 

@@ -10,8 +10,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
- * Die Klasse SoundPlayer spielt Töne wie eine Angriff, Menu-Selektor, und sonstiges.
- * //TODO: check grammar und Text neu schreiben
+ * Das AudioManager Objekt erlaubt es verschiedene AudioClips an verschiedenen Stellen abzuspielen.
  */
 
 public class AudioController {
@@ -29,7 +28,6 @@ public class AudioController {
 		try {
 			String n = this.trackName;
 			player = AudioSystem.getClip();
-			//TODO: wenn app zu jar gepackaged wird, dateipfad immer mit "jar:" beginnen lassen
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n + ".wav")));
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
 			player.start();
