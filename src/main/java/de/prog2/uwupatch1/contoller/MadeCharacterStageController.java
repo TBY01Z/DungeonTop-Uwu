@@ -4,6 +4,8 @@ import de.prog2.uwupatch1.Model.Collectables.Ethnicities;
 import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
 import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
+import de.prog2.uwupatch1.util.MyIO;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -29,13 +31,17 @@ public class MadeCharacterStageController implements Initializable {
     private final int ID_PARAMETER = 100000;
     private int startDeckCounter = ID_PARAMETER;
     private int charDeckCounter = ID_PARAMETER;
+
+    @FXML
+    public void toMainMenu(ActionEvent event) {
+        MyIO.loadXML(event, "StartStage.fxml");
+    }
+
     @FXML
     public void startForward() {
         startDeckCounter++;
         loadDeckOnScreen();
     }
-
-
 
     @FXML
     public void startBackward() {
@@ -48,11 +54,8 @@ public class MadeCharacterStageController implements Initializable {
         startDeckIcon.setImage(active.icon());
         ethnicityLabel.setText(active.ethnicityName());
         deckIcon01.setImage(active.ethnicityDeck().get(0).icon());
-        System.out.println(deckIcon01.getImage().getUrl());
         deckIcon02.setImage(active.ethnicityDeck().get(1).icon());
-        System.out.println(deckIcon02.getImage().getUrl());
         deckIcon03.setImage(active.ethnicityDeck().get(2).icon());
-        System.out.println(deckIcon03.getImage().getUrl());
     }
     @FXML
     public void charForward() {

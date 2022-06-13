@@ -33,8 +33,6 @@ public class Usable {
         this.ID = ID;
         this.objName = objName;
         icon = loadIcon(iconPath);
-        System.out.println(ID + ":" + iconPath);//TODO CHek
-        System.out.println(icon.getUrl());
     }
 
 

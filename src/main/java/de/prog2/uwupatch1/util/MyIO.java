@@ -54,7 +54,6 @@ public class MyIO {
     }
 
     public static void loadXML(ActionEvent event, String source) {
-
         Parent root;
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(FirstStage.class.getResource(source));
