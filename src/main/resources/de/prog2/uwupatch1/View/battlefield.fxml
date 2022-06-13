@@ -110,5 +110,11 @@
       <ToggleButton fx:id="card3" layoutX="596.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
       <ToggleButton fx:id="card2" layoutX="507.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
       <ToggleButton fx:id="card1" layoutX="418.0" layoutY="590.0" mnemonicParsing="false" opacity="0.18" prefHeight="120.0" prefWidth="90.0" />
+      <Button layoutX="99.0" layoutY="637.0" mnemonicParsing="false" onAction="#redrawDeck" prefHeight="40.0" prefWidth="90.0" text="Re-Draw" />
+      <Label fx:id="redrawCounter" layoutX="99.0" layoutY="612.0" prefHeight="27.0" prefWidth="50.0" textFill="BLUE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

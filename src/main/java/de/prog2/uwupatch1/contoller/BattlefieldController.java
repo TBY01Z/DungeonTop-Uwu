@@ -85,6 +85,10 @@ public class BattlefieldController implements Initializable {
     private ImageView card4View = new ImageView();
     @FXML
     private ImageView card5View = new ImageView();
+    @FXML
+    private Label redrawCounter;
+
+    private int maxDraws = 3;
 
 //    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
@@ -184,6 +188,7 @@ public class BattlefieldController implements Initializable {
 //        effectView.setImage(loadIcon(EffectCard.icon().toString()));
         manaBar.setStyle("-fx-accent: blue;");
 //        card1.setStyle("-fx-background-image: url()");     //TODO: alle toggle buttons mit den karten versehen usw usw
+        redrawCounter.setText("3");
         hand();
     }
 
@@ -237,6 +242,26 @@ public class BattlefieldController implements Initializable {
             System.out.println(tmpDeckList);
         }
 
+    }
+
+    public void redrawDeck(ActionEvent event){
+        if(maxDraws != 0) {
+            hand();
+            maxDraws--;
+        } else {
+            gegnerLabel.setText("Keine Karten mehr :(");
+        }
+        switch(maxDraws){
+            case 0: redrawCounter.setText("0");
+                break;
+            case 1: redrawCounter.setText("1");
+                break;
+            case 2: redrawCounter.setText("2");
+                break;
+            case 3: redrawCounter.setText("3");
+                break;
+            default: redrawCounter.setText("");
+        }
     }
 
     public void hand(){
