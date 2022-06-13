@@ -6,4 +6,6 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.SettingStageControl">
    <CheckBox fx:id="fsCheckbox" layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFullscreenClick" text="Full Screen" />
    <Button layoutX="239.0" layoutY="360.0" mnemonicParsing="false" onAction="#onMainMenuChange" text="Back to Main Menu" />
+   <Slider layoutX="31.0" layoutY="84.0" prefHeight="17.0" prefWidth="79.0" />
+   <Label layoutX="31.0" layoutY="67.0" prefHeight="17.0" prefWidth="61.0" text="Volume" />
 </AnchorPane>
