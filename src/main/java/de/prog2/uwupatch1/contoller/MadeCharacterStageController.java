@@ -44,12 +44,15 @@ public class MadeCharacterStageController implements Initializable {
     }
 
     private void loadDeckOnScreen() {
-        Ethnicity active = Ethnicities.get((startDeckCounter%Ethnicities.ethnicities().size()));
+        Ethnicity active = Ethnicities.get(startDeckCounter%Ethnicities.ethnicities().size());
         startDeckIcon.setImage(active.icon());
         ethnicityLabel.setText(active.ethnicityName());
         deckIcon01.setImage(active.ethnicityDeck().get(0).icon());
+        System.out.println(deckIcon01.getImage().getUrl());
         deckIcon02.setImage(active.ethnicityDeck().get(1).icon());
+        System.out.println(deckIcon02.getImage().getUrl());
         deckIcon03.setImage(active.ethnicityDeck().get(2).icon());
+        System.out.println(deckIcon03.getImage().getUrl());
     }
     @FXML
     public void charForward() {
