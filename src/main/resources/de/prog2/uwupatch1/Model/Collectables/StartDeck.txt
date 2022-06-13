@@ -1,3 +1,3 @@
-IT'ler-TOD-startIcon01.png-0-100-600
-BYTE-TOD-startIcon02.png-100-600-0
-BiT-TOD-startIcon03.png-600-0-100
+IT'ler-TOD-HArmor6.png-0-100-600
+BYTE-TOD-HArmor6.png-100-600-0
+BiT-TOD-HArmor6.png-600-0-100
