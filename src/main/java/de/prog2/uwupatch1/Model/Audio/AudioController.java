@@ -32,7 +32,6 @@ public class AudioController {
 			System.out.print(n);
 			//TODO: wenn app zu jar gepackaged wird, dateipfad immer mit "jar:" beginnen lassen
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n + ".wav")));
-			//FIXME: datei wird nicht gefunden
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
 			player.start();
 		} catch (LineUnavailableException e) {
