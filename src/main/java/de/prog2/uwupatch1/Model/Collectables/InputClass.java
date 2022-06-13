@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class InputClass {
     /**
      * TODO:check ob mans besser ausdruecken kann?
-     *Methode prueft, ob alle Objekte mit Attributen befuellt wurden.
+     * Methode prueft, ob alle Objekte mit Attributen befuellt wurden.
      * @return true
      * if @return true fill is positiv
      */
