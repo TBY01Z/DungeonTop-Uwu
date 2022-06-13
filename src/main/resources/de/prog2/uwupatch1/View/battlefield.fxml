@@ -11,11 +11,11 @@
          <image>
             <Image url="@../Model/Icon/battlefieldBackground.png" />
          </image></ImageView>
-      <ImageView fx:id="card5View" fitHeight="120.0" fitWidth="90.0" layoutX="773.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="card4View" fitHeight="120.0" fitWidth="90.0" layoutX="684.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="card3View" fitHeight="120.0" fitWidth="90.0" layoutX="595.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="card2View" fitHeight="120.0" fitWidth="90.0" layoutX="506.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="card1View" fitHeight="120.0" fitWidth="90.0" layoutX="416.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card5View" fitHeight="120.0" fitWidth="90.0" layoutX="773.0" layoutY="591.0" pickOnBounds="true" />
+      <ImageView fx:id="card4View" fitHeight="120.0" fitWidth="90.0" layoutX="684.0" layoutY="590.0" pickOnBounds="true" />
+      <ImageView fx:id="card3View" fitHeight="120.0" fitWidth="90.0" layoutX="595.0" layoutY="590.0" pickOnBounds="true" />
+      <ImageView fx:id="card2View" fitHeight="120.0" fitWidth="90.0" layoutX="506.0" layoutY="591.0" pickOnBounds="true" />
+      <ImageView fx:id="card1View" fitHeight="120.0" fitWidth="90.0" layoutX="416.0" layoutY="590.0" pickOnBounds="true" />
       <GridPane layoutX="340.0" layoutY="139.0" prefHeight="400.0" prefWidth="600.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
