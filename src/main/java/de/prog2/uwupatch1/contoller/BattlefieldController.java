@@ -3,6 +3,7 @@ package de.prog2.uwupatch1.contoller;
 import de.prog2.uwupatch1.Model.Audio.AudioController;
 import de.prog2.uwupatch1.Model.Items.Cards.Card;
 import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Deck;
+import de.prog2.uwupatch1.Model.PlayerSelf.Player;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,7 +13,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.media.MediaView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,14 +28,11 @@ public class BattlefieldController implements Initializable {
      *                  {@code null} if the location is not known.
      * @param resources The resources used to localize the root object, or {@code null} if
      *                  the root object was not localized.
-     */
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+     *
+     **/
 
-    }
-/**
     @FXML
-    Label gegnerLabel;  //verwendet fuer die anzeige der gegnernamen.
+    Label generalFeedbackLabel;
     @FXML
     private ImageView tile1 = new ImageView();
     @FXML
@@ -102,6 +99,8 @@ public class BattlefieldController implements Initializable {
     private Label redrawCounter;
 
     private int maxDraws = 3;
+
+    private Player player = MadeCharacterStageController.player();
 
 //    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
@@ -178,7 +177,7 @@ public class BattlefieldController implements Initializable {
      *                  {@code null} if the location is not known.
      * @param resources The resources used to localize the root object, or {@code null} if
      *                  the root object was not localized.
-     *//**
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tile1.setImage(loadIcon("battlefieldTile.png"));
@@ -206,7 +205,7 @@ public class BattlefieldController implements Initializable {
     }
 
     public void getLabelFeedback(ActionEvent event){
-        gegnerLabel.setText("reagiert button? updated mana? spielt sound?");
+        generalFeedbackLabel.setText("reagiert button? updated mana? spielt sound?");
         increaseMana(0.2);
         new AudioController("menuClick");
     }
@@ -244,7 +243,7 @@ public class BattlefieldController implements Initializable {
     }
 
     public void onEndTurn(ActionEvent event){
-        gegnerLabel.setText("Zug wurde beendet!");
+        generalFeedbackLabel.setText("Zug wurde beendet!");
         increaseMana(0.2);
         new AudioController("menuClick");
     }
@@ -254,7 +253,6 @@ public class BattlefieldController implements Initializable {
             tmpDeckList.add(Deck.draw());
             System.out.println(tmpDeckList);
         }
-
     }
 
     public void redrawDeck(ActionEvent event){
@@ -262,7 +260,7 @@ public class BattlefieldController implements Initializable {
             hand();
             maxDraws--;
         } else {
-            gegnerLabel.setText("Keine Karten mehr :(");
+            generalFeedbackLabel.setText("Keine Karten mehr :(");
         }
         switch(maxDraws){
             case 0: redrawCounter.setText("0");
@@ -278,10 +276,11 @@ public class BattlefieldController implements Initializable {
     }
 
     public void hand(){
-//        while(iconTmpDeck.size() != 5){
-//            iconTmpDeck.add(Deck.draw().icon());
-//        }
-        System.out.println(iconTmpDeck);
+        Image card1Drawn = Deck.draw().icon();
+        Image card2Drawn = Deck.draw().icon();
+        Image card3Drawn = Deck.draw().icon();
+        Image card4Drawn = Deck.draw().icon();
+        Image card5Drawn = Deck.draw().icon();
         card1View.setImage(Deck.draw().icon());
         card2View.setImage(Deck.draw().icon());
         card3View.setImage(Deck.draw().icon());
@@ -291,7 +290,6 @@ public class BattlefieldController implements Initializable {
 
     public void cardSelector(ImageView tile){
 
-//        deckList();
 //        deckSelector.getToggles().addAll(card1, card2, card3, card4, card5);    //damit nur eine auf einmal gewaehlt werden kann
 
         if(card1.isSelected() == true && manaBarProgress >= 0.3){
@@ -340,4 +338,4 @@ public class BattlefieldController implements Initializable {
             new AudioController("menuClick");
         }
     }
-}*/}
+}

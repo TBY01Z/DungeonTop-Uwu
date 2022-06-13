@@ -29,7 +29,6 @@ public class AudioController {
 		try {
 			String n = this.trackName;
 			player = AudioSystem.getClip();
-			System.out.print(n);
 			//TODO: wenn app zu jar gepackaged wird, dateipfad immer mit "jar:" beginnen lassen
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n + ".wav")));
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);

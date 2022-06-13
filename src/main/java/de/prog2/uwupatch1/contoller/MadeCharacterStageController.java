@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MadeCharacterStageController implements Initializable {
-    private Player player;
+    private static Player player;
     @FXML
     private ImageView startDeckIcon = new ImageView();
     @FXML
@@ -106,12 +106,11 @@ public class MadeCharacterStageController implements Initializable {
         MyIO.loadXML(event, "Battlefield.fxml");
     }
 
-    public Player player() {
+    public static Player player() {
         return player;
     }
 
-    public MadeCharacterStageController setPlayer(Player player) {
-        this.player = player;
-        return this;
+    public static void setPlayer(Player player01) {
+        player = player01;
     }
 }
