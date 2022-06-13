@@ -276,11 +276,6 @@ public class BattlefieldController implements Initializable {
     }
 
     public void hand(){
-        Image card1Drawn = player.cards().draw().icon();
-        Image card2Drawn = player.cards().draw().icon();
-        Image card3Drawn = player.cards().draw().icon();
-        Image card4Drawn = player.cards().draw().icon();
-        Image card5Drawn = player.cards().draw().icon();
         card1View.setImage(player.cards().draw().icon());
         card2View.setImage(player.cards().draw().icon());
         card3View.setImage(player.cards().draw().icon());
@@ -297,6 +292,7 @@ public class BattlefieldController implements Initializable {
 //            tile.setImage();
             System.out.print("card1");
             decreaseMana(0.3);
+            tile.setImage(card1View.getImage());
             card1.setSelected(false);
             card1View.setVisible(false);
             new AudioController("menuClick");
@@ -306,6 +302,7 @@ public class BattlefieldController implements Initializable {
 //            tile.setImage();
             System.out.print("card2");
             decreaseMana(0.3);
+            tile.setImage(card2View.getImage());
             card2.setSelected(false);
             card2View.setVisible(false);
             new AudioController("menuClick");
@@ -315,6 +312,7 @@ public class BattlefieldController implements Initializable {
 //            tile.setImage();
             System.out.print("card3");
             decreaseMana(0.3);
+            tile.setImage(card3View.getImage());
             card3.setSelected(false);
             card3View.setVisible(false);
             new AudioController("menuClick");
@@ -324,6 +322,7 @@ public class BattlefieldController implements Initializable {
 //            tile.setImage();
             System.out.print("card4");
             decreaseMana(0.3);
+            tile.setImage(card4View.getImage());
             card4.setSelected(false);
             card4View.setVisible(false);
             new AudioController("menuClick");
@@ -333,6 +332,7 @@ public class BattlefieldController implements Initializable {
 //            tile.setImage();
             System.out.print("card5");
             decreaseMana(0.3);
+            tile.setImage(card5View.getImage());
             card5.setSelected(false);
             card5View.setVisible(false);
             new AudioController("menuClick");
