@@ -86,7 +86,7 @@ public class BattlefieldController implements Initializable {
     @FXML
     private ImageView card5View = new ImageView();
 
-    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
+//    private Image newCard = loadIcon("testImg1.png");   //TODO: unterschiedliche icons laden
 //    private final Image showEffect = loadIcon(EffectCard.icon().toString());
 
     public void onTile1Place(){
