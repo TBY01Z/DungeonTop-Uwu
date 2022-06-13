@@ -4,6 +4,6 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.prog2.uwupatch1.contoller.SettingStageControl">
-   <CheckBox layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFullscreenClick" text="Full Screen" />
+   <CheckBox fx:id="fsCheckbox" layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFullscreenClick" text="Full Screen" />
    <Button layoutX="239.0" layoutY="360.0" mnemonicParsing="false" onAction="#onMainMenuChange" text="Back to Main Menu" />
 </AnchorPane>

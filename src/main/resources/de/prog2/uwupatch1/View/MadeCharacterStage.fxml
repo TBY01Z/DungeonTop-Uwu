@@ -73,8 +73,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
-        <ImageView fx:id="deckIcon01" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
-        <ImageView fx:id="deckIcon02" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+        <ImageView fx:id="deckIcon01" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <ImageView fx:id="deckIcon02" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
         <ImageView fx:id="deckIcon03" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" text="Erstellen" GridPane.columnIndex="3" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" text="Hauptmenu" GridPane.columnIndex="2" GridPane.rowIndex="5" />
