@@ -1,1 +1,10 @@
-100-2 Runden 100% Heal-eff01.PNG-200-500-5
+100-Wirbel-DEffect1.PNG-200-500-5
+101-Rot-DEffect2.PNG-200-500-5
+102-Blau-DEffect3.PNG-200-500-5
+103-Schwarz-DEffect4.PNG-200-500-5
+104-Weiss-DEffect5.PNG-200-500-5
+105-Schwarz Weiss-DEffect6.PNG-200-500-5
+
+106-Blau-HEffect1.PNG-200-500-5
+107-Pink-HEffect2.PNG-200-500-5
+108-Pinker Wirbel-HEffect3.PNG-200-500-5
