@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,11 +24,11 @@ public class MadeCharacterStageController implements Initializable {
     @FXML
     private Label personalityLabel = new Label();
     @FXML
-    private ImageView deckIcon01 = new ImageView();
+    private ImageView deckIcon01 = new ImageView(Ethnicities.ethnicities().get(0).icon());
     @FXML
-    private ImageView deckIcon02 = new ImageView();
+    private ImageView deckIcon02 = new ImageView(Ethnicities.ethnicities().get(1).icon());
     @FXML
-    private ImageView deckIcon03 = new ImageView();
+    private ImageView deckIcon03 = new ImageView(Ethnicities.ethnicities().get(2).icon());
     private final int ID_PARAMETER = 100000;
     private int startDeckCounter = ID_PARAMETER;
     private int charDeckCounter = ID_PARAMETER;
@@ -53,9 +54,12 @@ public class MadeCharacterStageController implements Initializable {
         Ethnicity active = Ethnicities.get(startDeckCounter%Ethnicities.ethnicities().size());
         startDeckIcon.setImage(active.icon());
         ethnicityLabel.setText(active.ethnicityName());
-        deckIcon01.setImage(active.ethnicityDeck().get(0).icon());
-        deckIcon02.setImage(active.ethnicityDeck().get(1).icon());
-        deckIcon03.setImage(active.ethnicityDeck().get(2).icon());
+        deckIcon01.setImage(null);
+        deckIcon02.setImage(null);
+        deckIcon03.setImage(null);
+        deckIcon01.setImage(new Image(active.ethnicityDeck().get(0).icon().getUrl()));
+        deckIcon02.setImage(new Image(active.ethnicityDeck().get(1).icon().getUrl()));
+        deckIcon03.setImage(new Image(active.ethnicityDeck().get(2).icon().getUrl()));
     }
     @FXML
     public void charForward() {
