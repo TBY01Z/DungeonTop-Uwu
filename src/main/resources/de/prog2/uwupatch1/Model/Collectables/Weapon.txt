@@ -10,3 +10,4 @@
 409-Hanabi-Weapon10.PNG-0-10-1-700
 410-Teppichmesser-Weapon11.PNG-0-10-1-550
 411-Morgenstern-Weapon12.PNG-0-10-1-900
+999-Faust-clear.png-0-0-0-0

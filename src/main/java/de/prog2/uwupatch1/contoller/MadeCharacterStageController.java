@@ -1,7 +1,6 @@
 package de.prog2.uwupatch1.contoller;
 
-import de.prog2.uwupatch1.Model.Collectables.Ethnicities;
-import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
+import de.prog2.uwupatch1.Model.Collectables.*;
 import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
 import de.prog2.uwupatch1.Model.PlayerSelf.Player;
@@ -33,6 +32,7 @@ public class MadeCharacterStageController implements Initializable {
     @FXML
     private ImageView deckIcon03 = new ImageView(Ethnicities.ethnicities().get(2).icon());
     private final int ID_PARAMETER = 100000;
+    private final int newPlayerLevel = 1;
     private int startDeckCounter = ID_PARAMETER;
     private int charDeckCounter = ID_PARAMETER;
 
@@ -92,7 +92,11 @@ public class MadeCharacterStageController implements Initializable {
     public void createPlayerAndStartTheGame(ActionEvent event) {
         setPlayer(new Player(PlayerType.ADVENTURE,
                 PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()),
-                null,null,null,null,1,
+                Weapons.get(Weapons.weapons().size()-1),
+                Armors.get(Armors.armors().size()-1),
+                Artifacts.get(Artifacts.artifacts().size()-1),
+                Artifacts.get(Artifacts.artifacts().size()-1),
+                newPlayerLevel,
                 PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundDamage(),
                 PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundMana(),
                 PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundMana()/4,
