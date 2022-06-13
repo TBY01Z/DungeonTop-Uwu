@@ -20,7 +20,20 @@ import java.util.ResourceBundle;
 import static de.prog2.uwupatch1.util.MyIO.loadIcon;
 //v1
 public class BattlefieldController implements Initializable {
+    /**
+     * Called to initialize a controller after its root element has been
+     * completely processed.
+     *
+     * @param location  The location used to resolve relative paths for the root object, or
+     *                  {@code null} if the location is not known.
+     * @param resources The resources used to localize the root object, or {@code null} if
+     *                  the root object was not localized.
+     */
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
+    }
+/**
     @FXML
     Label gegnerLabel;  //verwendet fuer die anzeige der gegnernamen.
     @FXML
@@ -165,7 +178,7 @@ public class BattlefieldController implements Initializable {
      *                  {@code null} if the location is not known.
      * @param resources The resources used to localize the root object, or {@code null} if
      *                  the root object was not localized.
-     */
+     *//**
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tile1.setImage(loadIcon("battlefieldTile.png"));
@@ -327,4 +340,4 @@ public class BattlefieldController implements Initializable {
             new AudioController("menuClick");
         }
     }
-}
+}*/}

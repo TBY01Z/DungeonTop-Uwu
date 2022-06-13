@@ -4,6 +4,8 @@ import de.prog2.uwupatch1.Model.Collectables.Ethnicities;
 import de.prog2.uwupatch1.Model.Collectables.PersonalityTypeCasts;
 import de.prog2.uwupatch1.Model.PlayerSelf.Ethnicity;
 import de.prog2.uwupatch1.Model.PlayerSelf.PersonalityTypeCast;
+import de.prog2.uwupatch1.Model.PlayerSelf.Player;
+import de.prog2.uwupatch1.Model.PlayerSelf.PlayerType;
 import de.prog2.uwupatch1.util.MyIO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,6 +17,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MadeCharacterStageController implements Initializable {
+    private Player player;
     @FXML
     private ImageView startDeckIcon = new ImageView();
     @FXML
@@ -84,5 +87,27 @@ public class MadeCharacterStageController implements Initializable {
         charBackward();
 
 
+    }
+
+    public void createPlayerAndStartTheGame(ActionEvent event) {
+        setPlayer(new Player(PlayerType.ADVENTURE,
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()),
+                null,null,null,null,1,
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundDamage(),
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundMana(),
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundMana()/4,
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundHealth(),
+                PersonalityTypeCasts.get(charDeckCounter%PersonalityTypeCasts.personalityTypeCasts().size()).groundDrawLimit(),
+                Ethnicities.get(startDeckCounter%Ethnicities.ethnicities().size())));
+        MyIO.loadXML(event, "Battlefield.fxml");
+    }
+
+    public Player player() {
+        return player;
+    }
+
+    public MadeCharacterStageController setPlayer(Player player) {
+        this.player = player;
+        return this;
     }
 }

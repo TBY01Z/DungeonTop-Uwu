@@ -79,7 +79,7 @@
          </ImageView>
         <ImageView fx:id="deckIcon03" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" >
             </ImageView>
-      <Button mnemonicParsing="false" text="Erstellen" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#createPlayerAndStartTheGame" text="Erstellen" GridPane.columnIndex="3" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" onAction="#toMainMenu" text="Hauptmenu" GridPane.columnIndex="2" GridPane.rowIndex="5" />
     </GridPane>
 </GridPane>
