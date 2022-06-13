@@ -1,3 +1,6 @@
-Paladin-TOD-CharType01.PNG-200-8-10-30-5
-Bob-TOD-CharType02.PNG-200-20-10-20-5
-EVE-TOD-CharType03.PNG-200-999-10-50-5
+Berserk-TOD-HCharacterType1.png-200-8-10-30-8
+Seraph-TOD-HCharacterType2.png-200-8-10-30-8
+Death Caller-TOD-HCharacterType3.png-200-8-10-30-8
+Dragon Master-TOD-DCharacterType1.png-200-8-10-30-8
+Yeti-TOD-DCharacterType2.png-200-8-10-30-8
+Demon king Boa-TOD-DCharacterType3.png-200-8-10-30-8

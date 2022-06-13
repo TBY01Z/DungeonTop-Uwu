@@ -1,1 +1,13 @@
-200-2-2 Runden Heal-eff01.PNG-1-0-0-0-0
+200_3_FireBall_DAbility1.png_-0.5_0_0_0_0
+201_1_Local Hypnosis_DAbility2.png_0_0_0_0_-2
+202_3_Fire Eyes_DAbility3.png_-0.8_0_0_0_0
+203_3_Nova Prime_DAbility4.png_-0.9_0_0_0_0
+204_3_Nova Prime_DAbility5.png_-0.9_0_0_0_0
+205_3_Nova Prime_DAbility6.png_-0.9_0_0_0_0
+206_3_Nova Prime_DAbility7.png_-0.9_0_0_0_0
+207_3_Nova Prime_DAbility8.png_-0.9_0_0_0_0
+208_3_Nova Prime_DAbility9.png_-0.9_0_0_0_0
+209_3_Nova Prime_DAbility10.png_-0.9_0_0_0_0
+250_3_Nova Prime_LAbility4.png_-0.9_0_0_0_0
+204_3_Nova Prime_DAbility4.png_-0.9_0_0_0_0
+Ability(int ID, int timer, String name, String iconPath, double increaseHealth, double increaseMana, double increaseDamage, double increaseArmor, int increaseDrawLimit)

@@ -50,7 +50,7 @@ public class InputClass {
         Scanner scanner = new Scanner(new File((Objects.requireNonNull(InputClass.class.getResource("Ability.txt")).getFile())));
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            String [] activeLine = line.split("-");
+            String [] activeLine = line.split("_");
             Abilities.addEffect(new Ability(
                     Integer.parseInt(activeLine[0]),
                     Integer.parseInt(activeLine[1]),
