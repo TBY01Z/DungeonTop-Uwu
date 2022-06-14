@@ -4,10 +4,7 @@ import javafx.scene.media.AudioClip;
 
 import java.io.IOException;
 
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.sound.sampled.*;
 
 /**
  * Das AudioManager Objekt erlaubt es verschiedene AudioClips an verschiedenen Stellen abzuspielen.
@@ -30,6 +27,7 @@ public class AudioController {
 			player = AudioSystem.getClip();
 			player.open(AudioSystem.getAudioInputStream(getClass().getResource(n + ".wav")));
 			//sound.loop(Clip.LOOP_CONTINUOUSLY);
+			setVolume(90);
 			player.start();
 		} catch (LineUnavailableException e) {
 			e.printStackTrace();
@@ -38,6 +36,12 @@ public class AudioController {
 		} catch (UnsupportedAudioFileException e) {
 			e.printStackTrace();
 		}
+	}
+	public void setVolume(int volume) {
+		FloatControl control = (FloatControl) player.getControl(FloatControl.Type.MASTER_GAIN);
+		float range = control.getMinimum();
+		float result = range * (1 - volume / 100.0f);
+		control.setValue(result);
 	}
 
 }
