@@ -8,8 +8,8 @@ import java.io.Serializable;
 
 /**
  * @author Niclas Rieckers
- * Superklasse für alle im Spiel vorhandenen spielbaren Charakter.
- * TODO: Check Grammatical & comments
+ * Diese Klasse stellt denn spielbaren Charakter dar.
+ *
  */
 
 public class Player implements Serializable {

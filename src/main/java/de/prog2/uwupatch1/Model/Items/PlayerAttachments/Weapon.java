@@ -1,7 +1,7 @@
 package de.prog2.uwupatch1.Model.Items.PlayerAttachments;
 /**
  * @author Niclas
- * TODO: Check Grammatical
+ * Diese Klasse stellt die Waffe in diesem Programm dar.
  */
 public class Weapon extends Usable {
 

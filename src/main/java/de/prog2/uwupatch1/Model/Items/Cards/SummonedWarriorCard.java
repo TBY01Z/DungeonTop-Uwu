@@ -8,7 +8,6 @@ import javafx.collections.ObservableList;
  * @author Niclas Rieckers
  * Klasse fürs erzeugen eines SummonedWarriorCard Objektes. Erbt von Klasse Usable, da SummonedWarriorCard zu
  * den vom Spieler nutzbaren Items gehört.
- * TODO: Check Grammatical
  */
 public class SummonedWarriorCard extends Card {
     /**

@@ -6,7 +6,6 @@ import de.prog2.uwupatch1.Model.Items.PlayerAttachments.Ability;
  * @author Niclas Rieckers
  * Klasse für die erzeugung eines "EffectCard" Objektes. Erbt von Klasse Usable, da EffectCard zu den vom
  * Spieler nutzbaren Items gehört.
- * TODO: Check Grammatical
  */
 public class EffectCard extends Card{
     //Hier wird die cardAbility referenciert.

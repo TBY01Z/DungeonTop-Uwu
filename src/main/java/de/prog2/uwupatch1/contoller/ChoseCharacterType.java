@@ -22,4 +22,12 @@ public class ChoseCharacterType {
                 event,"StartStage.fxml"
         );
     }
+
+    public static boolean adventureMode() {
+        return adventureMode;
+    }
+
+    public static void setAdventureMode(boolean adventureMode) {
+        ChoseCharacterType.adventureMode = adventureMode;
+    }
 }

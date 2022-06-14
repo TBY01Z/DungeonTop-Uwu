@@ -19,7 +19,7 @@ public class StartController {
 
 
     public void onLocalChose(ActionEvent event) {
-        MyIO.loadXML(event, "Battlefield.fxml");
+        MyIO.loadXML(event, "onLocalMode.fxml");
     }
 
 
